@@ -22,7 +22,8 @@ let
       name = builtins.baseNameOf ./.;
       root = gitignore.gitignoreSource ''
           /*.markdown
-          /index.html
+          /*.md
+          /*.html
           /templates/*
           /css/*
           /js/*
@@ -37,31 +38,33 @@ let
       });
     }).overrideAttrs (old: {
       shellHook = ''
-        alias buildAndWatch="cabal build && ./dist/build/site/site watch"
+        alias buildAndWatch="cabal build && ./dist/build/site/site clean && ./dist/build/site/site watch"
         echo ""
         echo "  Haskell.org Dev Shell"
-        echo "    \`buildAndWatch\` to serve the site, and rebuild when files change"
+        echo "    \`buildAndWatch\` to serve the site, and rebuild when files change."
+        echo "    \`ghcid\` and \`cabal\` are provided in this environment."
         echo ""
       '';
     });
 
   built = pkgs.stdenv.mkDerivation {
     name = "haskell.org";
-    src = ./.;
+    src = gitignore.gitignoreSource [] ./.;
     buildInputs = [ builder ];
+    LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
+    LC_ALL = "en_US.UTF-8";
     installPhase = ''
       echo ""
       echo "  Building static site..."
       echo ""
       site build
       echo ""
-      echo "  Copying static site to $out"
-      echo ""
+      echo "  Copying static site to $out..."
       cp -r _site $out
-      echo ""
       echo "  Build complete"
       echo ""
     '';
   };
 in
-  if pkgs.lib.inNixShell then builder else built
+  if pkgs.lib.inNixShell then builder
+  else { inherit builder built; }
