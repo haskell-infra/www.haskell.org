@@ -1,43 +1,41 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid ((<>))
-import Data.Time.Clock
-import Data.Time.Calendar
-import System.FilePath.Posix
+import           Data.Monoid           ((<>))
+import           Data.Time.Calendar
+import           Data.Time.Clock
 import           Hakyll
+import           System.FilePath.Posix
 
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = do
-  ctx <- mkContext
-  hakyll $ do
-    match "img/*" $ do
-        route   idRoute
-        compile copyFileCompiler
+main = mkContext >>= \ctx -> hakyll $ do
+  match "img/*" $ do
+    route   idRoute
+    compile copyFileCompiler
 
-    match "css/*" $ do
-        route   idRoute
-        compile compressCssCompiler
+  match "css/*" $ do
+    route   idRoute
+    compile compressCssCompiler
 
-    match "js/*" $ do
-        route   idRoute
-        compile copyFileCompiler
+  match "js/*" $ do
+    route   idRoute
+    compile copyFileCompiler
 
-    match "index.html" $ do
-        route idRoute
-        compile $ defCompiler ctx
+  match "index.html" $ do
+    route idRoute
+    compile $ defCompiler ctx
 
-    match "*.html" $ do
-        route cleanRoute
-        compile $ defCompiler ctx
+  match "*.html" $ do
+    route cleanRoute
+    compile $ defCompiler ctx
 
-    match "*.markdown" $ do
-        route cleanRoute
-        compile $ mdCompiler ctx
+  match "*.markdown" $ do
+    route cleanRoute
+    compile $ mdCompiler ctx
 
-
-    match "templates/*" $ compile templateCompiler
+  match "templates/*" $
+    compile templateCompiler
 
 
 mdCompiler :: Context String -> Compiler (Item String)
