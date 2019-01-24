@@ -1,12 +1,19 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
+import           Data.Monoid ((<>))
+import Data.Time.Clock
+import Data.Time.Calendar
 import           Hakyll
 
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = do
+  (year, _, _) <- toGregorian . utctDay <$> getCurrentTime
+  hakyll $ do
+    let ctx = constField "year" (show year)
+           <> defaultContext
+
     match "img/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -19,29 +26,16 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-  {-
-    match (fromList ["about.rst", "contact.markdown"]) $ do
-        route   $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
-            -}
-
-    match "index.html" $ do
+    match "*.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    defaultContext
 
             getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= applyAsTemplate ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-    match "templates/*" $ compile templateBodyCompiler
+    match "templates/*" $ compile templateCompiler
 
 
 --------------------------------------------------------------------------------
