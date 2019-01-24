@@ -13,14 +13,27 @@
    </head>
    <body class="page-$page$">
      <div class="wrap">
-       $if(isHome)$
-       $else$
+       $if(isHome)$$else$
        <div class="template">
        $endif$
+
          $partial("templates/nav.html")$
+
+         $if(isHome)$$else$
+         <div class=" container ">
+           <div class=" row ">
+              <div class=" span12 col-sm-12">
+         $endif$
+
          $body$
-       $if(isHome)$
-       $else$
+
+         $if(isHome)$$else$
+             </div>
+           </div>
+         </div>
+         $endif$
+
+       $if(isHome)$$else$
        </div>
        $endif$
      </div>

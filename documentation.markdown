@@ -4,12 +4,6 @@ page: documentation
 isDocumentation: true
 ---
 
-<div class=" container ">
-
-<div class=" row ">
-
-<div class=" span12 col-sm-12">
-
 # Documentation
 
 ## Books for Learning Haskell
@@ -103,9 +97,3 @@ It can also be downloaded as a git repository:
 ```
 $$ git clone -b h2010 https://github.com/haskell/haskell-report
 ```
-
-</div>
-
-</div>
-
-</div>

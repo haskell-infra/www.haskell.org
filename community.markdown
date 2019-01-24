@@ -4,12 +4,6 @@ page: community
 isCommunity: true
 ---
 
-<div class=" container ">
-
-<div class=" row ">
-
-<div class=" span12 col-sm-12">
-
 # Community
 
 Haskellers interact, talk and collaborate across several mediums and around the world. There are places to learn, to teach, to ask questions, and to find contributors and collaborators.
@@ -91,9 +85,3 @@ Haskell Hackathons are a long tradition, with lots of learning and social exchan
 *   [Commercial Haskell Group](http://commercialhaskell.com/)
 *   [DataHaskell: data science, machine learning, numerical computation and related](http://www.datahaskell.org/)
 *   [Haskell Art](http://lurk.org/groups/haskell-art/)
-
-</div>
-
-</div>
-
-</div>

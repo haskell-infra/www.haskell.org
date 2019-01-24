@@ -4,12 +4,6 @@ page: downloads
 isDownloads: true
 ---
 
-<div class=" container ">
-
-<div class=" row ">
-
-<div class=" span12 col-sm-12">
-
 # Downloads
 
 There are three widely used ways to install the Haskell toolchain on supported platforms. These are:
@@ -165,9 +159,3 @@ $$ git clone https://github.com/haskell/network
 $$ cd network
 $$ cabal install
 ```
-
-</div>
-
-</div>
-
-</div>
