@@ -3,3 +3,212 @@ title: Downloads
 page: downloads
 isDownloads: true
 ---
+
+<div class=" container ">
+  <div class=" row ">
+     <div class=" span12 col-sm-12">
+        <h1>Downloads</h1>
+        <p>There are three widely used ways to install the Haskell toolchain on supported
+           platforms. These are:
+        </p>
+        <ul>
+           <li>
+              <p><a href="#minimal">Minimal installers</a>: Just GHC (the compiler), and build
+                 tools (primarily Cabal and Stack) are installed globally on your system, using your
+                 system's package manager.
+              </p>
+           </li>
+           <li>
+              <p><a href="#stack">Stack</a>: Installs the <code>stack</code> command globally: a project-centric
+                 build tool to automatically download and manage Haskell dependencies on a
+                 project-by-project basis.
+              </p>
+           </li>
+           <li>
+              <p><a href="#platform">Haskell Platform</a>: Installs GHC, Cabal, and some other tools,
+                 along with a starter set of libraries in a global location on your system.
+              </p>
+           </li>
+        </ul>
+        <p>These options make different choices as to what is installed globally on your
+           system and what is maintained in project-specific environments. Global
+           installations allow more sharing across users and projects, but at the cost of
+           potential conflicts between projects. To avoid these conflicts, each option
+           has a lightweight <i>sandboxing</i> feature that creates largely self-contained,
+           per-project environments. With Minimal you can optionally sandbox the
+           libraries, avoiding most conflicts. Stack sandboxes the compiler, tools and
+           libraries, so avoids nearly all kinds of conflicts between projects. With
+           Platform you can also optionally sandbox libraries, but not the globally
+           installed platform libraries.
+        </p>
+        <h3>Haskell IDEs &amp; other distributions</h3>
+        <p>In addition to the generic, cross-platform Haskell toolchain described above,
+           there are also easy-to-use, platform-specific distributions and IDEs.
+           The Haskell Wiki contains a <a href="https://wiki.haskell.org/Distributions">list of the most popular ones</a>.
+        </p>
+        <!-- For information on other platforms and methods, please see the section on
+           [third party installers](#other). -->
+        <hr style="height:1px;background-color:black" />
+        <h2>Minimal installers</h2>
+        <h3>What they are <a name="minimal"></a></h3>
+        <p>Minimal installers provide centrally the
+           <a href="https://www.haskell.org/ghc">GHC</a>  compiler and the
+           <a href="https://www.haskell.org/cabal/">Cabal</a> and
+           <a href="https://github.com/commercialhaskell/stack">Stack</a> tools for
+           installing packages. Some may install further build tools (i.e. for
+           parsing and lexing) as well.
+        </p>
+        <h3>What you get</h3>
+        <ul>
+           <li>Only the core libraries necessary for each platform are included.</li>
+           <li>Cabal or Stack must be used to download and install packages after installation.</li>
+        </ul>
+        <h3>How to get them</h3>
+        <ul>
+           <li><a href="/downloads/linux">Linux</a></li>
+           <li><a href="https://www.haskell.org/platform/mac.html">OS X</a> (via the minimal platform)</li>
+           <li><a href="https://www.haskell.org/platform/windows.html">Windows</a> (via
+              the minimal platform)
+           </li>
+        </ul>
+        <h3>Where to get help <a name="help"></a></h3>
+        <ul>
+           <li>For help learning Haskell itself, start with the  <a href="https://www.haskell.org/documentation">Documentation</a> page on the <a href="https://wiki.haskell.org/">Haskell Wiki</a>.</li>
+           <li>If you need help with <a href="https://www.haskell.org/ghc">GHC</a>---the Haskell
+              compiler---there is a comprehensive
+              <a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/index.html">GHC User Manual</a>.
+           </li>
+           <li>For help using Cabal to download or create additional packages (see
+              <a href="#libraries">below</a>), there is the
+              <a href="https://www.haskell.org/cabal/users-guide/">Cabal User Guide</a>.
+           </li>
+           <li>For help using Stack to download or create packages, see the stack documentation <a href="#stackhelp">below</a>.</li>
+           <li>Finally, you can ask questions of other Haskell users and experts on the
+              <a href="irc://irc.freenode.net/haskell">#haskell IRC channel</a> on the Freenode IRC
+              network.
+           </li>
+        </ul>
+        <h2>Stack</h2>
+        <h3>What it is <a name="stack"></a></h3>
+        <p>Stack is a cross-platform build tool for Haskell that
+           handles management of the toolchain (including the GHC compiler and MSYS2 on
+           Windows), building and registering libraries, and more.
+        </p>
+        <h3>What you get</h3>
+        <ul>
+           <li>Once downloaded, it has the capacity to download and install GHC and other
+              core tools.
+           </li>
+           <li>Project development is isolated within sandboxes, including automatic
+              download of the right version of GHC for a given project.
+           </li>
+           <li>It manages all Haskell-related dependencies, ensuring reproducible builds.</li>
+           <li>It fetches from a curated repository of over a thousand packages by default,
+              known to be mutually compatible.
+           </li>
+           <li>It can optionally use Docker to produce standalone deployments.</li>
+        </ul>
+        <h3>How to get it</h3>
+        <p>The <a href="http://docs.haskellstack.org/en/stable/install_and_upgrade/">install and upgrade page</a>
+           describes how to download Stack on various platforms, although the main
+           three are repeated here:
+        </p>
+        <ul>
+           <li><a href="http://docs.haskellstack.org/en/stable/install_and_upgrade/#ubuntu">Ubuntu Linux</a></li>
+           <li><a href="http://docs.haskellstack.org/en/stable/install_and_upgrade/#os-x">OS X</a></li>
+           <li><a href="http://docs.haskellstack.org/en/stable/install_and_upgrade/#windows">Windows</a></li>
+        </ul>
+        <p>Instructions for other Linux distributions, including Debian, Fedora, Red Hat,
+           Nix OS, and Arch Linux, are also available.
+        </p>
+        <h3>Where to get help <a name="stackhelp"></a></h3>
+        <p>For help with Haskell and GHC in general, see the links mentioned
+           <a href="#help">above</a>. For Stack itself there are also the following resources:
+        </p>
+        <ul>
+           <li>The <a href="https://github.com/commercialhaskell/stack/#readme">README</a> offers a
+              general overview, and help with installation.
+           </li>
+           <li>There is an
+              <a href="http://docs.haskellstack.org">in-depth guide</a>
+              to using Stack.
+           </li>
+           <li><a href="http://seanhess.github.io/2015/08/04/practical-haskell-getting-started.html">Getting started with Stack</a>
+              introduces how to build new projects using Stack.
+           </li>
+           <li>You may post issues and feature requests on its
+              <a href="https://github.com/commercialhaskell/stack">GitHub issue tracker</a>.
+           </li>
+           <li>There is a <a href="https://groups.google.com/d/forum/haskell-stack">mailing list for Stack</a></li>
+           <li>There is a dedicated
+              <a href="irc://irc.freenode.net/haskell-stack">#haskell-stack IRC channel</a> on the
+              Freenode IRC network.
+           </li>
+           <li>The <a href="http://stackoverflow.com/questions/tagged/haskell-stack">StackOverflow haskell-stack tag</a>
+              has many stack-specific questions and answers.
+           </li>
+        </ul>
+        <h2>Haskell Platform</h2>
+        <h3>What it is</h3>
+        <a name="platform"></a>The Haskell Platform is a self-contained, all-in-one
+        installer. After download, you will have everything necessary to build Haskell
+        programs against a core set of useful libraries. It comes in both minimal versions
+        with tools but no libraries outside of GHC core, or full versions, which include a
+        broader set of globally installed libraries.
+        <h3>What you get</h3>
+        <ul>
+           <li>The <a href="https://www.haskell.org/ghc">Glasgow Haskell Compiler</a></li>
+           <li>The <a href="https://www.haskell.org/cabal/">Cabal build system</a>, which can install
+              new packages, and by default fetches from
+              <a href="https://hackage.haskell.org/">Hackage</a>, the central Haskell package
+              repository.
+           </li>
+           <li>the <a href="http://docs.haskellstack.org">Stack</a> tool for developing projects</li>
+           <li>Support for profiling and code coverage analysis</li>
+           <li>35 core &amp; widely-used <a href="https://www.haskell.org/platform/contents.html">packages</a></li>
+        </ul>
+        <h3>How to get it</h3>
+        <p>The Platform is provided as a single installer, and can be downloaded at the
+           links below.
+        </p>
+        <ul>
+           <li><a href="http://www.haskell.org/platform/linux.html">Linux</a></li>
+           <li><a href="http://www.haskell.org/platform/mac.html">OS X</a></li>
+           <li><a href="http://www.haskell.org/platform/windows.html">Windows</a></li>
+        </ul>
+        <h3>Where to get help</h3>
+        <ul>
+           <li>You can find a comprehensive list of
+              <a href="https://www.haskell.org/platform/contents.html">what the Platform offers</a>.
+           </li>
+           <li>See the general help mentioned <a href="#help">above</a>, which covers the usage of GHC,
+              as well as the Cabal and Stack tools.
+           </li>
+        </ul>
+        <hr style="height:1px;background-color:black" />
+        <h2>Additional Libraries <a name="libraries"></a></h2>
+        <p>In Haskell, packages are configured and built with the Cabal package system built into GHC (and other compilers). For more specific details, see <a href="https://www.haskell.org/cabal/users-guide/">The Cabal User Guide</a>. The command line tools to download and install packages are either <code>cabal</code> or <code>stack</code>, each having different workflows. For details on their usage, see the documentation above.</p>
+        <h3>Hackage</h3>
+        <p>Hackage is a repository of packages to which anyone can freely upload at any time. The packages are available immediately and documentation will be generated and hosted there. It can be used by cabal install.</p>
+        <p>You can install a package using cabal by running:</p>
+        <pre>&#36; cabal update
+&#36; cabal install the-package</pre>
+        <p>Note that if you are not in a sandbox, this will install the package globally, which is often not what you want, so it is recommended to set up sandboxes in your project directory by running <code>cabal sandbox init</code>.</p>
+        <p><a href="https://hackage.haskell.org/packages/">Go to Hackage &rarr;</a></p>
+        <h3>LTS Haskell</h3>
+        <p>LTS Haskell is a stackage-based long-term support set of packages which build and pass tests together, with backported bug fixes.</p>
+        <p><a href="http://www.stackage.org/lts">Get LTS Haskell &rarr;</a></p>
+        <h3>Stackage Nightly</h3>
+        <p>Stackage is a nightly generated stable repository of snapshots of package sets in which only packages which build and pass tests together are bundled together into a snapshot.</p>
+        <p><a href="http://www.stackage.org/nightly">Get Stackage Nightly &rarr;</a></p>
+        <h3>From source control repositories</h3>
+        <p>Installing from a source repository is also possible. For example, to clone and install the network package from source, you would run:</p>
+        <pre>&#36; git clone https://github.com/haskell/network
+&#36; cabal install network/</pre>
+        <p>Or:</p>
+        <pre>&#36; git clone https://github.com/haskell/network
+&#36; cd network
+&#36; cabal install</pre>
+        </div>
+     </div>
+  </div>

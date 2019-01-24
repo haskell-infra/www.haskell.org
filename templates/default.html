@@ -13,8 +13,16 @@
    </head>
    <body class="page-$page$">
      <div class="wrap">
-       $partial("templates/nav.html")$
-       $body$
+       $if(isHome)$
+       $else$
+       <div class="template">
+       $endif$
+         $partial("templates/nav.html")$
+         $body$
+       $if(isHome)$
+       $else$
+       </div>
+       $endif$
      </div>
      <div class="footer">
         <div class="container">
