@@ -1,0 +1,13 @@
+image: nixos/nix
+
+stages:
+  - build
+
+compile:
+  stage: build
+  script:
+  - nix-build -A built
+  - rm -r result
+  artifacts:
+    untracked: true
+

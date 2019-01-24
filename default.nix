@@ -3,10 +3,7 @@
 , pkgs     ?
     import (builtins.fetchTarball {
       url    = "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
-      }) {
-      config.allowBroken = false;
-      config.allowUnfree = true;
-    }
+      }) {}
 }:
 
 let
