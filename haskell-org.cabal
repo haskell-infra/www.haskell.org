@@ -8,5 +8,6 @@ executable site
   build-depends:    base == 4.*
                   , hakyll == 4.12.*
                   , time
+                  , filepath
   ghc-options:      -threaded
   default-language: Haskell2010

@@ -3,17 +3,15 @@
 import           Data.Monoid ((<>))
 import Data.Time.Clock
 import Data.Time.Calendar
+import System.FilePath.Posix
 import           Hakyll
 
 
 --------------------------------------------------------------------------------
 main :: IO ()
 main = do
-  (year, _, _) <- toGregorian . utctDay <$> getCurrentTime
+  ctx <- mkContext
   hakyll $ do
-    let ctx = constField "year" (show year)
-           <> defaultContext
-
     match "img/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -26,20 +24,40 @@ main = do
         route   idRoute
         compile copyFileCompiler
 
-    match "*.html" $ do
+    match "index.html" $ do
         route idRoute
-        compile $ do
+        compile $ defCompiler ctx
 
-            getResourceBody
-                >>= applyAsTemplate ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
+    match "*.html" $ do
+        route cleanRoute
+        compile $ defCompiler ctx
+
 
     match "templates/*" $ compile templateCompiler
 
 
---------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
-    defaultContext
+defCompiler :: Context String -> Compiler (Item String)
+defCompiler ctx = getResourceBody
+  >>= applyAsTemplate ctx
+  >>= loadAndApplyTemplate "templates/default.html" ctx
+  >>= relativizeUrls
+
+
+mkContext :: IO (Context String)
+mkContext = do
+  (year, _, _) <- toGregorian . utctDay <$> getCurrentTime
+  return $ constField "year" (show year)
+        <> dropIndexHtml
+        <> defaultContext
+
+
+cleanRoute :: Routes
+cleanRoute = customRoute $
+  (\(p, _) -> p </> "index" <.> "html") . splitExtension . toFilePath
+
+
+dropIndexHtml :: Context a
+dropIndexHtml = mapContext transform (urlField "url") where
+    transform url = case splitFileName url of
+                        (p, "index.html") -> takeDirectory p
+                        _                 -> url
