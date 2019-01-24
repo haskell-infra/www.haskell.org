@@ -32,8 +32,20 @@ main = do
         route cleanRoute
         compile $ defCompiler ctx
 
+    match "*.markdown" $ do
+        route cleanRoute
+        compile $ mdCompiler ctx
+
 
     match "templates/*" $ compile templateCompiler
+
+
+mdCompiler :: Context String -> Compiler (Item String)
+mdCompiler ctx =
+  pandocCompiler
+  >>= applyAsTemplate ctx
+  >>= loadAndApplyTemplate "templates/default.html" ctx
+  >>= relativizeUrls
 
 
 defCompiler :: Context String -> Compiler (Item String)
