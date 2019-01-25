@@ -1,5 +1,7 @@
 # Haskell.org hakyll
 
+[![pipeline status](https://gitlab.com/fresheyeball/haskell.org-hakyll/badges/master/pipeline.svg)](https://gitlab.com/fresheyeball/haskell.org-hakyll/commits/master)
+
 Haskell.org as a nix derivation of a hakyll built static site. The `default.nix` file returns a set with two elements
 - builder (the hakyll binary which processes source into the static site)
 - built (the static site built by the builder, and ready to serve)
