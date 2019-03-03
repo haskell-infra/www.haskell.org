@@ -17,15 +17,16 @@ let
 
   builder = (pkgs.haskell.packages.${compiler}.developPackage {
       name = builtins.baseNameOf ./.;
-      root = gitignore.gitignoreSource ''
-          /*.markdown
-          /*.md
-          /*.html
-          /templates/*
-          /css/*
-          /js/*
-          /img/*
-        '' ./.;
+      root = gitignore.gitignoreSource [
+          "*.markdown"
+          "*.md"
+          "*.html"
+          "templates/*"
+          "css/*"
+          "js/*"
+          "img/*"
+          ".git"
+        ] ./.;
       modifier = drv: pkgs.haskell.lib.overrideCabal drv (attrs: {
         buildTools = with pkgs.haskell.packages.${compiler}; (attrs.buildTools or []) ++ [
           cabal-install
@@ -35,7 +36,7 @@ let
       });
     }).overrideAttrs (old: {
       shellHook = ''
-        alias buildAndWatch="cabal build && ./dist/build/site/site clean && ./dist/build/site/site watch"
+        alias buildAndWatch="cabal configure && cabal build && ./dist/build/site/site clean && ./dist/build/site/site watch"
         echo ""
         echo "  Haskell.org Dev Shell"
         echo "    \`buildAndWatch\` to serve the site, and rebuild when files change."
@@ -46,8 +47,12 @@ let
 
   built = pkgs.stdenv.mkDerivation {
     name = "haskell.org";
-    src = gitignore.gitignoreSource [] ./.;
-    buildInputs = [ builder ];
+    src = gitignore.gitignoreSource [
+      ".git"
+      "*.cabal"
+      "*.hs"
+      ] ./.;
+    buildInputs = [ builder pkgs.linkchecker ];
     LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
     LC_ALL = "en_US.UTF-8";
     installPhase = ''
