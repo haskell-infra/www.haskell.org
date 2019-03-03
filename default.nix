@@ -32,6 +32,7 @@ let
           cabal-install
           ghcid
           hakyll
+          pkgs.linkchecker
         ];
       });
     }).overrideAttrs (old: {
@@ -40,7 +41,7 @@ let
         echo ""
         echo "  Haskell.org Dev Shell"
         echo "    \`buildAndWatch\` to serve the site, and rebuild when files change."
-        echo "    \`ghcid\` and \`cabal\` are provided in this environment."
+        echo "    \`linkchecker\`, \`ghcid\` and \`cabal\` are provided in this environment."
         echo ""
       '';
     });
@@ -60,6 +61,10 @@ let
       echo "  Building static site..."
       echo ""
       site build
+      echo ""
+      echo "  Checking for bad links..."
+      echo ""
+      linkchecker _site
       echo ""
       echo "  Copying static site to $out..."
       cp -r _site $out

@@ -12,8 +12,8 @@ Haskellers interact, talk and collaborate across several mediums and around the 
 
 Haskellers are active on a number of online areas, but the most busy are below:
 
-*   [The Haskell mailing lists](/mailing-lists)
-*   [IRC (online chat)](/irc)
+*   [The Haskell mailing lists](/mailing-lists/)
+*   [IRC (online chat)](/irc/)
 *   [StackOverflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
 *   [Google+ community](https://plus.google.com/communities/104818126031270146189)
 *   [Facebook community](https://www.facebook.com/groups/programming.haskell/)
