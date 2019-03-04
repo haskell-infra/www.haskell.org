@@ -4,6 +4,9 @@ Haskell.org as a nix derivation of a hakyll built static site. The `default.nix`
 - builder (the hakyll binary which processes source into the static site)
 - built (the static site built by the builder, and ready to serve)
 
+### Cabal instructions
+Just run `cabal v2-build` to build or `cabal v2-run` to run, and `cabal v2-run -- build` to actually build the site.
+
 ### Developing
 
 Simply run `nix-shell`. This will allow you to build the `site` binary which in turn builds the static site.
