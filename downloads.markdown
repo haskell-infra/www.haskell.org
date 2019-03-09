@@ -36,8 +36,8 @@ Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) comp
 ### How to get them
 
 *   [Linux](/downloads/linux)
-*   [OS X](https://www.haskell.org/platform/mac.html) (via the minimal platform)
-*   [Windows](https://www.haskell.org/platform/windows.html) (via the minimal platform)
+*   [OS X](https://www.haskell.org/platform/mac.html) (via the core platform)
+*   [Windows](https://www.haskell.org/platform/windows.html) (via the core platform)
 
 ### Where to get help<a name="help"></a>
 
@@ -87,7 +87,7 @@ For help with Haskell and GHC in general, see the links mentioned [above](#help)
 
 ### What it is
 
-<a name="platform"></a>The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both minimal versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
+<a name="platform"></a>The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both core versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
 
 ### What you get
 
