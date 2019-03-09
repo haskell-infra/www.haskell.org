@@ -13,10 +13,10 @@ isDocumentation: true
 *   [Haskell Programming from first principles](http://haskellbook.com)
 *   [Beginning Haskell](http://www.apress.com/9781430262503)
 *   [Thinking Functionally with Haskell](http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/thinking-functionally-haskell)
-*   [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929)
+*   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
 *   [Programming in Haskell](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
 *   [Haskell: The Craft of Functional Programming](http://www.haskellcraft.com/craft3e/Home.html)
-*   [The Haskell School of Music](http://haskell.cs.yale.edu/wp-content/uploads/2015/03/HSoM.pdf)
+*   [The Haskell School of Music](http://euterpea.com/haskell-school-of-music/)
 *   [Developing Web Applications with Haskell and Yesod](http://www.yesodweb.com/book)
 *   [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell)
 
@@ -47,8 +47,8 @@ Curated resources put together by Haskellers:
 
 *   [The Haskell Wiki](http://wiki.haskell.org)
 *   [The Haskell Wikibook](http://en.wikibooks.org/wiki/Haskell)
-*   [FP Complete's School of Haskell](https://www.fpcomplete.com/school)
-*   [Stephen Diehl's What I Wish I Knew When Learning Haskell](http://dev.stephendiehl.com/hask/#cabal)
+*   [FP Complete's School of Haskell](https://www.schoolofhaskell.com/)
+*   [Stephen Diehl's What I Wish I Knew When Learning Haskell](http://dev.stephendiehl.com/hask/)
 *   [Chris Allen's List of Learning Haskell Resources](https://github.com/bitemyapp/learnhaskell)
 *   [Bob Ippolito's Getting Started with Haskell](http://bob.ippoli.to/archives/2013/01/11/getting-started-with-haskell/)
 *   [Albert Y.C. Lai's Haskell Notes and Examples](http://www.vex.net/~trebla/haskell/index.xhtml)
@@ -61,8 +61,8 @@ Manuals and guides that cover common Haskell tooling:
 *   [GHC User Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/)
 *   [Cabal Homepage And Quick Links](https://www.haskell.org/cabal/)
 *   [Cabal User Guide](http://www.haskell.org/cabal/users-guide/)
-*   [Stack User Guide](https://github.com/commercialhaskell/stack/blob/master/doc/GUIDE.md)
-*   [Haddock User Guide](http://www.haskell.org/haddock/doc/html/index.html)
+*   [Stack User Guide](https://docs.haskellstack.org/)
+*   [Haddock User Guide](https://haskell-haddock.readthedocs.io/)
 *   [Haskeleton: A Haskell Project Skeleton](http://taylor.fausak.me/2014/03/04/haskeleton-a-haskell-project-skeleton/)
 *   [How to Write a Haskell Program](https://wiki.haskell.org/How_to_write_a_Haskell_program)
 
@@ -80,9 +80,9 @@ The Cabal guide is a good start but there's a lot to learn:
 Documentation for Haskell libraries is typically available on Hackage. We also have specialized tools for searching across it, not only by name, but by type.
 
 *   [Hoogle API Search](http://www.haskell.org/hoogle/)
-*   [FPComplete API Search](https://www.fpcomplete.com/hoogle)
 *   [Hayoo! API Search](http://hayoo.fh-wedel.de)
 *   [Hackage](http://hackage.haskell.org/)
+*   [Stackage (with API Search)](https://www.stackage.org)
 *   [The Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
 *   [Haddocks for Libraries included with GHC](https://downloads.haskell.org/~ghc/latest/docs/html/libraries/index.html)
 
