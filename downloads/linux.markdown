@@ -10,31 +10,22 @@ isDownloads: true
 
 ### Ubuntu
 
-Steps to setup ghc and cabal:
+Steps to setup ghc and cabal are given in the [ghc ppa](https://launchpad.net/~hvr/+archive/ubuntu/ghc)
 
+Packages from the PPA can be installed as follows:
 ```bash
-sudo apt-get update
-sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:hvr/ghc
 sudo apt-get update
-sudo apt-get install -y cabal-install-1.22 ghc-7.10.3
-cat >> ~/.bashrc <<EOF
-export PATH='$$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$$PATH'
-EOF
-export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$$PATH
+sudo apt-get install -y cabal-install-XXX ghc-YYY
 ```
 
-Steps to setup stack are [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#ubuntu).
+Packages are installed into `/opt/ghc/bin` and `/opt/cabal/bin`
 
-### Debian (jessie)
+Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#ubuntu).
 
-Steps to setup ghc and cabal:
+### Debian (jessie and stretch)
 
-```bash
-echo 'deb http://ftp.debian.org/debian/ jessie-backports main' | sudo tee /etc/apt/sources.list.d/backports.list
-sudo apt-get update && sudo apt-get -t jessie-backports install ghc cabal-install
-cabal update && echo export PATH='$$HOME/.cabal/bin:$$PATH' >> $$HOME/.bashrc
-```
+Steps to setup ghc and cabal are given in the [ghc debian apt repository](https://downloads.haskell.org/~debian/)
 
 Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
 
@@ -44,16 +35,7 @@ GHC and cabal-install are in the official Fedora repos, to install:
 
 `sudo dnf install ghc cabal-install`
 
-*   Fedora 26 has ghc-8.0.2 and cabal-install-1.24.0.2
-*   Fedora 25 has ghc-7.10.3 and cabal-install-1.22.9.0
-*   Fedora 24 has ghc-7.8.4 and cabal-install-1.18.1.0
-
-There are also unofficial Fedora Copr ghc repos which include cabal-install:
-
-*   [petersen/ghc-8.0.2 Copr repo (F24,F25)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.0.2)
-*   [petersen/ghc-7.10.3 Copr repo (F24)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.10.3)
-
-(earlier 7.10.x and 8.0.1 coprs are also available).
+There are also [unofficial Fedora Copr ghc repos](http://copr.fedorainfracloud.org/coprs/petersen/) which include more recent ghc and cabal-install.
 
 Note ghc from Copr cannot be installed in parallel with official Fedora ghc packages.
 
@@ -139,14 +121,7 @@ You can now update your package set:
 $$ cabal update
 ```
 
-And install packages into a sandbox so it doesn't conflict with other projects:
-
-```bash
-$$ mkdir my-project
-$$ cd my-project
-$$ cabal sandbox init
-$$ cabal install the-package-name
-```
+And install proced to use cabal with your projects.
 
 ### 3. Installing Stack
 
