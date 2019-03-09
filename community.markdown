@@ -14,11 +14,11 @@ Haskellers are active on a number of online areas, but the most busy are below:
 
 *   [The Haskell mailing lists](/mailing-lists/)
 *   [IRC (online chat)](/irc/)
+*   [Haskell Community Discourse](https://discourse.haskell.org)
 *   [StackOverflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
-*   [Google+ community](https://plus.google.com/communities/104818126031270146189)
 *   [Facebook community](https://www.facebook.com/groups/programming.haskell/)
 *   [Reddit](http://www.reddit.com/r/haskell)
-*   [Wiki](http://www.haskell.org/haskellwiki/Haskell)
+*   [Wiki](https://wiki.haskell.org)
 *   [The blogosphere](http://planet.haskell.org/)
 *   [Haskell Weekly e-mail newsletter](https://haskellweekly.news/)
 *   [Haskell Gitter Community Chat](https://gitter.im/haskell-chat)
@@ -34,6 +34,7 @@ There are a number of Haskell Users groups where haskellers meet to learn and co
 *   [Berlin Haskell Users Group](http://www.meetup.com/berlinhug/)
 *   [Brisbane Functional Programming Group](http://www.meetup.com/Brisbane-Functional-Programming-Group/)
 *   [Chicago Haskell](http://ChicagoHaskell.com/)
+*   [Delhi NCR Haskell User Group](https://www.meetup.com/DelhiNCR-Haskell-And-Functional-Programming-Languages-Group/)
 *   [Dublin Haskell Meetup](https://www.meetup.com/haskell-dublin-meetup/)
 *   [Italy Haskell Users Group](http://www.haskell-ita.it/)
 *   [Japan Haskell Users Group (Haskell-jp)](http://haskell.jp/)
@@ -58,17 +59,16 @@ There are a number of conferences and events featuring Haskell, some focusing on
 ### Non-Academic Conferences
 
 *   [Commercial Users of Functional Programming (Roving)](http://cufp.org/)
-*   [LambdaJam (Chicago, IL, USA)](http://www.lambdajam.com/)
 *   [YOW! LambdaJam (Sydney, AU)](http://lambdajam.yowconference.com.au/)
 *   [Functional Conf (Bangalore, IN)](http://functionalconf.com/)
-*   [LambdaCon (Bologna, IT)](http://www.lambdacon.org/)
 *   [BOB (Berlin, DE)](http://bobkonf.de/)
-*   [HaL (Leipzig, Halle, DE)](http://www.iba-cg.de/hal9.html)
-*   [Skills Matter's Haskell eXchange (London, GB)](https://skillsmatter.com/conferences/1907-haskell-exchange-2014)
-*   [LambdaConf (Boulder, CO, USA)](http://www.degoesconsulting.com/lambdaconf-2015/)
+*   [Skills Matter's Haskell eXchange (London, GB)](https://skillsmatter.com/conferences/11741-haskell-exchange-2019)
+*   [LambdaConf (Boulder, CO, USA)](http://lambdaconf.us/)
+*   [Lambda World (Cádiz, Spain and Seattle, USA)](http://www.lambda.world/)
 *   [Compose :: Conference (NY, NY, USA)](http://composeconference.org)
 *   [Compose :: Melbourne (Melbourne, VIC, AU)](http://composeconference.org)
 *   [Curry On (Europe, roving)](http://www.curry-on.org/)
+*   [LambdAle (London, GB)](https://lambdale.org/)
 
 ### Hackathons
 
