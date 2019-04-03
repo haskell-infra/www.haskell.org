@@ -69,6 +69,32 @@ The official repos on Arch Linux contain packages `ghc`, `cabal-install`, `happy
 
 Steps to setup stack are [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#arch-linux).
 
+### openSUSE Leap
+
+*   Leap 15.1 has ghc-8.6.4 and cabal-install-2.4.0.0
+
+To install from official openSUSE:Leap repo, just run the install command:
+
+`sudo zypper in ghc cabal-install`
+
+For last stable version you can use the development openSUSE repository:
+
+* [devel:languages:haskell repo](https://build.opensuse.org/project/show/devel:languages:haskell)
+
+Use this command to add repository to your system:
+
+`sudo zypper ar -f -p 90 https://download.opensuse.org/repositories/devel:/languages:/haskell/openSUSE_Leap_15.1/devel:languages:haskell.repo`
+
+
+### openSUSE Tumbleweed
+
+*   Tumbleweed has last stable version of ghc and cabal install.
+
+To install from official openSUSE:Tumbleweed repo, just run the install command:
+
+`sudo zypper in ghc cabal-install`
+
+
 ### Generic Tarballs
 
 Generic minimal installers that work on most modern linux distributions are available via the [Haskell Platform](https://www.haskell.org/platform/linux.html#linux-generic)
