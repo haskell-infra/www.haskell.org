@@ -52,7 +52,7 @@ There are a number of conferences and events featuring Haskell, some focusing on
 *   [The Haskell Symposium](https://www.haskell.org/haskell-symposium/)
 *   [Haskell Implementors' Workshop](https://wiki.haskell.org/HaskellImplementorsWorkshop)
 *   [The International Conference on Functional Programming](http://www.icfpconference.org/)
-*   [Symposium on Principles of Programming Languages](http://popl.mpi-sws.org/)
+*   [Symposium on Principles of Programming Languages](https://www.sigplan.org/Conferences/POPL/)
 *   [International Symposia on Implementation and Application of Functional Languages](http://www.ifl-symposia.org/)
 *   [Symposium on Trends in Functional Programming](http://www.tifp.org/)
 
