@@ -25,7 +25,7 @@ isDocumentation: true
 Course material created by instructors
 
 *   [University of Pennsylvania's CIS 194](https://www.seas.upenn.edu/~cis194/)
-*   [NICTA Functional Programming Course](https://github.com/NICTA/course)
+*   [Data61 Functional Programming Course](https://github.com/data61/fp-course)
 *   [University of Virginia's CS 1501](http://shuklan.com/haskell/)
 *   [Stanford's cs240h](http://www.scs.stanford.edu/14sp-cs240h/)
 *   [Hendrix's CSCI 360](http://ozark.hendrix.edu/~yorgey/360/f16/)
