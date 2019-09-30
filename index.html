@@ -254,7 +254,7 @@ isHome: true
                <pre><span class='hs-keyword'>if</span> <span class='hs-varid'>c</span> <span class='hs-keyword'>then</span> <span class='hs-varid'>t</span> <span class='hs-keyword'>else</span> <span class='hs-conid'>False</span></pre>
                <p>you can give this a name, like </p>
                <pre><span class='hs-definition'>and</span> <span class='hs-varid'>c</span> <span class='hs-varid'>t</span> <span class='hs-keyglyph'>=</span> <span class='hs-keyword'>if</span> <span class='hs-varid'>c</span> <span class='hs-keyword'>then</span> <span class='hs-varid'>t</span> <span class='hs-keyword'>else</span> <span class='hs-conid'>False</span></pre>
-               <p>and then use it with the same effect as the orginal expression.</p>
+               <p>and then use it with the same effect as the original expression.</p>
                <p>Get code re-use by composing lazy functions. It&#39;s quite natural to express the <code>any</code> function by reusing the <code>map</code> and <code>or</code> functions:</p>
                <pre><span class='hs-definition'>any</span> <span class='hs-keyglyph'>::</span> <span class='hs-layout'>(</span><span class='hs-varid'>a</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>Bool</span><span class='hs-layout'>)</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-keyglyph'>[</span><span class='hs-varid'>a</span><span class='hs-keyglyph'>]</span> <span class='hs-keyglyph'>-&gt;</span> <span class='hs-conid'>Bool</span>
 <span class='hs-definition'>any</span> <span class='hs-varid'>p</span> <span class='hs-keyglyph'>=</span> <span class='hs-varid'>or</span> <span class='hs-varop'>.</span> <span class='hs-varid'>map</span> <span class='hs-varid'>p</span></pre>
