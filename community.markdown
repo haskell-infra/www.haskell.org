@@ -8,10 +8,6 @@ isCommunity: true
 
 Haskellers interact, talk and collaborate across several mediums and around the world. There are places to learn, to teach, to ask questions, and to find contributors and collaborators.
 
-## Supporting the Community
-
-If you would like to support the Haskell community, consider [donating to Haskell.org](../donations), the organization that maintains a significant part of the Haskell community infrastructure.
-
 ## Online Communities and Social Resources
 
 Haskellers are active on a number of online areas, but the most busy are below:
@@ -89,3 +85,7 @@ Haskell Hackathons are a long tradition, with lots of learning and social exchan
 *   [Commercial Haskell Group](http://commercialhaskell.com/)
 *   [DataHaskell: data science, machine learning, numerical computation and related](http://www.datahaskell.org/)
 *   [Haskell Art](http://lurk.org/groups/haskell-art/)
+
+## Supporting the Community
+
+If you would like to support the Haskell community, consider [donating to Haskell.org](../donations), the organization that maintains a significant part of the Haskell community infrastructure.
