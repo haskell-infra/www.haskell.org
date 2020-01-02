@@ -6,7 +6,7 @@ isDonations: true
 
 # Support the Community
 
-A significant part of the Haskell community infrastructure—like Hackage, Hoogle, the GHC build infrastructure and this website—runs on donations from the Haskell community. If you would like to support these efforts, you have several options for donating:
+A significant part of the Haskell community infrastructure—like Hackage, Hoogle, the GHC build infrastructure and this website—runs on monetary and in-kind donations from the Haskell community. If you would like to support these efforts, you have several options for donating:
 
   * PayPal
   
