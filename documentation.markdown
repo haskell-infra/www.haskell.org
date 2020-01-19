@@ -19,6 +19,7 @@ isDocumentation: true
 *   [The Haskell School of Music](http://euterpea.com/haskell-school-of-music/)
 *   [Developing Web Applications with Haskell and Yesod](http://www.yesodweb.com/book)
 *   [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell)
+*   [Category Theory For Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf)
 
 ## Courses
 
