@@ -37,7 +37,7 @@ Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) comp
 
 *   [Linux](/downloads/linux)
 *   [OS X](https://www.haskell.org/platform/mac.html) (via the core platform)
-*   [Windows](https://www.haskell.org/platform/windows.html) (via the core platform)
+*   [Windows](/downloads/windows) (via Chocolatey)
 
 ### Where to get help<a name="help"></a>
 
