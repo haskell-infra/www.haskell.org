@@ -51,6 +51,7 @@ Plain text logs are also available at [tunes](http://tunes.org/~nef/logs/haskell
 | #haskell.tw | Chinese speakers (mainly in Taiwan) |
 | #haskell.vn | Vietnamese speakers |
 | #haskell-blah | Haskell people talking about anything except Haskell itself |
+| #haskell-docs | The chatroom for coordinating contributions to the documentation |
 | #haskell-game | The hub for Haskell-based game development |
 | #haskell-in-depth | slower paced discussion of use, theory, implementation etc with no monad tutorials! |
 | #haskell-iphone | Haskell-based iPhone development |
