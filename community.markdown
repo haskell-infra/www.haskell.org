@@ -36,6 +36,7 @@ There are a number of Haskell Users groups where haskellers meet to learn and co
 *   [Chicago Haskell](http://ChicagoHaskell.com/)
 *   [Delhi NCR Haskell User Group](https://www.meetup.com/DelhiNCR-Haskell-And-Functional-Programming-Languages-Group/)
 *   [Dublin Haskell Meetup](https://www.meetup.com/haskell-dublin-meetup/)
+*   [Haskell DC](https://www.meetup.com/Haskell-DC/)
 *   [Italy Haskell Users Group](http://www.haskell-ita.it/)
 *   [Japan Haskell Users Group (Haskell-jp)](http://haskell.jp/)
 *   [New York Haskell Users Group](http://www.meetup.com/NY-Haskell/)
