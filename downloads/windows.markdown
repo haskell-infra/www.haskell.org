@@ -11,11 +11,11 @@ isDownloads: true
 The package based installers on Windows use [chocolatey](https://chocolatey.org).
 To use them first [configure Chocolatey](https://chocolatey.org/install) on your machine.
 
-### Setup new environment
+### Setting up a new environment
 
-Steps to setup ghc and cabal are given in the [ghc chocolatey](https://chocolatey.org/packages/ghc)
+Follow the steps for setting up ghc and cabal given by [ghc chocolatey](https://chocolatey.org/packages/ghc)
 
-For new installations it is recommended to use `Haskell-Dev` which will also setup and configure `MSys2` for use with `GHC` and `Cabal`.
+For new installations, it is recommended to use `Haskell-Dev` which will also setup and configure `MSys2` for use with `GHC` and `Cabal`.
 
 **If upgrading from `Haskell-Platform` please see instructions below.**
 
@@ -28,9 +28,9 @@ refreshenv
 
 Chocolatey has limited [non-administrative](https://chocolatey.org/docs/installation#non-administrative-install) install support for those that absolutely need it.
 
-After this you can upgrade or install additional `ghc` independently (see below).
+After this you can upgrade or install additional `ghc` versions independently (see below).
 
-Read more about [haskell-dev](https://hub.zhox.com/posts/introducing-haskell-dev/) or about how to integrate with Cloud CI systems.
+For integrating with Cloud CI systems, see [haskell-dev](https://hub.zhox.com/posts/introducing-haskell-dev/). 
 
 Packages are installed into `%ProgramData%\chocolatey\lib\ghc\` and `%ProgramData%\chocolatey\lib\cabal\`
 
@@ -45,9 +45,9 @@ To do this run:
 cabal user-config init -f
 ```
 
-and proceed to uninstall `Haskell-Platform` before installing using Chocolatey otherwise the Chocolatey packages may not modify the Cabal configuration file.
+and proceed to uninstall `Haskell-Platform` before installing using Chocolatey. Otherwise, the Chocolatey packages may not modify the Cabal configuration file.
 
-Do not keep both `Haskell-Platform` and `Chocolatey` based set up at the same time as they modify the same global configuration.
+Do not attempt to use both `Haskell-Platform` and `Chocolatey`-based installations at the same time, as they modify the same global configuration.
 
 ### Upgrading/Downgrading GHC or Cabal
 
@@ -80,7 +80,7 @@ choco install ghc --version 8.6.5
 refreshenv
 ```
 
-A list of versions available can be seen on the [ghc Chocolatey](https://chocolatey.org/packages/ghc) website or by
+A list of available versions can be found on the [GHC Chocolatey](https://chocolatey.org/packages/ghc) website or by
 using the command
 
 ```bash
