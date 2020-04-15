@@ -8,6 +8,7 @@ isDocumentation: true
 
 ## Books for Learning Haskell
 
+*   [Haskell from the Very Beginning](https://www.haskellfromtheverybeginning.com/)
 *   [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
 *   [Real World Haskell](http://book.realworldhaskell.org/)
 *   [Haskell Programming from first principles](http://haskellbook.com)
