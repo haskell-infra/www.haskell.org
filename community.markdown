@@ -70,6 +70,7 @@ There are a number of conferences and events featuring Haskell, some focusing on
 *   [Compose :: Melbourne (Melbourne, VIC, AU)](http://composeconference.org)
 *   [Curry On (Europe, roving)](http://www.curry-on.org/)
 *   [LambdAle (London, GB)](https://lambdale.org/)
+*   [Haskell Love Conference (online)](https://haskell.love)
 
 ### Hackathons
 
