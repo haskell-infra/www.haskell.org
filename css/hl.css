@@ -270,7 +270,7 @@ textarea {
 
 a {
   color: #9E358F;
-  text-decoration: none; }
+  text-decoration: underline dotted; }
   a:hover, a:focus {
     color: #65225b;
     text-decoration: underline; }
@@ -656,7 +656,7 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #9E358F;
+  color: #333;
   background-color: #ebe4f3;
   border-radius: 4px; }
 
