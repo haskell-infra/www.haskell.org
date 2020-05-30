@@ -37,7 +37,7 @@ let
       });
     }).overrideAttrs (old: {
       shellHook = ''
-        alias buildAndWatch="cabal configure && cabal build && ./dist/build/site/site clean && ./dist/build/site/site watch"
+        alias buildAndWatch="cabal configure && cabal build && cabal exec site -- clean && cabal exec site -- watch"
         echo ""
         echo "  Haskell.org Dev Shell"
         echo "    \`buildAndWatch\` to serve the site, and rebuild when files change."
