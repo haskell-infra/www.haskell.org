@@ -36,6 +36,8 @@ let
         ];
       });
     }).overrideAttrs (old: {
+      LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
+      LC_ALL = "en_US.UTF-8";
       shellHook = ''
         alias buildAndWatch="cabal configure && cabal build && ./dist/build/site/site clean && ./dist/build/site/site watch"
         echo ""
