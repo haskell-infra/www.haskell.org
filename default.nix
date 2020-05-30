@@ -1,5 +1,5 @@
-{ compiler ? "ghc843"
-, rev      ? "9f88b3cbeae8bc87294807ba6ce9252f9bb31ee0"
+{ compiler ? "ghc883"
+, rev      ? "d4226e3a4b5fcf988027147164e86665d382bbfa" # from Nix 20.03 release
 , pkgs     ?
     import (builtins.fetchTarball {
       url    = "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
