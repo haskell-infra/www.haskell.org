@@ -31,15 +31,20 @@ Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en
 
 ### Fedora
 
-GHC and cabal-install are in the official Fedora repos, to install:
+GHC, cabal-install and stack are in the official Fedora repos, to install:
 
-`sudo dnf install ghc cabal-install`
+`sudo dnf install ghc cabal-install stack`
 
-There are also [unofficial Fedora Copr ghc repos](http://copr.fedorainfracloud.org/coprs/petersen/) which include more recent ghc and cabal-install.
+There are also Fedora module streams with newer versions of ghc:
 
-Note ghc from Copr cannot be installed in parallel with official Fedora ghc packages.
+`sudo dnf module list ghc`
+`sudo dnf module install ghc:X.Y`
 
-Steps to setup stack are [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#fedora). You can also obtain stack from the fedora [petersen/stack Copr repo](https://copr.fedoraproject.org/coprs/petersen/stack/)
+The different versions cannot be parallel installed.
+
+There are also unofficial Fedora Copr repos with more recent [cabal-install](http://copr.fedorainfracloud.org/coprs/petersen/cabal-install) and [stack](http://copr.fedorainfracloud.org/coprs/petersen/stack-2.3).
+
+Steps to setup stack are also [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#fedora).
 
 ### EPEL for RHEL/CentOS/etc
 
@@ -52,12 +57,15 @@ To install these older versions of ghc and cabal-install from the official EPEL 
 
 For newer versions of ghc you can use the unofficial Fedora Copr repos:
 
+*   [petersen/ghc-8.6.5 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.6.5/)
+*   [petersen/ghc-8.4.4 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.4.4/)
+*   [petersen/ghc-8.2.2 Copr repo (EL7,EL6)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.2.2/)  
 *   [petersen/ghc-8.0.2 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.0.2)
 *   [petersen/ghc-7.10.3 Copr repo (EL7,EL6)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.10.3)
 *   [petersen/ghc-7.8.4 Copr repo (EL7,EL6)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.8.4)
 *   [petersen/ghc-7.4.2 Copr repo (EL6,EL5)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.4.2)
 
-Note the ghc packages from Copr cannot be installed in parallel with EPEL ghc.
+Note that the different ghc package versions cannot be installed in parallel.
 
 Steps to setup stack are [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#fedora). You can also obtain stack from the fedora [petersen/stack Copr repo](https://copr.fedoraproject.org/coprs/petersen/stack/)
 
