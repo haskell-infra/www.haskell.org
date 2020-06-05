@@ -2,6 +2,8 @@ name:               haskell-org
 version:            0.1.0.0
 build-type:         Simple
 cabal-version:      >= 1.10
+license:            BSD3
+license-file:       LICENSE
 
 executable site
   main-is:          site.hs
