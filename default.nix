@@ -1,5 +1,5 @@
-{ compiler ? "ghc843"
-, rev      ? "9f88b3cbeae8bc87294807ba6ce9252f9bb31ee0"
+{ compiler ? "ghc883"
+, rev      ? "d4226e3a4b5fcf988027147164e86665d382bbfa" # from Nix 20.03 release
 , pkgs     ?
     import (builtins.fetchTarball {
       url    = "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
@@ -39,7 +39,7 @@ let
       LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
       LC_ALL = "en_US.UTF-8";
       shellHook = ''
-        alias buildAndWatch="cabal configure && cabal build && ./dist/build/site/site clean && ./dist/build/site/site watch"
+        alias buildAndWatch="cabal configure && cabal build && cabal exec site -- clean && cabal exec site -- watch"
         echo ""
         echo "  Haskell.org Dev Shell"
         echo "    \`buildAndWatch\` to serve the site, and rebuild when files change."

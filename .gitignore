@@ -1,4 +1,11 @@
+# Hakyll
 _site
 _cache
+
+# Haskell
+cabal.project.local
 dist
+dist-newstyle
+
+# Nix
 result*
