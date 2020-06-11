@@ -37,7 +37,7 @@ let
       });
     }).overrideAttrs (old: {
       LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
-      LC_ALL = "en_US.UTF-8";
+      LC_ALL = "C.UTF-8";
       shellHook = ''
         alias buildAndWatch="cabal configure && cabal build && cabal exec site -- clean && cabal exec site -- watch"
         echo ""
@@ -57,7 +57,7 @@ let
       ] ./.;
     buildInputs = [ builder pkgs.linkchecker ];
     LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
-    LC_ALL = "en_US.UTF-8";
+    LC_ALL = "C.UTF-8";
     installPhase = ''
       echo ""
       echo "  Building static site..."
