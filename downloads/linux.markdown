@@ -73,7 +73,7 @@ Steps to setup stack are [on the stack website](https://github.com/commercialhas
 
 The official repos on Arch Linux contain packages `ghc`, `cabal-install`, `happy`, `alex`, `haddock`. Install them with:
 
-<pre>sudo pacman -S ghc cabal-install happy alex haddock</pre>
+<pre>sudo pacman -S ghc cabal-install happy alex haskell-haddock-library</pre>
 
 Steps to setup stack are [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#arch-linux).
 
