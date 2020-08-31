@@ -5,7 +5,7 @@ page: haskell-org-committee
 
 # Haskell.org
 
-Haskell.org is a 510(c)(3) non-profit organization that oversees the Haskell.org website and a number of other services for the Haskell community:
+Haskell.org is a 501(c)(3) non-profit organization that oversees the Haskell.org website and a number of other services for the Haskell community:
 
   * [Hackage], Haskell's largest open package repository
   * [GHC] pages and release infrastructure
