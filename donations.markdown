@@ -56,5 +56,5 @@ If you have any questions or would like to discuss larger-scale donations or spo
 [discourse]: https://discourse.haskell.org
 [Hoogle]: https://hoogle.haskell.org/
 [summer]: https://summer.haskell.org/
-[committee]: https://wiki.haskell.org/Haskell.org_committee
+[committee]: haskell-org-committee
 [committee-email]: mailto:committee@haskell.org
