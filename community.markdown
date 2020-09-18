@@ -17,7 +17,7 @@ Haskellers are active on a number of online areas, but the most busy are below:
 *   [Haskell Community Discourse](https://discourse.haskell.org)
 *   [StackOverflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
 *   [Facebook community](https://www.facebook.com/groups/programming.haskell/)
-*   [PASHpost community](https://pashpost.com/group/haskell-the-haskell-beginners-community)
+*   [theTUNDRA community](https://thetundra.com/interests/tech/groups/haskell-the-haskell-beginners-community)
 *   [Reddit](http://www.reddit.com/r/haskell)
 *   [Wiki](https://wiki.haskell.org)
 *   [The blogosphere](http://planet.haskell.org/)
