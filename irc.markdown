@@ -6,24 +6,15 @@ isCommunity: true
 
 # IRC Channels
 
-The IRC channel can be an excellent place to learn more about Haskell, and to just keep in the loop on new things in the Haskell world. Many new developments in the Haskell world first appear on the irc channel.
+The IRC channel can be an excellent place to learn more about Haskell, and to just keep in the loop on new things in the Haskell world. Many new developments in the Haskell world first appear on the IRC channel.
 
-Point your irc client to `chat.freenode.net` and then join the `#haskell` channel.
+Point your IRC client to `chat.freenode.net` and then join the `#haskell` channel. Check the [knowledge base](https://freenode.net/kb/answer/chat) for more connection information.
 
-Alternately, you can try [http://java.freenode.net/](http://java.freenode.net/) or [http://webchat.freenode.net/](http://webchat.freenode.net/) which connects inside the browser.
+Alternately, you can try [http://webchat.freenode.net/](http://webchat.freenode.net/) which connects inside the browser.
 
 ## Logs
 
-Searchable logs are available on IRC Browse for:
-
-*   [#haskell](http://ircbrowse.net/haskell) — [recent messages](http://ircbrowse.net/day/haskell/today/recent)
-*   [#haskell-game](http://ircbrowse.net/haskell-game) — [recent messages](http://ircbrowse.net/day/haskell-game/today/recent)
-*   [#haskell-beginners](http://ircbrowse.net/haskell-beginners) — [recent messages](http://ircbrowse.net/day/haskell-beginners/today/recent)
-*   [#diagrams](http://ircbrowse.net/diagrams) — [recent messages](http://ircbrowse.net/day/diagrams/today/recent)
-*   [#tasty](http://ircbrowse.net/tasty) — [recent messages](http://ircbrowse.net/day/tasty/today/recent)
-*   [#haskell-distributed](http://ircbrowse.net/haskell-distributed) — [recent messages](http://ircbrowse.net/day/haskell-distributed/today/recent)
-
-Plain text logs are also available at [tunes](http://tunes.org/~nef/logs/haskell/).
+Plain text logs for #haskell are available at [tunes](http://tunes.org/~nef/logs/haskell/).
 
 ## Related channels
 
