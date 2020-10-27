@@ -47,7 +47,7 @@ There are a number of Haskell Users groups where haskellers meet to learn and co
 
 ## Committees
 
-Haskell infrastructure is mostly maintained by committees and groups volunteers.  Here are some of the committees involved in keeping things running:
+Haskell infrastructure is mostly maintained by committees and groups of volunteers.  Here are some of the committees involved in keeping things running:
 
 *   [Core Libraries Committee](https://wiki.haskell.org/Core_Libraries_Committee)
 *   [GHC Steering Committee](https://github.com/ghc-proposals/ghc-proposals)
