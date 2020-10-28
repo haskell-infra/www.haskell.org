@@ -37,7 +37,6 @@ Haskell.org, Inc. is a non-profit registered in New York, dedicated to promoting
   * [GHC] pages and release infrastructure
   * [Haskell Wiki][wiki]
   * [mailing lists][mailing]
-  * [Discourse][discourse]
   * [Hoogle], a type-aware Haskell search engine
   
 Haskell.org also organizes Haskell's participation in the [Google Summer of Code program][summer].
@@ -53,7 +52,6 @@ If you have any questions or would like to discuss larger-scale donations or spo
 [GHC]: https://www.haskell.org/ghc/
 [wiki]: https://wiki.haskell.org/Haskell
 [mailing]: https://www.haskell.org/mailing-lists/
-[discourse]: https://discourse.haskell.org
 [Hoogle]: https://hoogle.haskell.org/
 [summer]: https://summer.haskell.org/
 [committee]: haskell-org-committee
