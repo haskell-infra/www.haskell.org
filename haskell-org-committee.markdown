@@ -50,7 +50,7 @@ Committee members do not need to be deep technical Haskell experts.  Instead we 
 
 After nominations have been solicited, the current committee—including any outgoing members—selects new members with a simple majority vote.
 
-Due this has never occurred in the past, Committee members can also be removed by majority vote.
+While this has never occurred in the past, Committee members can also be removed by majority vote.
 
 ### Process
 
