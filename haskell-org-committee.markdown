@@ -48,7 +48,7 @@ In November of each year—or if a member steps down before their term is over�
 
 Committee members do not need to be deep technical Haskell experts.  Instead we look for enthusiasm towards improving the Haskell community.  We aim to represent the different facets of the community.  We aim to be diverse in terms of industry or research, and in terms of gender, race and location.
 
-After nominations have been solicited, in the current committee—including any outgoing members—selects new members with a simple majority vote.
+After nominations have been solicited, the current committee—including any outgoing members—selects new members with a simple majority vote.
 
 Due this has never occurred in the past, Committee members can also be removed by majority vote.
 
