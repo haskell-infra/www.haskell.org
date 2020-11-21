@@ -44,9 +44,17 @@ The committee consists of 7 members serving 3-year terms. The current members ar
   * Rebecca Skinner (term ends 2022)
   * Alexandre Garcia de Oliveira (term ends 2022)
 
-At the end of each year—or if a member steps down before their term is over—the committee holds an open call for new members, encouraging self-nominations. Committee members whose terms are over are eligible for renomination.
+In November of each year—or if a member steps down before their term is over—the committee holds an open call for new members, encouraging self-nominations. Committee members whose terms are over are eligible for renomination.
+
+Committee members do not need to be deep technical Haskell experts.  Instead we look for enthusiasm towards improving the Haskell community.  We aim to represent the different facets of the community.  We aim to be diverse in terms of industry or research, and in terms of gender, race and location.
 
 After nominations have been solicited, the current committee—including any outgoing members—selects new members with a simple majority vote.
+
+While this has never occurred in the past, Committee members can also be removed by majority vote.
+
+### Process
+
+The Committee uses the [haskell-community][list] for public discussion.  Proposals and meeting notes are stored in a [public repository][repo].
 
 ### Contact
 
@@ -57,3 +65,4 @@ After nominations have been solicited, the current committee—including any out
 [email]: mailto:committeee@haskell.org
 [list]: https://mail.haskell.org/cgi-bin/mailman/listinfo/haskell-community
 [github]: https://github.com/haskell-infra/www.haskell.org/
+[repo]: https://github.com/haskell-org/committee
