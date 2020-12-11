@@ -22,9 +22,9 @@ In addition to the generic, cross-platform Haskell toolchain described above, th
 
 * * *
 
-## Minimal installers
+## Minimal installers<a name="minimal"></a>
 
-### What they are<a name="minimal"></a>
+### What they are
 
 Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) compiler and the [Cabal](https://www.haskell.org/cabal/) and [Stack](https://github.com/commercialhaskell/stack) tools for installing packages. Some may install further build tools (i.e. for parsing and lexing) as well.
 
@@ -47,9 +47,9 @@ Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) comp
 *   For help using Stack to download or create packages, see the stack documentation [below](#stackhelp).
 *   Finally, you can ask questions of other Haskell users and experts on the [#haskell IRC channel](irc://irc.freenode.net/haskell) on the Freenode IRC network.
 
-## Stack
+## Stack<a name="stack"></a>
 
-### What it is<a name="stack"></a>
+### What it is
 
 Stack is a cross-platform build tool for Haskell that handles management of the toolchain (including the GHC compiler and MSYS2 on Windows), building and registering libraries, and more.
 
@@ -83,11 +83,11 @@ For help with Haskell and GHC in general, see the links mentioned [above](#help)
 *   There is a dedicated [#haskell-stack IRC channel](irc://irc.freenode.net/haskell-stack) on the Freenode IRC network.
 *   The [StackOverflow haskell-stack tag](http://stackoverflow.com/questions/tagged/haskell-stack) has many stack-specific questions and answers.
 
-## Haskell Platform
+## Haskell Platform<a name="platform"></a>
 
 ### What it is
 
-<a name="platform"></a>The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both core versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
+The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both core versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
 
 ### What you get
 
