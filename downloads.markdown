@@ -22,9 +22,9 @@ In addition to the generic, cross-platform Haskell toolchain described above, th
 
 * * *
 
-## Minimal installers
+## Minimal installers { #minimal }
 
-### What they are<a name="minimal"></a>
+### What they are
 
 Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) compiler and the [Cabal](https://www.haskell.org/cabal/) and [Stack](https://github.com/commercialhaskell/stack) tools for installing packages. Some may install further build tools (i.e. for parsing and lexing) as well.
 
@@ -39,7 +39,7 @@ Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) comp
 *   [OS X](https://www.haskell.org/platform/mac.html) (via the core platform)
 *   [Windows](https://www.haskell.org/platform/windows.html) (via the core platform)
 
-### Where to get help<a name="help"></a>
+### Where to get help { #help }
 
 *   For help learning Haskell itself, start with the [Documentation](https://www.haskell.org/documentation) page on the [Haskell Wiki](https://wiki.haskell.org/).
 *   If you need help with [GHC](https://www.haskell.org/ghc)---the Haskell compiler---there is a comprehensive [GHC User Manual](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/index.html).
@@ -47,9 +47,9 @@ Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) comp
 *   For help using Stack to download or create packages, see the stack documentation [below](#stackhelp).
 *   Finally, you can ask questions of other Haskell users and experts on the [#haskell IRC channel](irc://irc.freenode.net/haskell) on the Freenode IRC network.
 
-## Stack
+## Stack { #stack }
 
-### What it is<a name="stack"></a>
+### What it is
 
 Stack is a cross-platform build tool for Haskell that handles management of the toolchain (including the GHC compiler and MSYS2 on Windows), building and registering libraries, and more.
 
@@ -71,7 +71,7 @@ The [install and upgrade page](http://docs.haskellstack.org/en/stable/install_an
 
 Instructions for other Linux distributions, including Debian, Fedora, Red Hat, Nix OS, and Arch Linux, are also available.
 
-### Where to get help<a name="stackhelp"></a>
+### Where to get help { #stackhelp }
 
 For help with Haskell and GHC in general, see the links mentioned [above](#help). For Stack itself there are also the following resources:
 
@@ -83,11 +83,11 @@ For help with Haskell and GHC in general, see the links mentioned [above](#help)
 *   There is a dedicated [#haskell-stack IRC channel](irc://irc.freenode.net/haskell-stack) on the Freenode IRC network.
 *   The [StackOverflow haskell-stack tag](http://stackoverflow.com/questions/tagged/haskell-stack) has many stack-specific questions and answers.
 
-## Haskell Platform
+## Haskell Platform { #platform }
 
 ### What it is
 
-<a name="platform"></a>The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both core versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
+The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both core versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
 
 ### What you get
 
@@ -112,7 +112,7 @@ The Platform is provided as a single installer, and can be downloaded at the lin
 
 * * *
 
-## Additional Libraries<a name="libraries"></a>
+## Additional Libraries { #libraries }
 
 In Haskell, packages are configured and built with the Cabal package system built into GHC (and other compilers). For more specific details, see [The Cabal User Guide](https://www.haskell.org/cabal/users-guide/). The command line tools to download and install packages are either `cabal` or `stack`, each having different workflows. For details on their usage, see the documentation above.
 
