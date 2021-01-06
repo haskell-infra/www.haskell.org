@@ -8,6 +8,8 @@ isCommunity: true
 
 Haskellers interact, talk and collaborate across several mediums and around the world. There are places to learn, to teach, to ask questions, and to find contributors and collaborators.
 
+[Help support the community!](/donations/)
+
 ## Online Communities and Social Resources
 
 Haskellers are active on a number of online areas, but the most busy are below:
