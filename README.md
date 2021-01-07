@@ -2,6 +2,14 @@
 
 This is the website for www.haskell.org built as a hakyll static site, which builds both as a nix derivation and a standalone cabal project. Issues with the site can be raised in this repository, and PRs can be made to change content. More general administrative issues with the site or related haskell.org infrastructure are better raised directly with the admin team on the #haskell-infrastructure channel on freenode, or at the admin@[LANGUAGE].org email address.
 
+### Subsites
+
+Not all subsites of www.haskell.org are built from this repository.
+Some of the others are
+
+* www.haskell.org/cabal (built from [cabal-website](https://github.com/haskell/cabal-website))
+* www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
+
 ### Cabal instructions
 Just run `cabal v2-build` to build or `cabal v2-run` to run, and `cabal v2-run -- build` to actually build the site.
 
