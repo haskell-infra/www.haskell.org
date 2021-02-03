@@ -53,7 +53,7 @@ Committee members do not need to be deep technical Haskell experts.  Instead we 
 
 ### Process
 
-* The committee's governing rules are laid out in the [Board Resolution](https://wiki.haskell.org/wikiupload/9/9c/Haskell-org-board-res.pdf) of that month.
+* The committee's governing rules are laid out in the [Board Resolution](/2015-11-10-Haskell-Org-Board-Resolution.pdf) of that month.
 * The committee uses the [haskell-community mailing list][list] for public discussion, where all interested parties may participate.
 * Proposals and meeting notes are stored in a [public repository][repo].
 * The committee will seek to reach consensus among its membership on its decisions. Ultimately, the committee will make decisions by more than half of the membership voting for a particular outcome.
