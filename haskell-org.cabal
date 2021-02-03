@@ -5,7 +5,7 @@ cabal-version:      >= 1.10
 license:            BSD3
 license-file:       LICENSE
 
-executable site
+executable haskell-org-site
   main-is:          site.hs
   build-depends:    base == 4.*
                   , hakyll >=4.12 && <4.14
