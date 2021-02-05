@@ -78,9 +78,9 @@ Haskell.org is incorporated in the state of New York as of November 2015.
 
 The Haskell.org committee was [initially formed in November 2010](https://mail.haskell.org/pipermail/haskell/2010-November/022375.html). As described there:
 
-    In recent years, haskell.org has started to receive assets, e.g. Google Summer Of Code funds, donations for Hackathons, and a Sparc machine for use in GHC development. We have also started spending this money: on the community server, on a server to take over hosting haskell.org itself, and on the haskell.org domain name. There is also interest in running fundraising drives for specific things such as Hackathon sponsorship and hosting fees.
+> In recent years, haskell.org has started to receive assets, e.g. Google Summer Of Code funds, donations for Hackathons, and a Sparc machine for use in GHC development. We have also started spending this money: on the community server, on a server to take over hosting haskell.org itself, and on the haskell.org domain name. There is also interest in running fundraising drives for specific things such as Hackathon sponsorship and hosting fees.
 
-    To resolve who is responsible for haskell.org’s infrastructure development, open nominations were held to form a haskell.org committee, based on representatives from the open source Haskell community.
+> To resolve who is responsible for haskell.org’s infrastructure development, open nominations were held to form a haskell.org committee, based on representatives from the open source Haskell community.
 
 [discourse]: https://discourse.haskell.org
 [email]: mailto:committeee@haskell.org
