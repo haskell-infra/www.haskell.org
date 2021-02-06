@@ -30,6 +30,10 @@ main = mkContext >>= \ctx -> hakyll $ do
     route cleanRoute
     compile $ mdCompiler ctx
 
+  match "*.pdf" $ do
+    route   idRoute
+    compile copyFileCompiler
+
   match "templates/*" $
     compile templateCompiler
 
