@@ -41,13 +41,13 @@ The Haskell.org Committee serves as the board of directors for Haskell.org. Its 
 
 The committee consists of 7 members serving 3-year terms. The current members are:
 
-  * Ryan Trinkle (term ends 2020)
-  * Tikhon Jelvis (term ends 2020)
-  * George Wilson (term ends 2020)
   * Emily Pillmore (term ends 2021)
   * Jasper Van der Jeugt (Chair) (term ends 2022)
   * Rebecca Skinner (term ends 2022)
   * Alexandre Garcia de Oliveira (term ends 2022)
+  * Ida Bzowska (term ends 2023)
+  * Ryan Trinkle (term ends 2023)
+  * Tikhon Jelvis (term ends 2023)
 
 Committee members do not need to be deep technical Haskell experts.  Instead we look for enthusiasm towards improving the Haskell community.  We aim to represent the different facets of the community.  We aim to be diverse in terms of industry or research, and in terms of gender, race and location.
 
