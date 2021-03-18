@@ -6,81 +6,47 @@ isDownloads: true
 
 # Downloads
 
-This page describes the installation of the Haskell toolchain, which mainly consists of the following tools:
+This page describes the installation of the Haskell toolchain, which consists of the following tools:
 
 *   [GHC](https://www.haskell.org/ghc/): the Glasgow Haskell Compiler
 
 *   [cabal-install](https://cabal.readthedocs.io): the Cabal installation tool for managing Haskell software
 
+*   [stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
+
 *   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
 
-The recommended way to install the Haskell toolchain varies depending on the platform. Select your platform below.
+Select your platform to get more specific installation instructions:
 
-*   [Linux](#linux)
-
-*   [OS X](#mac)
+*   [Linux, OS X and FreeBSD](#linux-mac-freebsd)
 
 *   [Windows](#windows)
 
-*   [Others](#other-platforms)
-
-You can also check the complete list of available [installation options](#installers).
+Alternative methods to install GHC are listed [here](#ghc-install-manual).
 
 * * *
 
 ## Platform specific instructions
 
-### Linux { #linux }
+### Linux, OS X and FreeBSD { #linux-mac-freebsd }
 
-The following recommended installation options are availabe on Linux:
-
-1. [Linux distribution package manager](#package-manager-linux)
-2. [GHCup](#ghcup)
-3. [Official bindists](#bindists)
-4. [Building from source](#from-source)
-
-### OS X { #mac }
-
-The following recommended installation options are availabe on Mac OSX:
-
-1. [GHCup](#ghcup)
-2. [Official bindists](#bindists)
-3. [Building from source](#from-source)
+1. Install GHC, cabal-install and haskell-language-server via [GHCup](https://www.haskell.org/ghcup/)
+2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/)
 
 *Note: Apple Silicon is not yet supported. You will have to install GHC in `arch -x86_64` compatibility mode using rosetta. See [here](https://derflounder.wordpress.com/2020/11/17/installing-rosetta-2-on-apple-silicon-macs/) and [here](https://gitlab.haskell.org/haskell/ghcup-hs/-/issues/101) for more pointers.*
 
 ### Windows { #windows }
 
-The following recommended installation options are availabe on Windows:
-
-1. [Chocolatey](#package-manager-windows)
-2. [Official bindists](#bindists)
-3. [Building from source](#from-source)
-
-### Other platforms { #other-platforms }
-
-Platforms listed here may not experience the same amount of support as the ones listed above.
-
-#### FreeBSD
-
-The following recommended installation options are availabe on FreeBSD:
-
-1. [GHCup](#ghcup)
-2. [FreeBSD ports](https://www.freebsd.org/cgi/ports.cgi?query=^ghc&stype=name&sektion=all)
-3. [Official bindists](#bindists)
-4. [Building from source](#from-source)
+1. Install GHC and cabal-install via Chocolatey
+	- [Configure Chocolatey](https://chocolatey.org/install) on your machine
+	- At an elevated command prompt, run `choco install haskell-dev`, followed by `refreshenv`.
+2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows)
 
 * * *
 
-## Installation options { #installers }
+## Alternative installation options { #ghc-install-manual }
 
-*   [Using a package manager](#package-manager)
-
-    - [Linux distributions](#package-manager-linux)
-
-    - [Chocolatey (Windows)](#package-manager-windows)
-
-*   [GHCup](#ghcup)
+*   [Using a package manager on linux](#package-manager)
 
 *   [Official bindists](#bindists)
 
@@ -88,19 +54,13 @@ The following recommended installation options are availabe on FreeBSD:
 
 *   [Other options](#other-options)
 
-### Using a package manager { #package-manager }
-
-Package managers are the recommended way to install the Haskell toolchain, given there's reasonable support for it.
-
-Mind that software provided by platform-specific package managers are usually maintained by 3rd parties.
-
-#### Linux distributions { #package-manager-linux }
+### Using a package manager on Linux { #package-manager }
 
 Refer to your distribution package manager documentation. For convenience, below are a few distribution specific instructions, outlining 3rd party repository use as well.
 
 *Note: Most linux distros don't allow different versions of GHC to be installed in parallel. Sometimes the GHC packages are a bit outdated as well. In either case, consider using [GHCup](#ghcup) instead.*
 
-*Note: haskell-language-server isn't packaged by most distributions. Instead you will have to install it manually, see the [release page](https://github.com/haskell/haskell-language-server/releases). This is optional.*
+*Note: haskell-language-server isn't packaged by most distributions. Instead you will have to install it manually, see the [release page](https://github.com/haskell/haskell-language-server/releases), unless you use VSCode, which bootstraps everything automatically. This is optional.*
 
 <p><a data-toggle="collapse" href="#collapse-linux" class="btn btn-xs btn-primary">Show linux distros</a></p>
 
@@ -205,21 +165,6 @@ sudo emerge --ask dev-lang/ghc dev-haskell/cabal-install
 
 </div>
 
-#### Chocolatey { #package-manager-windows }
-
-Chocolatey is a Windows package manager and the recommended way to install the Haskell toolchain on windows.
-
-1. [Configure Chocolatey](https://chocolatey.org/install) on your machine
-2. At an elevated command prompt, run `choco install haskell-dev`, followed by `refreshenv`.
-
-### GHCup { #ghcup }
-
-GHCup is a distribution agnostic way to install the Haskell toolchain conveniently into your `HOME` directory. It supports Linux, Mac OSX and FreeBSD, utilizing mostly [official bindists](#bindists).
-
-Visit [the website](https://www.haskell.org/ghcup/) for installation instructions.
-
-*Note: It also supports the installation of the [haskell-language-server](https://github.com/haskell/haskell-language-server) for developers.*
-
 ### Official bindists { #bindists }
 
 GHC bindists are binary packages built as part of the GHC release process and are guaranteed to have passed the test suite. The installation process is a bit manual, so this is meant for power users.
@@ -240,5 +185,4 @@ For building haskell-language-server from source, follow the instructions [here]
 
 Other popular installation options not further described here include:
 
-* [stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
 * [nix](https://nixos.org/): a popular cross-distro package manager, aiming to provide reproducible builds and declarative configuration
