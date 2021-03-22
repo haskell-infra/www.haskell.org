@@ -20,13 +20,14 @@ A significant part of the Haskell community infrastructure—like Hackage, Hoogl
     >
     > New York, NY 10159-1206
   
-  * [Amazon Smile][smile] which will donate 0.5% of your Amazon purchases to Haskell.org
+  * [Amazon Smile][smile], where you can select Haskell.org to receive 0.5% of your eligible Amazon purchases ([more details][smile-details]).
   
   * Donations through employers via Benevity using the unique ID 475236502
 
 Haskell.org is a 501(c)(3) non-profit, so donations may be tax-deductible in your jurisdiction.
 
-[smile]: Amazon Smile
+[smile]: https://smile.amazon.com
+[smile-details]: https://smile.amazon.com/about
 
 ### About Haskell.org
 
@@ -56,5 +57,5 @@ If you have any questions or would like to discuss larger-scale donations or spo
 [discourse]: https://discourse.haskell.org
 [Hoogle]: https://hoogle.haskell.org/
 [summer]: https://summer.haskell.org/
-[committee]: haskell-org-committee
+[committee]: /haskell-org-committee
 [committee-email]: mailto:committee@haskell.org
