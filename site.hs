@@ -26,7 +26,7 @@ main = mkContext >>= \ctx -> hakyll $ do
     route idRoute
     compile $ defCompiler ctx
 
-  match ("**/*.markdown" .||. "*.markdown") $ do
+  match ("**/**/*.markdown" .||. "**/*.markdown" .||. "*.markdown") $ do
     route cleanRoute
     compile $ mdCompiler ctx
 
