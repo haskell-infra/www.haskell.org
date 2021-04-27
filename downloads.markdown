@@ -6,156 +6,183 @@ isDownloads: true
 
 # Downloads
 
-There are three widely used ways to install the Haskell toolchain on supported platforms. These are:
+This page describes the installation of the Haskell toolchain, which consists of the following tools:
 
-*   [Minimal installers](#minimal): Just GHC (the compiler), and build tools (primarily Cabal and Stack) are installed globally on your system, using your system's package manager.
+*   [GHC](https://www.haskell.org/ghc/): the Glasgow Haskell Compiler
 
-*   [Stack](#stack): Installs the `stack` command globally: a project-centric build tool to automatically download and manage Haskell dependencies on a project-by-project basis.
+*   [cabal-install](https://cabal.readthedocs.io): the Cabal installation tool for managing Haskell software
 
-*   [Haskell Platform](#platform): Installs GHC, Cabal, and some other tools, along with a starter set of libraries in a global location on your system.
+*   [stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
 
-These options make different choices as to what is installed globally on your system and what is maintained in project-specific environments. Global installations allow more sharing across users and projects, but at the cost of potential conflicts between projects. To avoid these conflicts, each option has a lightweight _sandboxing_ feature that creates largely self-contained, per-project environments. With Minimal you can optionally sandbox the libraries, avoiding most conflicts. Stack sandboxes the compiler, tools and libraries, so avoids nearly all kinds of conflicts between projects. With Platform you can also optionally sandbox libraries, but not the globally installed platform libraries.
+*   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
 
-### Haskell IDEs & other distributions
+Select your platform to get more specific installation instructions:
 
-In addition to the generic, cross-platform Haskell toolchain described above, there are also easy-to-use, platform-specific distributions and IDEs. The Haskell Wiki contains a [list of the most popular ones](https://wiki.haskell.org/Distributions).
+*   [Linux, OS X and FreeBSD](#linux-mac-freebsd)
 
-* * *
+*   [Windows](#windows)
 
-## Minimal installers { #minimal }
-
-### What they are
-
-Minimal installers provide centrally the [GHC](https://www.haskell.org/ghc) compiler and the [Cabal](https://www.haskell.org/cabal/) and [Stack](https://github.com/commercialhaskell/stack) tools for installing packages. Some may install further build tools (i.e. for parsing and lexing) as well.
-
-### What you get
-
-*   Only the core libraries necessary for each platform are included.
-*   Cabal or Stack must be used to download and install packages after installation.
-
-### How to get them
-
-*   [Linux](/downloads/linux)
-*   [OS X](https://www.haskell.org/platform/mac.html) (via the core platform)
-*   [Windows](https://www.haskell.org/platform/windows.html) (via the core platform)
-
-### Where to get help { #help }
-
-*   For help learning Haskell itself, start with the [Documentation](https://www.haskell.org/documentation) page on the [Haskell Wiki](https://wiki.haskell.org/).
-*   If you need help with [GHC](https://www.haskell.org/ghc)---the Haskell compiler---there is a comprehensive [GHC User Manual](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/index.html).
-*   For help using Cabal to download or create additional packages (see [below](#libraries)), there is the [Cabal User Guide](https://www.haskell.org/cabal/users-guide/).
-*   For help using Stack to download or create packages, see the stack documentation [below](#stackhelp).
-*   Finally, you can ask questions of other Haskell users and experts on the [#haskell IRC channel](irc://irc.freenode.net/haskell) on the Freenode IRC network.
-
-## Stack { #stack }
-
-### What it is
-
-Stack is a cross-platform build tool for Haskell that handles management of the toolchain (including the GHC compiler and MSYS2 on Windows), building and registering libraries, and more.
-
-### What you get
-
-*   Once downloaded, it has the capacity to download and install GHC and other core tools.
-*   Project development is isolated within sandboxes, including automatic download of the right version of GHC for a given project.
-*   It manages all Haskell-related dependencies, ensuring reproducible builds.
-*   It fetches from a curated repository of over a thousand packages by default, known to be mutually compatible.
-*   It can optionally use Docker to produce standalone deployments.
-
-### How to get it
-
-The [install and upgrade page](http://docs.haskellstack.org/en/stable/install_and_upgrade/) describes how to download Stack on various platforms, although the main three are repeated here:
-
-*   [Ubuntu Linux](http://docs.haskellstack.org/en/stable/install_and_upgrade/#ubuntu)
-*   [OS X](http://docs.haskellstack.org/en/stable/install_and_upgrade/#os-x)
-*   [Windows](http://docs.haskellstack.org/en/stable/install_and_upgrade/#windows)
-
-Instructions for other Linux distributions, including Debian, Fedora, Red Hat, Nix OS, and Arch Linux, are also available.
-
-### Where to get help { #stackhelp }
-
-For help with Haskell and GHC in general, see the links mentioned [above](#help). For Stack itself there are also the following resources:
-
-*   The [README](https://github.com/commercialhaskell/stack/#readme) offers a general overview, and help with installation.
-*   There is an [in-depth guide](http://docs.haskellstack.org) to using Stack.
-*   [Getting started with Stack](http://seanhess.github.io/2015/08/04/practical-haskell-getting-started.html) introduces how to build new projects using Stack.
-*   You may post issues and feature requests on its [GitHub issue tracker](https://github.com/commercialhaskell/stack).
-*   There is a [mailing list for Stack](https://groups.google.com/d/forum/haskell-stack)
-*   There is a dedicated [#haskell-stack IRC channel](irc://irc.freenode.net/haskell-stack) on the Freenode IRC network.
-*   The [StackOverflow haskell-stack tag](http://stackoverflow.com/questions/tagged/haskell-stack) has many stack-specific questions and answers.
-
-## Haskell Platform { #platform }
-
-### What it is
-
-The Haskell Platform is a self-contained, all-in-one installer. After download, you will have everything necessary to build Haskell programs against a core set of useful libraries. It comes in both core versions with tools but no libraries outside of GHC core, or full versions, which include a broader set of globally installed libraries.
-
-### What you get
-
-*   The [Glasgow Haskell Compiler](https://www.haskell.org/ghc)
-*   The [Cabal build system](https://www.haskell.org/cabal/), which can install new packages, and by default fetches from [Hackage](https://hackage.haskell.org/), the central Haskell package repository.
-*   the [Stack](http://docs.haskellstack.org) tool for developing projects
-*   Support for profiling and code coverage analysis
-*   35 core & widely-used [packages](https://www.haskell.org/platform/contents.html)
-
-### How to get it
-
-The Platform is provided as a single installer, and can be downloaded at the links below.
-
-*   [Linux](http://www.haskell.org/platform/linux.html)
-*   [OS X](http://www.haskell.org/platform/mac.html)
-*   [Windows](http://www.haskell.org/platform/windows.html)
-
-### Where to get help
-
-*   You can find a comprehensive list of [what the Platform offers](https://www.haskell.org/platform/contents.html).
-*   See the general help mentioned [above](#help), which covers the usage of GHC, as well as the Cabal and Stack tools.
+Alternative methods to install GHC are listed [here](#ghc-install-manual).
 
 * * *
 
-## Additional Libraries { #libraries }
+## Platform specific instructions
 
-In Haskell, packages are configured and built with the Cabal package system built into GHC (and other compilers). For more specific details, see [The Cabal User Guide](https://www.haskell.org/cabal/users-guide/). The command line tools to download and install packages are either `cabal` or `stack`, each having different workflows. For details on their usage, see the documentation above.
+### Linux, OS X and FreeBSD { #linux-mac-freebsd }
 
-### Hackage
+1. Install GHC, cabal-install and haskell-language-server via [GHCup](https://www.haskell.org/ghcup/)
+2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/)
 
-Hackage is a repository of packages to which anyone can freely upload at any time. The packages are available immediately and documentation will be generated and hosted there. It can be used by cabal install.
+*Note: Apple Silicon is not yet supported. You will have to install GHC in `arch -x86_64` compatibility mode using rosetta. See [here](https://derflounder.wordpress.com/2020/11/17/installing-rosetta-2-on-apple-silicon-macs/) and [here](https://gitlab.haskell.org/haskell/ghcup-hs/-/issues/101) for more pointers.*
 
-You can install a package using cabal by running:
+### Windows { #windows }
+
+1. Install GHC and cabal-install via Chocolatey
+	- [Configure Chocolatey](https://chocolatey.org/install) on your machine
+	- At an elevated command prompt, run `choco install haskell-dev`, followed by `refreshenv`.
+2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows)
+
+* * *
+
+## Alternative installation options { #ghc-install-manual }
+
+*   [Using a package manager on linux](#package-manager)
+
+*   [Official bindists](#bindists)
+
+*   [Building from source](#from-source)
+
+*   [Other options](#other-options)
+
+### Using a package manager on Linux { #package-manager }
+
+Refer to your distribution package manager documentation. For convenience, below are a few distribution specific instructions, outlining 3rd party repository use as well.
+
+*Note: Most linux distros don't allow different versions of GHC to be installed in parallel. Sometimes the GHC packages are a bit outdated as well. In either case, consider using [GHCup](#ghcup) instead.*
+
+*Note: haskell-language-server isn't packaged by most distributions. Instead you will have to install it manually, see the [release page](https://github.com/haskell/haskell-language-server/releases), unless you use VSCode, which bootstraps everything automatically. This is optional.*
+
+<p><a data-toggle="collapse" href="#collapse-linux" class="btn btn-xs btn-primary">Show linux distros</a></p>
+
+<div id="collapse-linux" class="collapse">
+##### <span style="text-decoration: underline">Ubuntu</span>
+
+Steps to setup ghc and cabal are given in the [ghc ppa](https://launchpad.net/~hvr/+archive/ubuntu/ghc)
+
+Packages from the PPA can be installed as follows:
+```bash
+sudo add-apt-repository -y ppa:hvr/ghc
+sudo apt-get update
+sudo apt-get install -y cabal-install-XXX ghc-YYY
+```
+
+Packages are installed into `/opt/ghc/bin` and `/opt/cabal/bin`
+
+Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#ubuntu).
+
+##### <span style="text-decoration: underline">Debian</span>
+
+Steps to setup ghc and cabal are given in the [ghc debian apt repository](https://downloads.haskell.org/~debian/)
+
+Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
+
+##### <span style="text-decoration: underline">Fedora</span>
+
+GHC, cabal-install and stack are in the official Fedora repos, to install:
+
+`sudo dnf install ghc cabal-install`
+
+There are also Fedora module streams with newer versions of ghc:
 
 ```
-$$ cabal update
-$$ cabal install the-package
+sudo dnf module list ghc
+sudo dnf module install ghc:X.Y
 ```
 
-Note that if you are not in a sandbox, this will install the package globally, which is often not what you want, so it is recommended to set up sandboxes in your project directory by running `cabal sandbox init`.
+The different versions cannot be parallel installed.
 
-[Go to Hackage →](https://hackage.haskell.org/packages/)
+There are also unofficial Fedora Copr repos with more recent [cabal-install](http://copr.fedorainfracloud.org/coprs/petersen/cabal-install).
 
-### LTS Haskell
+##### <span style="text-decoration: underline">EPEL for RHEL/CentOS/etc</span>
 
-LTS Haskell is a stackage-based long-term support set of packages which build and pass tests together, with backported bug fixes.
+*   EPEL 7 has ghc-7.6.3 and cabal-install-1.16.1.0
+*   EPEL 5 and 6 have ghc-7.0.4 and cabal-install-0.10.2
 
-[Get LTS Haskell →](http://www.stackage.org/lts)
+To install these older versions of ghc and cabal-install from the official EPEL repo, just run the install command:
 
-### Stackage Nightly
+`sudo yum install ghc cabal-install`
 
-Stackage is a nightly generated stable repository of snapshots of package sets in which only packages which build and pass tests together are bundled together into a snapshot.
+For newer versions of ghc you can use the unofficial Fedora Copr repos:
 
-[Get Stackage Nightly →](http://www.stackage.org/nightly)
+*   [petersen/ghc-8.6.5 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.6.5/)
+*   [petersen/ghc-8.4.4 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.4.4/)
+*   [petersen/ghc-8.2.2 Copr repo (EL7,EL6)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.2.2/)  
+*   [petersen/ghc-8.0.2 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.0.2)
 
-### From source control repositories
+Note that the different ghc package versions cannot be installed in parallel.
 
-Installing from a source repository is also possible. For example, to clone and install the network package from source, you would run:
+##### <span style="text-decoration: underline">Arch Linux</span>
+
+*Note: installing the Haskell toolchain via the Arch Linux package manager is not recommended, since it enforces dynamic linking, which can cause various issues. Instead consider [GHCup](#ghcup).*
+
+The official repos on Arch Linux contain packages `ghc`, `cabal-install`, `happy`, `alex`, `haddock`. Install them with:
+
+<pre>sudo pacman -S ghc cabal-install happy alex haskell-haddock-library</pre>
+ 
+##### <span style="text-decoration: underline">openSUSE Leap</span>
+
+*   Leap 15.1 has ghc-8.6.4 and cabal-install-2.4.0.0
+
+To install from official openSUSE:Leap repo, just run the install command:
+
+`sudo zypper in ghc cabal-install`
+
+For last stable version you can use the development openSUSE repository:
+
+* [devel:languages:haskell repo](https://build.opensuse.org/project/show/devel:languages:haskell)
+
+Use this command to add repository to your system:
+
+`sudo zypper ar -f -p 90 https://download.opensuse.org/repositories/devel:/languages:/haskell/openSUSE_Leap_15.1/devel:languages:haskell.repo`
+
+##### <span style="text-decoration: underline">openSUSE Tumbleweed</span>
+
+*   Tumbleweed has last stable version of ghc and cabal install.
+
+To install from official openSUSE:Tumbleweed repo, just run the install command:
+
+`sudo zypper in ghc cabal-install`
+
+##### <span style="text-decoration: underline">Gentoo</span>
+
+While the Haskell toolchain is available in the main gentoo repository, it is recommended
+to use the more up-to-date [gentoo-haskell](https://github.com/gentoo-haskell/gentoo-haskell) overlay. This can be done using layman:
 
 ```
-$$ git clone https://github.com/haskell/network
-$$ cabal install network
+sudo layman -a haskell
+sudo emerge --ask dev-lang/ghc dev-haskell/cabal-install
 ```
 
-Or:
+</div>
 
-```
-$$ git clone https://github.com/haskell/network
-$$ cd network
-$$ cabal install
-```
+### Official bindists { #bindists }
+
+GHC bindists are binary packages built as part of the GHC release process and are guaranteed to have passed the test suite. The installation process is a bit manual, so this is meant for power users.
+
+The [GHC download page](https://www.haskell.org/ghc/download.html) gives an extensive overview of available options. Navigate to the version you seek and click on **Binary packages**. You may also visit [downloads.haskell.org/~ghc](https://downloads.haskell.org/~ghc/) for the complete list. Likewise, to install cabal-install manually visit [downloads.haskell.org/~cabal](https://downloads.haskell.org/~cabal/cabal-install-latest/).
+
+Haskell-language-server binaries can be found [here](https://github.com/haskell/haskell-language-server/releases/).
+
+### Building from source { #from-source }
+
+Building from source can be a difficult task, but may be necessary if all other installation options fail. Refer to the [Haskell gitlab wiki](https://gitlab.haskell.org/ghc/ghc/-/wikis/building/#building-and-porting-ghc) for further instructions.
+
+For building cabal-install from source, follow the instructions in the [README](https://github.com/haskell/cabal/blob/master/README.md).
+
+For building haskell-language-server from source, follow the instructions [here](https://github.com/haskell/haskell-language-server#installation-from-source).
+
+### Other options { #other-options }
+
+Other popular installation options not further described here include:
+
+* [nix](https://nixos.org/): a popular cross-distro package manager, aiming to provide reproducible builds and declarative configuration
