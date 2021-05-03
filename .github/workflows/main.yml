@@ -14,17 +14,11 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v12
 
-      - uses: actions/cache@v2
-        with:
-          path: result/bin/haskell-org-site
-          key: ${{ runner.os }}-${{ hashFiles('*.cabal', '**/*.nix', '**/*.hs') }}
-          restore-keys: ${{ runner.os }}-
-
       - name: Build Executable
-        run: if [ ! -f result/bin/haskell-org-site ]; then nix-build; fi
+        run: nix-build
 
       - name: Build Site
-        run:  ldd result/bin/haskell-org-site
+        run:  result/bin/haskell-org-site build
 
       - name: Check Links
         run: nix-shell --command 'linkchecker _site'
