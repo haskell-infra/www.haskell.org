@@ -23,4 +23,4 @@ jobs:
         run: result/bin/haskell-org-site build
 
       - name: Check Links
-        run: nix-shell -c 'linkchecker _site'
+        run: nix-shell --command 'linkchecker _site'
