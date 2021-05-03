@@ -24,7 +24,7 @@ jobs:
         run: if [ ! -f result/bin/haskell-org-site ]; then nix-build; fi
 
       - name: Build Site
-        run:  result/bin/haskell-org-site
+        run:  ldd result/bin/haskell-org-site
 
       - name: Check Links
         run: nix-shell --command 'linkchecker _site'
