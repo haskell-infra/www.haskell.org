@@ -14,6 +14,12 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v12
 
+      - uses: actions/cache@v2
+        with:
+          path: /nix/store
+          key: ${{ runner.os }}-${{ hashFiles('*.cabal', '**/*.nix') }}
+          restore-keys: ${{ runner.os }}-
+
       - name: Build Executable
         run: nix-build
 
@@ -22,9 +28,3 @@ jobs:
 
       - name: Check Links
         run: nix-shell --command 'linkchecker _site'
-
-      - uses: actions/cache@v2
-        with:
-          path: /nix/store
-          key: ${{ runner.os }}-${{ hashFiles('*.cabal', '**/*.nix') }}
-          restore-keys: ${{ runner.os }}-
