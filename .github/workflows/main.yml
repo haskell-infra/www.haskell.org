@@ -22,3 +22,9 @@ jobs:
 
       - name: Check Links
         run: nix-shell --command 'linkchecker _site'
+
+      - uses: actions/cache@v2
+        with:
+          path: /nix
+          key: ${{ runner.os }}-${{ hashFiles('*.cabal', '**/*.nix') }}
+          restore-keys: ${{ runner.os }}-
