@@ -25,6 +25,6 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: /nix
+          path: /nix/store
           key: ${{ runner.os }}-${{ hashFiles('*.cabal', '**/*.nix') }}
           restore-keys: ${{ runner.os }}-
