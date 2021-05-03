@@ -57,6 +57,7 @@ Haskell infrastructure is mostly maintained by committees and groups of voluntee
 *   [Hackage trustees](https://wiki.haskell.org/Hackage_trustees)
 *   [Haskell.org committee](/haskell-org-committee)
 *   [Stackage maintainers](https://docs.haskellstack.org/en/stable/maintainers/team_process/)
+*   [Haskell admin team](https://github.com/haskell-infra/haskell-admins/): responsible for all `***.haskell.org` infrastructure, including this website.
 
 ## Conferences and Events
 

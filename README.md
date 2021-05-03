@@ -8,7 +8,6 @@ Not all subsites of www.haskell.org are built from this repository.
 Some of the others are
 
 * www.haskell.org/cabal (built from [cabal-website](https://github.com/haskell/cabal-website))
-* www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
 
 ### Cabal instructions
 Just run `cabal v2-build` to build or `cabal v2-run` to run, and `cabal v2-run -- build` to actually build the site.
@@ -21,14 +20,14 @@ This repo provides haskell.org as a nix derivation of a hakyll built static site
 
 ### Developing
 
-Simply run `nix-shell`. This will allow you to build the `site` binary which in turn builds the static site.
+Simply run `nix-shell`. This will allow you to build the `haskell-org-site` binary which in turn builds the static site.
 You may also edit the content of the site in the shell.
 
 ### Editing
 
-You may install the site binary locally with `nix-env -f . -iA builder`. Once `site` is on your path you can edit content, and have
+You may install the `haskell-org-site` binary locally with `nix-env -f . -iA builder`. Once `haskell-org-site` is on your path you can edit content, and have
 the site served with `site watch`.
 
 ### Building
 
-To obtain the static site simply run `nix-build -A built` and the generated `result` link will contain the static site contents.
+To obtain the static `haskell-org-site` simply run `nix-build -A built` and the generated `result` link will contain the static site contents.
