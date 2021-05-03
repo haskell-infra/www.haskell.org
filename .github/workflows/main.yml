@@ -14,11 +14,11 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v12
 
-      - uses: actions/cache@v2
+      - name: /nix/store cache
+        uses: rikhuijzer/cache-install@v1
         with:
-          path: /nix/store
-          key: ${{ runner.os }}-${{ hashFiles('*.cabal', '**/*.nix') }}
-          restore-keys: ${{ runner.os }}-
+          key: nix-${{ hashFiles('default.nix') }}
+          nix_file: 'default.nix'
 
       - name: Build Executable
         run: nix-build
