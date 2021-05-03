@@ -12,7 +12,6 @@ Haskellers interact, talk and collaborate across several mediums and around the 
 
 ## Online Communities and Social Resources
 
-
 Haskellers are active on a number of online areas, but the most busy are below:
 
 *   [The Haskell mailing lists](/mailing-lists/)
