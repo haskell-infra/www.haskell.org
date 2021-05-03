@@ -15,7 +15,7 @@ jobs:
         uses: cachix/install-nix-action@v12
 
       - name: /nix/store cache
-        uses: rikhuijzer/cache-install@v1
+        uses: rikhuijzer/cache-install@v1.0.8
         with:
           key: nix-${{ hashFiles('default.nix') }}
           nix_file: 'default.nix'
