@@ -8,6 +8,7 @@ Not all subsites of www.haskell.org are built from this repository.
 Some of the others are
 
 * www.haskell.org/cabal (built from [cabal-website](https://github.com/haskell/cabal-website))
+* www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
 
 ### Cabal instructions
 Just run `cabal v2-build` to build or `cabal v2-run` to run, and `cabal v2-run -- build` to actually build the site.
