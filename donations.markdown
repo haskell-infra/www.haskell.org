@@ -38,11 +38,6 @@ To make a concrete contribution to the maintenance and development of Haskell co
 Some particular aspects of the work of Haskell.org include producing and maintaining material regarding the Haskell language on haskell.org and other associated websites; hosting and maintaining shared assets and infrastructure for the benefit of the Haskell community; coordinating educational activities including mentorship programs; and potentially organizing event regarding the Haskell language.
 
 Responsibility for the activities of haskell.org lies with the haskell.org committee, which serves as its board of directors.
-How to donate
-
-Contact
-
-Arrangements regarding larger-scale donations or sponsorships (including official recognition) can be discussed with the committee, reachable via committee [AT] haskell.org.
 
 ### About Haskell.org
 
@@ -64,7 +59,7 @@ Haskell.org also organizes Haskell's participation in the [Google Summer of Code
 
 Haskell.org is overseen by the [Haskell.org Committee][committee].
 
-If you have any questions or would like to discuss larger-scale donations or sponsorships, please contact the Committee at [committee@haskell.org][committee-email].
+If you have any questions or would like to discuss sponsorships, official recognition, or larger-scale donations or sponsorships, please contact the Committee at [committee@haskell.org][committee-email].
 
 [haskell.org]: https://haskell.org
 [Hackage]: https://hackage.haskell.org/
