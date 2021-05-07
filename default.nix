@@ -26,6 +26,7 @@ let
           "js/*"
           "img/*"
           ".git"
+          ".github"
         ] ./.;
       modifier = drv: pkgs.haskell.lib.overrideCabal drv (attrs: {
         buildTools = with pkgs.haskell.packages.${compiler}; (attrs.buildTools or []) ++ [
@@ -54,6 +55,7 @@ let
       ".git"
       "*.cabal"
       "*.hs"
+      ".github"
       ] ./.;
     buildInputs = [ builder pkgs.linkchecker ];
     LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
