@@ -18,7 +18,7 @@ jobs:
         run: nix build -f . built -o built-site
 
       - name: Check Links
-        run: nix-shell --command 'linkchecker site'
+        run: nix-shell --command 'linkchecker built-site'
 
       - uses: actions/upload-artifact@v2
         with:
