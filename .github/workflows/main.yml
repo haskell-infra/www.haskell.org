@@ -15,12 +15,17 @@ jobs:
         uses: cachix/install-nix-action@v12
 
       - name: Build Executable
-        run: nix build && ls -la
+        run: nix build
 
       - name: Check Links
-        run: ls -la && ls -R result* && nix-shell --command 'linkchecker result-1'
+        run: nix-shell --command 'linkchecker result-1'
 
       - uses: actions/upload-artifact@v2
         with:
           name: www.haskell.org
-          path: result-*
+          path: result-*        # Uses glob pattern because
+                                # actions/upload-artifact@v2 gets
+                                # confused by symlinks otherwise
+                                #
+                                # See:
+                                # https://github.com/actions/upload-artifact/issues/92
