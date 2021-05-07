@@ -15,7 +15,7 @@ jobs:
         uses: cachix/install-nix-action@v12
 
       - name: Build Executable
-        run: nix build
+        run: nix-build
 
       - name: Check Links
         run: nix-shell --command 'linkchecker result-1'
