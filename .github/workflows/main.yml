@@ -22,3 +22,8 @@ jobs:
 
       - name: Check Links
         run: nix-shell --command 'linkchecker _site'
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: www.haskell.org
+          path: result-1
