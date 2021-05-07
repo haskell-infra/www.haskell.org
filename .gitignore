@@ -9,4 +9,4 @@ dist-newstyle
 
 # Nix
 result*
-site
+built-site
