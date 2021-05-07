@@ -14,7 +14,7 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v12
 
-      - name: Build Executable
+      - name: Build Site
         run: nix build -f . built -o built-site
 
       - name: Check Links
