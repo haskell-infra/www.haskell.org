@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v12
+
+      - name: Build Executable
+        run: nix-build
+
+      - name: Build Site
+        run:  result/bin/haskell-org-site build
+
+      - name: Check Links
+        run: nix-shell --command 'linkchecker _site'
