@@ -8,7 +8,7 @@ isCommunity: true
 
 Haskellers interact, talk and collaborate across several mediums and around the world. There are places to learn, to teach, to ask questions, and to find contributors and collaborators.
 
-[Help support the community!](/donations/)
+[Help support the community!](/donations2/)
 
 ## Online Communities and Social Resources
 
