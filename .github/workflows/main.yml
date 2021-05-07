@@ -17,11 +17,8 @@ jobs:
       - name: Build Executable
         run: nix-build
 
-      - name: Build Site
-        run:  result/bin/haskell-org-site build
-
       - name: Check Links
-        run: nix-shell --command 'linkchecker _site'
+        run: nix-shell --command 'linkchecker result-1'
 
       - uses: actions/upload-artifact@v2
         with:
