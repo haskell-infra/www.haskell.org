@@ -41,7 +41,7 @@ The Haskell.org Committee serves as the board of directors for Haskell.org. Its 
 
 The committee consists of 7 members serving 3-year terms. The current members are:
 
-  * Emily Pillmore (term ends 2021)
+  * Tom Ellis (term ends 2021)
   * Jasper Van der Jeugt (Chair) (term ends 2022)
   * Rebecca Skinner (term ends 2022)
   * Alexandre Garcia de Oliveira (term ends 2022)
