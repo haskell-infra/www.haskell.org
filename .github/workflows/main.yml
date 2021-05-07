@@ -15,7 +15,8 @@ jobs:
         uses: cachix/install-nix-action@v12
 
       - name: Build Site
-        run: nix build -f . built -o built-site
+        # we run the checks as a separate step
+        run: nix build -f . built -o built-site --arg doCheck false
 
       - name: Check Links
         run: nix-shell --command 'linkchecker built-site'
