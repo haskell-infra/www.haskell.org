@@ -23,4 +23,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: www.haskell.org
-          path: result-1
+          path: result-1/**/*
