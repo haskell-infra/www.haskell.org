@@ -6,11 +6,9 @@ isCommunity: true
 
 # IRC Channels
 
-The IRC channel can be an excellent place to learn more about Haskell, and to just keep in the loop on new things in the Haskell world. Many new developments in the Haskell world first appear on the IRC channel.
+The IRC channel can be an excellent place to learn more about Haskell, and to just keep in the loop on new things in the Haskell world. Many new developments in the Haskell world first appear on the IRC channel. Haskell channels have been moving from freenode and are now mainly established on libera.chat.
 
-Point your IRC client to `chat.freenode.net` and then join the `#haskell` channel. Check the [knowledge base](https://freenode.net/kb/answer/chat) for more connection information.
-
-Alternately, you can try [http://webchat.freenode.net/](http://webchat.freenode.net/) which connects inside the browser.
+Point your IRC client to `irc.libera.chat:6697 (TLS)` and then join the `#haskell` channel. Check the [guides](https://libera.chat/guides) for more connection information.
 
 ## Logs
 
