@@ -76,3 +76,7 @@ You may then run the builder binary from the `result` directory:
 ```
 ./result/bin/haskell-org-site build
 ```
+
+### Deploying
+
+The site will automatically be deployed live to <http://www.haskell.org/> every time a branch is merged to `master`. Alternatively an admin for this GitHub repository can deploy the site by visiting the [Deploy workflow page](https://github.com/haskell-infra/www.haskell.org/actions/workflows/deploy.yml), clicking the "Run workflow" dropdown, choosing the branch to build and deploy, and clicking the "Run workflow" button.
