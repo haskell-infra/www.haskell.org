@@ -20,25 +20,25 @@ Plain text logs for #haskell are available at [tunes](http://tunes.org/~nef/logs
 
 | Channel | Purpose |
 |----|--------------|
-| #haskell.au | Australian Haskell hackers |
+| #haskell-au | Australian Haskell hackers |
 | #haskell-br | Brazilian Portuguese (pt_BR) speakers |
-| #haskell.cz | Czech speakers (UTF-8) |
-| #haskell.de | German speakers |
-| #haskell.dut | Dutch speakers |
-| #haskell.es | Spanish speakers |
-| #haskell.fi | Finnish speakers |
+| #haskell-cz | Czech speakers (UTF-8) |
+| #haskell-de | German speakers |
+| #haskell-dut | Dutch speakers |
+| #haskell-es | Spanish speakers |
+| #haskell-fi | Finnish speakers |
 | #haskell-fr | French speakers |
-| #haskell.hr | Croatian speakers |
-| #haskell.it | Italian speakers |
-| #haskell.jp | Japanese speakers |
-| #haskell.no | Norwegian speakers |
-| #haskell.pt | Portuguese speakers |
+| #haskell-hr | Croatian speakers |
+| #haskell-it | Italian speakers |
+| #haskell-jp | Japanese speakers |
+| #haskell-no | Norwegian speakers |
+| #haskell-pt | Portuguese speakers |
 | #haskell-pl | Polish speakers |
-| #haskell.ru | Russian speakers. Seems that most of them migrated to Jabber conference (haskell@conference.jabber.ru). |
+| #haskell-ru | Russian speakers. Seems that most of them migrated to Jabber conference (haskell@conference.jabber.ru). |
 | #haskell_ru | Russian speakers again, in UTF-8. For those, who prefer good ol' IRC channel with a lambdabot. |
-| #haskell.se | Swedish speakers |
-| #haskell.tw | Chinese speakers (mainly in Taiwan) |
-| #haskell.vn | Vietnamese speakers |
+| #haskell-se | Swedish speakers |
+| #haskell-tw | Chinese speakers (mainly in Taiwan) |
+| #haskell-vn | Vietnamese speakers |
 | #haskell-blah | Haskell people talking about anything except Haskell itself |
 | #haskell-docs | The chatroom for coordinating contributions to the documentation |
 | #haskell-game | The hub for Haskell-based game development |
