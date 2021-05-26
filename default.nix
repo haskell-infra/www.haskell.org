@@ -3,7 +3,8 @@
 , pkgs     ?
     import (builtins.fetchTarball {
       url    = "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
-      }) {}
+    }) {}
+, doCheck ? true
 }:
 
 let
@@ -26,6 +27,7 @@ let
           "js/*"
           "img/*"
           ".git"
+          ".github"
         ] ./.;
       modifier = drv: pkgs.haskell.lib.overrideCabal drv (attrs: {
         buildTools = with pkgs.haskell.packages.${compiler}; (attrs.buildTools or []) ++ [
@@ -50,30 +52,29 @@ let
 
   built = pkgs.stdenv.mkDerivation {
     name = "haskell.org";
+    inherit doCheck;
+
     src = gitignore.gitignoreSource [
       ".git"
       "*.cabal"
       "*.hs"
+      ".github"
       ] ./.;
     buildInputs = [ builder pkgs.linkchecker ];
+
     LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
     LC_ALL = "C.UTF-8";
-    installPhase = ''
-      echo ""
-      echo "  Building static site..."
-      echo ""
-      haskell-org-site build
-      echo ""
-      echo "  Checking for bad links..."
-      echo ""
+
+    buildPhase = ''
+      ${builder}/bin/haskell-org-site build
+    '';
+    checkPhase = ''
       linkchecker _site
-      echo ""
-      echo "  Copying static site to $out..."
+    '';
+    installPhase = ''
       cp -r _site $out
-      echo "  Build complete"
-      echo ""
     '';
   };
 in
   if pkgs.lib.inNixShell then builder
-  else { inherit builder built; }
+  else { inherit builder built; inherit (pkgs) linkchecker; }

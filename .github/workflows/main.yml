@@ -14,11 +14,19 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v12
 
-      - name: Build Executable
-        run: nix-build
-
       - name: Build Site
-        run:  result/bin/haskell-org-site build
+        # we run the checks as a separate step
+        run: nix build -f . built -o built-site --arg doCheck false
 
       - name: Check Links
-        run: nix-shell --command 'linkchecker _site'
+        run: nix run --quiet -f . linkchecker -c linkchecker built-site
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: www.haskell.org
+          path: built-site*  # Uses glob pattern because
+                             # actions/upload-artifact@v2 gets
+                             # confused by symlinks otherwise
+                             #
+                             # See:
+                             # https://github.com/actions/upload-artifact/issues/92
