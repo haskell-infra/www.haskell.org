@@ -1,0 +1,51 @@
+name: Deploy
+
+# We deploy the site *only* on
+#
+# 1. A push to master, or
+# 2. A manually triggered Deploy build
+#
+# We don't want to deploy for every branch and PR of course!
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v12
+
+      # The CI Github Action also builds the site and puts it in an
+      # artifact.  However, downloading an artifact from a different
+      # workflow seems to be difficult.
+      #
+      # https://github.com/actions/download-artifact/issues/3
+      #
+      # We'll just build the whole site again here.  It only takes a
+      # couple of minutes.
+      - name: Build Site
+        # we run the checks as a separate step
+        run: nix build -f . built -o built-site --arg doCheck false
+
+      - name: Check Links
+        run: nix run --quiet -f . linkchecker -c linkchecker built-site
+
+      - name: Deploy
+        shell: bash
+        env:
+          # Create the secret with:
+          #
+          # Settings -> Secrets -> New Repository Secret ->
+          #
+          #   Name: WWW_HASKELL_ORG_SSH_KEY
+          #   Value: The text of the ssh private key
+          WWW_HASKELL_ORG_SSH_KEY: ${{ secrets.WWW_HASKELL_ORG_SSH_KEY }}
+        run: |
+          nix run --quiet -f . lftp -c sh ./deploy.sh --DEPLOY-IT-LIVE
