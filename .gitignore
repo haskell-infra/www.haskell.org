@@ -10,3 +10,6 @@ dist-newstyle
 # Nix
 result*
 built-site
+
+# Emacs
+*~
