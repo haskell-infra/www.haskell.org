@@ -3,6 +3,7 @@ name: CI
 on:
   pull_request:
   push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,12 +15,18 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v12
 
+      - name: Cachix
+        uses: cachix/cachix-action@v10
+        with:
+          name: haskell-org
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+
       - name: Build Site
         # we run the checks as a separate step
-        run: nix build -f . built -o built-site --arg doCheck false
+        run: nix build --verbose --print-build-logs --file . built -o built-site --arg doCheck false
 
       - name: Check Links
-        run: nix run --quiet -f . linkchecker -c linkchecker built-site
+        run: nix run --quiet --file . linkchecker --command linkchecker built-site
 
       - uses: actions/upload-artifact@v2
         with:
