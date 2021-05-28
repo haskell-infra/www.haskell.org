@@ -17,6 +17,7 @@ Haskellers are active on a number of online areas, but the most busy are below:
 
 *   [The Haskell mailing lists](/mailing-lists/)
 *   [IRC (online chat)](/irc/)
+*   [Matrix (online chat)](https://matrix.to/#/#haskell-space:matrix.org)
 *   [Haskell Community Discourse](https://discourse.haskell.org)
 *   [StackOverflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
 *   [Facebook community](https://www.facebook.com/groups/programming.haskell/)
