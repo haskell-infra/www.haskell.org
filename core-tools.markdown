@@ -23,9 +23,7 @@ for more details.
         - [Optimisations](#optimisations)
 - [An interactive environment](#an-interactive-environment)
     - [Using external packages in ghci](#using-external-packages-in-ghci)
-- [Compiling programs - Advanced usage](#compiling-programs---advanced-usage)
-    - [Runtime options](#runtime-options)
-    - [Profiling](#profiling)
+- [Additional information](#additional-information)
 
 First, let's start by opening your system's command line interface
 and running `ghc --version` to make sure we have successfully
