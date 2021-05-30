@@ -298,4 +298,4 @@ This article covered the most common usage of the core tools GHC offers.
 If you'd like to learn more about them,
 [the GHC manual](This article describes the most common usage of the core tools)
 Contains additional information on how to use the tools, including how to control
-tweak the runtime system and how to profile Haskell programs.
+the runtime system and how to profile Haskell programs.
