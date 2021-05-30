@@ -84,13 +84,6 @@ so GHC created an executable for us. And we can run it:
 Hello, Haskell!
 ```
 
-Or on Microsoft Windows:
-
-```sh
-> hello.exe
-Hello, Haskell!
-```
-
 Alternatively, we can skip the compilation phase by using the command `runghc`:
 
 ```sh
