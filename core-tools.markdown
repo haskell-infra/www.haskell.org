@@ -274,20 +274,19 @@ And the modules of the relevant packages will be available for import:
 GHCi, version 9.0.1: https://www.haskell.org/ghc/  :? for help
 ghci> import Control.Concurrent.Async 
 ghci> import Say
-ghci> concurrently_ (say "Hello") (say "World")
+ghci> concurrently_ (sayString "Hello") (sayString "World")
 Hello
 World
 ```
 
 Stack users can also use this feature with `runghc` and `ghc` by replacing
-`ghci` in the command above. <!-- , and Cabal-install users can generate an
+`ghci` in the command above, and Cabal-install users can generate an
 environment file that will make `async` and `say` visible for GHC tools
 in the current directory using this command:
 
 ```sh
-cabal --lib --package-env . install async say
+cabal install --lib async --lib say --package-env .
 ```
--->
 
 Many more packages are waiting for you on [Hackage](https://hackage.haskell.org).
 
