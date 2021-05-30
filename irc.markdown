@@ -49,6 +49,7 @@ Plain text logs for #haskell are available at [tunes](http://tunes.org/~nef/logs
 | #haskell-llvm | For projects using Haskell and LLVM |
 | #haskell-overflow | Overflow conversations |
 | #haskell-web | Friendly, practical discussion of haskell web app/framework/server development |
+| #haskell-language-server | Haskell lsp based ide |
 
 </div>
 
