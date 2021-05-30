@@ -65,7 +65,7 @@ GHC created the following files:
 
 GHC will produce an executable when the source file:
 
-1. Defines the binding `main` in the source file
+1. Defines the `main` function in the source file
 2. Defines the module name to be `Main` (this can be done by adding `module Main where` at the top of the file), or does not have a module declaration (which is then inferred as the module `Main`).
 
 Otherwise, it will only produce the `.o` and `.hi` files.
@@ -154,7 +154,7 @@ will convert warnings to errors and will halt compilation when a warning is emit
 
 Another very useful flag is `-O`. This flag asks GHC to compile the program with optimisations and code improvements at the cost of taking longer to compile.
 This will often make the program run much faster and perform more aggressive optimisations such as inlining and specialisation.
-For even more optimisations that may take significantly longer, `-O2` is also available.
+For even more optimisations that may take significantly longer to compile, `-O2` is also available.
 
 ## An interactive environment
 
@@ -188,7 +188,7 @@ ghci> double 2
 4
 ```
 
-We can import Haskell source files using the `:load` command:
+We can import Haskell source files using the `:load` command (`:l` for short):
 
 ```sh
 ghci> :load hello.hs
@@ -208,7 +208,7 @@ ghci> clearBit 33 0
 32
 ```
 
-We can even ask what the type of an expression is using the `:type` command:
+We can even ask what the type of an expression is using the `:type` command (`:t` for short):
 
 ```sh
 λ> :type putStrLn
@@ -226,7 +226,7 @@ A more thorough introduction to GHCi can be found in the [GHC user guide](https:
 
 ### Using external packages in ghci
 
-By default, ghci can only load and use packages that are [included with the GHC installation](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/9.0.1-notes.html#included-libraries).
+By default, GHCi can only load and use packages that are [included with the GHC installation](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/9.0.1-notes.html#included-libraries).
 
 However, users of [cabal-install](https://www.haskell.org/cabal) and [stack](http://haskellstack.org) can download and load external packages very easily using the following commands:
 
@@ -342,4 +342,3 @@ The full list of runtime options can be found in the [GHC user guide](https://do
 ### Profiling
 
 The GHC user guide contains a very thorough [section about profiling Haskell programs](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/profiling.html).
-
