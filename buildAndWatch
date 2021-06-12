@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -eou pipefail
+
+if [[ -n "${IN_NIX_SHELL+x}" ]]; then
+    echo "buildAndWatch does not work inside of a nix shell. Please exit the nix-shell and retry."
+    exit 1
+fi
+
+if [[ ! -x $(type -P "nix-build") ]]; then
+    echo "nix-build is not available. Please install nix from https://nixos.org/download.html"
+    exit 1
+fi
+
+nix-build -A builder && \
+    ./result/bin/haskell-org-site clean && \
+    ./result/bin/haskell-org-site build && \
+    ./result/bin/haskell-org-site watch

@@ -27,10 +27,8 @@
   LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
   LC_ALL = "C.UTF-8";
   shellHook = ''
-        alias buildAndWatch="cabal configure && cabal build && cabal exec haskell-org-site -- clean && cabal exec haskell-org-site -- watch"
         echo ""
         echo "  Haskell.org Dev Shell"
-        echo "    \`buildAndWatch\` to serve the site, and rebuild when files change."
         echo "    \`linkchecker\`, \`ghcid\` and \`cabal\` are provided in this environment."
         echo ""
       '';
