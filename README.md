@@ -11,11 +11,6 @@ Some of the others are
 * www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
 * www.haskell.org/ghcup (build from [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www)
 
-### Nix
-
-The best way to make changes to haskell.org is to use nix. You can install it
-by following the directions [on the nix downloads page](https://nixos.org/download.html).
-
 ### Contributing Changes
 
 The easiest way to make changes is to use the `buildAndWatch` script and then
@@ -43,38 +38,41 @@ instructions in the _Contributing Changes_ section above.
 
 If you want to make a quick change or two, you can continue to use the
 `buildAndWatch` script to rebuild changes, but for more substantial changes this
-might increase the build cycle time too much. In that case, you can test your
-changes more immediately by building with `cabal`.
+might increase the build cycle time too much. In this case, you can build the
+builder using either nix or cabal. Directions for both are given below:
 
-If you want to ensure that you are using the correct versions of all of the
-libraries, you can develop inside of a nix shell. To do that, simply type:
+<a id="buildingWithoutNix"></a>
+### Manually Building the Site With Cabal
 
-`nix-shell` from either the project root directory or the `builder` directory.
+If you don't have nix installed, or if you are inside of the project's nix
+shell, you will want to use cabal to compile the builder. To do so, enter the
+`builder` directory and compile the program with:
 
-To build the builder with cabal, go into the `builder` directory and run:
-
-```
+```shell
 cabal v2-build
 ```
 
-### Manually Building the Site with the Builder
+Once compiled, the builder must be run from the project root directory so that
+it can find all of the content. To run the builder, you need to first find the
+name of the executable. From the builder directory, you can find the executable
+path by running:
 
-If you want to manually build the site with the builder, you need to run the
-builder from the project root directory. You can do this by building the site
-with nix:
+```
+find dist-newstyle -name 'haskell-org-site' -type f
+```
+
+Using that path, you can run the builder from the project root directory.
+
+### Manually Building the Site With Nix
+
+If you have nix installed, you can have nix build the builder by running:
 
 ```
 nix-build -A builder
 ```
 
-Then running the builder binary from the `result` directory:
+You may then run the builder binary from the `result` directory:
 
 ```
 ./result/bin/haskell-org-site build
-```
-
-Alternatively you can build with cabal and run the executable directly:
-
-```
-./builder/dist-newstyle/build/x86_64-linux/ghc-8.8.4/haskell-org-0.1.0.0/x/haskell-org-site/build/haskell-org-site/haskell-org-site build
 ```
