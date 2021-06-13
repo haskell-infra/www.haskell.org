@@ -1,17 +1,116 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
-if [[ -n "${IN_NIX_SHELL+x}" ]]; then
-    echo "buildAndWatch does not work inside of a nix shell. Please exit the nix-shell and retry."
-    exit 1
-fi
+function buildAndWatchWithNix() {
+    if [[ -n "${IN_NIX_SHELL+x}" ]]; then
+        echo "buildAndWatch does not work inside of a nix shell. Please exit the nix-shell and retry."
+        exit 1
+    fi
 
-if [[ ! -x $(type -P "nix-build") ]]; then
-    echo "nix-build is not available. Please install nix from https://nixos.org/download.html"
-    exit 1
-fi
+    if [[ ! -x $(type -P "nix-build") ]]; then
+        echo "nix-build is not available. Please install nix from https://nixos.org/download.html"
+        exit 1
+    fi
 
-nix-build -A builder && \
-    ./result/bin/haskell-org-site clean && \
-    ./result/bin/haskell-org-site build && \
-    ./result/bin/haskell-org-site watch
+    nix-build -A builder && \
+        ./result/bin/haskell-org-site clean && \
+        ./result/bin/haskell-org-site build && \
+        ./result/bin/haskell-org-site watch
+    exit 0
+}
+
+function buildAndWatchWithoutNix() {
+    if [[ ! -x $(type -P "cabal") ]]; then
+        echo "Please download and install a haskell environment. See: https://www.haskell.org/downloads/"
+        exit 1
+    fi
+
+    pushd builder
+    cabal v2-build
+    builderPath=$(find dist-newstyle -name 'haskell-org-site' -type f)
+    popd
+    builder="./builder/${builderPath}"
+
+    if [[ ! -x "${builder}" ]]; then
+        cat <<EOF
+After building 'haskell-org-site' I was unable to find the path to a
+runnable executable. This may be because of a bug in this script. You
+may want to try to build and run the builder manually, ask for help,
+or submit a bug report.
+EOF
+        exit 1
+    fi
+
+    "${builder}" clean
+    "${builder}" build
+    "${builder}" watch
+    exit 0
+}
+
+function buildAndWatchAuto() {
+    if [[ -x $(type -P "nix-build") ]]; then
+        if [[ -n "${IN_NIX_SHELL+x}" ]]; then
+            cat <<EOF
+I found a 'nix' installation, but we're currently inside of a nix
+shell. I will try to build using cabal. If building with cabal fails,
+you should try to re-run this script when you are not inside of a nix
+shell.
+EOF
+            buildAndWatchWithoutNix
+        else
+            buildAndWatchWithNix
+        fi
+    else
+        buildAndWatchWithoutNix
+    fi
+}
+
+function showHelp() {
+    cat <<EOF
+Usage: buildAndWatch [buildMode]
+
+Build the haskell.org site builder, compile the site, and start a
+local server on port 8000 to preview changes.
+
+buildAndWatch takes a single optional argument, 'buildMode'. If it's
+omitted, buildAndWatch will attempt to select the best method for
+building the site based on your current environment. If you provide an
+argument, it may be one of the following:
+
+  auto (default)      Automatically select between 'nix' or 'cabal' based on the
+                        current environment.
+  nix                 Use nix to build the site
+  cabal               Use cabal to build the site. If you are in a nix shell,
+                        it will use your nix environment. Otherwise, it will use
+                        your system-wide cabal installation.
+  help                Show this help message and exit
+EOF
+}
+
+
+function buildAndWatchWithArgs() {
+    case ${1} in
+        "auto")
+            buildAndWatchAuto
+            ;;
+        "nix")
+            buildAndWatchWithNix
+            ;;
+        "cabal")
+            buildAndWatchWithoutNix
+            ;;
+        "help")
+            showHelp
+            ;;
+        *)
+            echo "Unrecognized or missing arguments"
+            showHelp
+            exit 1
+    esac
+}
+
+if [[ $# -gt 0 ]]; then
+    buildAndWatchWithArgs "${1}"
+else
+    buildAndWatchWithArgs "auto"
+fi
