@@ -11,25 +11,68 @@ Some of the others are
 * www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
 * www.haskell.org/ghcup (build from [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www)
 
-### Cabal instructions
-Just run `cabal v2-build` to build or `cabal v2-run` to run, and `cabal v2-run -- build` to actually build the site.
+### Contributing Changes
 
-### Nix instructions
+The easiest way to make changes is to use the `buildAndWatch` script and then
+point your web browser to [http://localhost:8000](http://localhost:8000). When
+you are finished editing or want to re-build the hakyll part of the site, you
+can stop the script by pressing `Control+c` (`C-c`).
 
-This repo provides haskell.org as a nix derivation of a hakyll built static site. The `default.nix` file returns a set with two elements
-- builder (the hakyll binary which processes source into the static site)
-- built (the static site built by the builder, and ready to serve)
+If you are only making changes to the content of the site, you can leave this
+script running and it will automatically pick up changes and re-build the site
+for you.
 
-### Developing
+If you want to change the `builder`, or if you encounter an error where your
+changes to the content aren't being picked up, need to stop the script and
+re-start it.
 
-Simply run `nix-shell`. This will allow you to build the `haskell-org-site` binary which in turn builds the static site.
-You may also edit the content of the site in the shell.
+Once you're satisfied with your changes, make a PR and the maintainers will try
+to review it as soon as we can.
 
-### Editing
+### Working On The Builder
 
-You may install the `haskell-org-site` binary locally with `nix-env -f . -iA builder`. Once `haskell-org-site` is on your path you can edit content, and have
-the site served with `site watch`.
+The `builder` is the static site generator that turns the markdown files, CSS,
+images, and scripts into a website. It lives in the `builder`. Most of the time,
+you won't need to make changes to the builder and you can follow the
+instructions in the _Contributing Changes_ section above.
 
-### Building
+If you want to make a quick change or two, you can continue to use the
+`buildAndWatch` script to rebuild changes, but for more substantial changes this
+might increase the build cycle time too much. In this case, you can build the
+builder using either nix or cabal. Directions for both are given below:
 
-To obtain the static `haskell-org-site` simply run `nix-build -A built` and the generated `result` link will contain the static site contents.
+<a id="buildingWithoutNix"></a>
+### Manually Building the Site With Cabal
+
+If you don't have nix installed, or if you are inside of the project's nix
+shell, you will want to use cabal to compile the builder. To do so, enter the
+`builder` directory and compile the program with:
+
+```shell
+cabal v2-build
+```
+
+Once compiled, the builder must be run from the project root directory so that
+it can find all of the content. To run the builder, you need to first find the
+name of the executable. From the builder directory, you can find the executable
+path by running:
+
+```
+find dist-newstyle -name 'haskell-org-site' -type f
+```
+
+Using that path, you can run the builder from the project root directory.
+
+### Manually Building the Site With Nix
+
+If you have nix installed, you can have nix build the builder by running:
+
+```
+nix-build -A builder
+```
+
+You may then run the builder binary from the `result` directory:
+
+```
+./result/bin/haskell-org-site build
+```
