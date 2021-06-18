@@ -30,7 +30,7 @@ main = mkContext >>= \ctx -> hakyll $ do
     route idRoute
     compile $ do
       testimonials <- loadAll @Testimonial "testimonials/*.yaml"
-      item <- makeItem $ (BL.unpack . encode . map itemBody) testimonials
+      item <- (makeItem . BL.unpack . encode . map itemBody) testimonials
       saveSnapshot "_final" item
       pure item
 
