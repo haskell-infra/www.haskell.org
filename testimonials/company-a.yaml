@@ -1,6 +1,9 @@
+# This is an example testimonial file. It should be removed before the
+# branch is deployed. It serves as an example of how to format the
+# testimonials.
 ---
-company: Company A
-logo: logos/sample-logo-1.png
+companyName: Company A
+logoURL: logos/sample-logo-1.png
 shortTestimonial: |
   This is a short testimonial where we have a sentence or two.
   Later we might add a longer testimonial when we have a page for them.
