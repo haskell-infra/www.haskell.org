@@ -6,3 +6,6 @@ companyName: Company B, Incorporated With A Long Name
 logoURL: logos/sample-logo-2.png
 shortTestimonial: |
   This is just a couple of sentences long. It is shorter than the other quote.
+language: "enUS"
+longTestimonial: |
+  this is a longer testimonial. It won't be shown yet, but it might be used later if we click to expand the quotes, or do a separate page with longer quotes.
