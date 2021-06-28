@@ -81,7 +81,6 @@ The Cabal guide is a good start but there's a lot to learn:
 Documentation for Haskell libraries is typically available on Hackage. We also have specialized tools for searching across it, not only by name, but by type.
 
 *   [Hoogle API Search](http://www.haskell.org/hoogle/)
-*   [Hayoo! API Search](http://hayoo.fh-wedel.de)
 *   [Hackage](http://hackage.haskell.org/)
 *   [Stackage (with API Search)](https://www.stackage.org)
 *   [The Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
