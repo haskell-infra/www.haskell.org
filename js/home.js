@@ -8,6 +8,13 @@ $(function(){
   });
 });
 
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider'), {
+    setting: setting-value
+  })
+})
+
+
 // Setup hovering of video thumbnails
 function setupVids(){
   var $community = $('.community');
@@ -54,3 +61,4 @@ function setupFeatures(){
       $this.find('.expand').hide();
   });
 }
+
