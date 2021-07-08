@@ -2,7 +2,7 @@
 # branch is deployed. It serves as an example of how to format the
 # testimonials.
 ---
-companyName: Company C, Incorporated With A Long Name
+companyName: Company E, Incorporated With A Long Name
 logoURL: logos/sample-logo-2.png
 shortTestimonial: |
   This is just a couple of sentences long. It is shorter than the other quote.
