@@ -2,10 +2,13 @@
 # branch is deployed. It serves as an example of how to format the
 # testimonials.
 ---
-companyName: Company B, Incorporated With A Long Name
+companyName: Company D, Incorporated With A Long Name
 logoURL: logos/sample-logo-2.png
 shortTestimonial: |
-  This is just a couple of sentences long. It is shorter than the other quote.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 language: "enUS"
 longTestimonial: |
   this is a longer testimonial. It won't be shown yet, but it might be used later if we click to expand the quotes, or do a separate page with longer quotes.
