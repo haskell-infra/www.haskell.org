@@ -2,15 +2,6 @@
 
 This is the website for www.haskell.org built as a hakyll static site, which builds both as a nix derivation and a standalone cabal project. Issues with the site can be raised in this repository, and PRs can be made to change content. More general administrative issues with the site or related haskell.org infrastructure are better raised directly with the admin team on the #haskell-infrastructure channel on freenode, or at the admin@[LANGUAGE].org email address.
 
-### Subsites
-
-Not all subsites of www.haskell.org are built from this repository.
-Some of the others are
-
-* www.haskell.org/cabal (built from [cabal-website](https://github.com/haskell/cabal-website))
-* www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
-* www.haskell.org/ghcup (build from [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www)
-
 ### Contributing Changes
 
 The easiest way to make changes is to use the `buildAndWatch` script and then
@@ -80,3 +71,94 @@ You may then run the builder binary from the `result` directory:
 ### Deploying
 
 The site will automatically be deployed live to <http://www.haskell.org/> every time a branch is merged to `master`. Alternatively an admin for this GitHub repository can deploy the site by visiting the [Deploy workflow page](https://github.com/haskell-infra/www.haskell.org/actions/workflows/deploy.yml), clicking the "Run workflow" dropdown, choosing the branch to build and deploy, and clicking the "Run workflow" button.
+
+### Subsites
+
+Not all subsites of www.haskell.org are built from this repository.
+Some of the others are
+
+| Subsite | Source | Owner | Details |
+| --------------- | --------------- | --------------- | --------------- |
+| [`cabal/`](https://www.haskell.org/cabal/) | [cabal-website](https://github.com/haskell/cabal-website) |  | [Details](#details-cabal) |
+| [`ghc/`](https://www.haskell.org/ghc/) | |  | [Details](#details-ghc) |
+| [`ghc-perf/`](https://www.haskell.org/ghc-perf/) | | Joachim Breitner | [Details](#details-ghc-perf) |
+| [`ghcup/`](https://www.haskell.org/ghcup/) | [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www) | Julian Ospald | |
+| [`haskell-symposium/`](https://www.haskell.org/haskell-symposium/) | |  | |
+| [`platform/`](https://www.haskell.org/platform/) | [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website) | | |
+| [`alex/`](https://www.haskell.org/alex/) | | Simon Marlow | [Details](#details-alex) |
+| [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
+| [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
+| [`definition/`](https://www.haskell.org/definition/) | | | [Details](#details-definition) |
+| [`haddock/`](https://www.haskell.org/haddock/) | | Simon Marlow | [Details](#details-haddock) |
+| [`happy/`](https://www.haskell.org/happy/) | | Simon Marlow | [Details](#details-happy) |
+| [`haskell-workshop/`](https://www.haskell.org/haskell-workshop/) | |  | [Details](#details-haskell-workshop) |
+| [`hugs/`](https://www.haskell.org/hugs/) | | | [Details](#details-hugs) |
+| [`nhc98/`](https://www.haskell.org/nhc98/) | | York Functional Programming Group | [Details](#details-nhc98) |
+| [`tutorial/`](https://www.haskell.org/tutorial/) | | | [Details](#details-tutorial) |
+
+#### Details on subsites
+
+* <a name="details-cabal"></a>
+  `cabal/`
+
+  At least @emilypi has deploy permissions.
+
+* <a name="details-ghc"></a>
+  `ghc/`
+
+  Probably owned by the GHC team.  Most likely @bgamari is the best
+  contact point.
+
+* <a name="details-ghc-perf"></a>
+  `ghc-perf/`
+
+  Same as https://perf.haskell.org
+
+* <a name="details-alex"></a>
+  `alex/`
+
+  Owner is listed as Simon Marlow at his Microsoft address, long-since
+  defunct.
+
+* <a name="details-communities"></a>
+  `communities/`
+
+  Just contains a link to the HCAR page on this Haskell wiki
+
+* <a name="details-definition"></a>
+  `definition/`
+
+  Last update: 21 June 2005
+
+* <a name="details-haddock"></a>
+  `haddock/`
+
+  Not updated since 2014 and the owner is listed as Simon Marlow at
+  his Microsoft address, long-since defunct.
+
+* <a name="details-happy"></a>
+  `happy/`
+
+* <a name="details-haskell-workshop"></a>
+  `haskell-workshop/`
+
+  Not updated since 2008.  Source is linked as
+  http://abridgegame.org/darcs/ but that link seems long-dead.
+
+* <a name="details-hugs"></a>
+  `hugs/`
+
+  Not updated since 2003. Report problems to <hugs-bugs@haskell.org>.
+
+* <a name="details-nhc98"></a>
+  `nhc98/`
+
+  This page last modified: 9th July 2010.
+
+  Not updated since 2010
+
+* <a name="details-tutorial"></a>
+  `tutorial/`
+
+  Revised June 2000. "This code has been tested with Hugs
+  98". Copyright (C) 1999 Paul Hudak, John Peterson and Joseph Fasel.
