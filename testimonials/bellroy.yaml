@@ -2,11 +2,6 @@
 companyName: Bellroy
 logoURL: logos/bellroy.png
 shortTestimonial: |
-  We tried out Shopify and Magento before carving out our own path,
-  building out a custom e-commerce platform largely in Ruby on
-  Rails. Over the last two years we've changed direction and most of
-  our greenfields projects are being written in Haskell as we push
-  harder towards a headless e-commerce model. We've found the
-  stability, maintainability and performance of Haskell to be
-  exceptional and we look forward to more of that in the years to
-  come.
+  We've found the stability, maintainability and performance of
+  Haskell to be exceptional and we look forward to more of that in the
+  years to come.

@@ -2,12 +2,7 @@
 companyName: Bitnomial
 logoURL: logos/bitnomial.png
 shortTestimonial: |
-  We're Bitnomial. Bitnomial is a CFTC-regulated derivatives exchange
-  written entirely in Haskell. We use Haskell to implement our
-  low-latency matching engine, order entry gateways, pricefeeds,
-  settlement systems, and everything else. Haskell gives us huge
-  leverage over our complex business domain while allowing us to stay
-  nimble and innovate. The type system allows us to integrate new
-  knowledge quickly and refactor our sizeable code base with relative
-  ease. Our first products will be a physically-settled Bitcoin future
-  with options on the future.
+  Haskell gives us huge leverage over our complex business domain
+  while allowing us to stay nimble and innovate. The type system
+  allows us to integrate new knowledge quickly and refactor our
+  sizeable code base with relative ease.

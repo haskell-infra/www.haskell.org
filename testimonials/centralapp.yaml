@@ -2,9 +2,5 @@
 companyName: CentralApp
 logoURL: logos/centralapp.png
 shortTestimonial: |
-  We're a very small startup (in team size, not in our customer base
-  ☺️) based out of Brussels. We use Haskell to power parts of V1 and
-  almost all of V2 of our services, and we'd like to do more in the
-  near future to help the Haskell community & increase awareness of
-  its benefits. Because solving complex problems well require the best
-  tools in the business.
+  We use Haskell... Because solving complex problems well require the
+  best tools in the business.
