@@ -1,4 +1,3 @@
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -3364,7 +3363,9 @@ a.badge:hover, a.badge:focus {
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out; }
+  transition: border 0.2s ease-in-out;
+  overflow: hidden;
+}
   .thumbnail > img,
   .thumbnail a > img {
     display: block;
@@ -3374,11 +3375,11 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #333333; 
+    color: #333333;
   }
   .thumbnail .testimonial-caption {
     padding: 9px;
-    color: #333333; 
+    color: #333333;
     height: 250px;
     overflow-y:auto;
     word-wrap: break-word;
@@ -4616,14 +4617,14 @@ pre .hs-keyglyph {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto; }
-    .row-flex > div[class*='col-'] .thumbnail {
+  .row-flex > div[class*='col-'] .thumbnail {
       width: 100%; }
 
   .glider,.glider-contain{margin:0 auto;position:relative}
   .glider,.glider-track{transform:translateZ(0)}
   .glider-dot,.glider-next,.glider-prev{border:0;padding:0;user-select:none;outline:0}
   .glider-contain{width:100%}
-  .glider{overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none; justify-content: space-between; display: flex;
+  .glider{overflow:hidden;overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none; justify-content: space-between; display: flex;
     align-items: flex-start;}
   .glider-track{width:100%;margin:0;padding:0;display:flex;z-index:1}
   .glider.draggable{user-select:none;cursor:-webkit-grab;cursor:grab}
@@ -4657,5 +4658,6 @@ pre .hs-keyglyph {
   }
 
   .testimonial-box {
+      min-width: 292.5px;
     width:100%
   }

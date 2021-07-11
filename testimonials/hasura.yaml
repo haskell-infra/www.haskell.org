@@ -1,0 +1,14 @@
+---
+companyName: Hasura
+logoURL: logos/hasura.png
+shortTestimonial: |
+  Haskell is the ideal programming language for us at Hasura, because
+  it can actually be several languages at once. Turning on several of
+  the more advanced extensions, we can work with a language that
+  allows us to be very precise, asserting a lot about the properties
+  of our code at compile time. Or alternatively, Haskell is an ideal
+  prototyping tool, when we want to build an MVP and get a prototype
+  out as quickly as possible. Even used in this way, Haskell provides
+  more guarantees about our code than most other available languages,
+  while still enabling rapid development. Haskell lets us be precise
+  when we need to be, and fast when we want to be.
