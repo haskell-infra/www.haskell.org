@@ -1,18 +1,18 @@
 <div class="glider-contain">
     <div class="glider">
           $for(testimonials)$
-              <div class=" span3 col-xs-6 col-sm-3 testimonial-box">
+              <div class=" span3 col-xs-6 col-sm-3 testimonial-box" name="testimonial">
                   <div class= "thumbnail">
-                      <img width="100px" src="./testimonials/$logoURL$" class="img responsive"><br>
+                      <img width="100px" src="./testimonials/$logoURL$" class="img responsive">
                       <div class="testimonial-caption">
-                          <h3>$companyName$</h2>
+                          <h4>$companyName$</h4>
                           <h5>$shortTestimonial$</h5>
                       </div>
                       <hr>
                   </div>
               </div>
           $endfor$
-    </div> 
+    </div>
     <button role="button" aria-label="Previous" class="glider-prev">«</button>
     <button role="button" aria-label="Next" class="glider-next">»</button>
     <div role="tablist" class="dots"></div>
