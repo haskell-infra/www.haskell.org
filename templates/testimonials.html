@@ -18,6 +18,23 @@
     <div role="tablist" class="dots"></div>
 </div>
 
+<script>
+  function random(max) { return Math.floor(Math.random() * max); }
+  function shuffleTestimonials() {
+      var testimonials = document.getElementsByName("testimonial");
+      var parent = testimonials[0].parentNode;
+      var testimonialCount = testimonials.length
+//      var shuffledContainer = document.createElement("div");
+      while(testimonialCount) {
+          idx = random(testimonialCount);
+          parent.append(testimonials[idx]);
+          testimonialCount -= 1;
+      }
+
+  }
+  shuffleTestimonials();
+</script>
+
 <script>new Glider(document.querySelector('.glider'), {
     // Default configuration for mobile
     slidesToShow: 1,
