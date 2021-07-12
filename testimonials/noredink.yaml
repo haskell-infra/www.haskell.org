@@ -1,0 +1,8 @@
+---
+companyName: NoRedInk
+logoURL: logos/noredink.png
+shortTestimonial: |
+  The highest-traffic features of noredink.com are now served via
+  Haskell. We've seen a huge performance improvement compared to what
+  was previously doing that work as well as a massive
+  reduction in production error rates.
