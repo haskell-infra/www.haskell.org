@@ -1,7 +1,7 @@
 # Haskell.org Testimonials
 
-Is your company using haskell? Do you want to tell the world about it? This is
-the place! This repository contains all of our haskell user testimonials. If you
+Is your company using Haskell? Do you want to tell the world about it? This is
+the place! This repository contains all of our Haskell user testimonials. If you
 want to add a new testimonial, you can add a new file and logo in this
 directory. Here's how:
 
