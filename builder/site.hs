@@ -1,7 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE OverloadedStrings #-}
-import           Control.Monad
 import           Data.Aeson
 import qualified Data.ByteString.Lazy          as BL
 import           Data.Monoid                   ((<>))
@@ -11,7 +10,6 @@ import           Hakyll
 import           Hakyll.Core.Compiler
 import           Hakyll.Core.Compiler.Internal
 import           Hakyll.Core.Provider
-import           Hakyll.Core.Routes
 import           System.FilePath.Posix
 import           Testimonial
 

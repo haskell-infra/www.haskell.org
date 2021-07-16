@@ -5,10 +5,6 @@ import GHC.Generics
 import qualified Data.Aeson as Aeson
 import qualified Data.Yaml as Yaml
 import Hakyll
-import Hakyll.Core.Util.File
-import Hakyll.Core.Compiler
-import Hakyll.Core.Compiler.Internal
-import Hakyll.Core.Writable
 import Data.Binary
 import qualified Data.ByteString as BS
 import qualified Data.ByteString.Lazy as BL
