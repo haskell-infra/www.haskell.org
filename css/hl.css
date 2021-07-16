@@ -4620,11 +4620,11 @@ pre .hs-keyglyph {
   .row-flex > div[class*='col-'] .thumbnail {
       width: 100%; }
 
-  .glider,.glider-contain{margin:0 auto;position:relative}
+  .glider,.glider-contain{margin:0 auto;position:relative;}
   .glider,.glider-track{transform:translateZ(0)}
   .glider-dot,.glider-next,.glider-prev{border:0;padding:0;user-select:none;outline:0}
   .glider-contain{width:100%}
-  .glider{overflow:hidden;overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none; justify-content: space-between; display: flex;
+  .glider{overflow:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none; justify-content: space-between; display: flex;
     align-items: flex-start;}
   .glider-track{width:100%;margin:0;padding:0;display:flex;z-index:1}
   .glider.draggable{user-select:none;cursor:-webkit-grab;cursor:grab}
