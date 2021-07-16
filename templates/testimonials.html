@@ -1,0 +1,70 @@
+<div class="glider-contain">
+    <div class="glider">
+          $for(testimonials)$
+              <div class=" span3 col-xs-6 col-sm-3 testimonial-box" name="testimonial">
+                  <div class= "thumbnail">
+                      <img width="100px" src="./testimonials/$logoURL$" class="img responsive">
+                      <div class="testimonial-caption">
+                          <h4>$companyName$</h4>
+                          <h5>$shortTestimonial$</h5>
+                      </div>
+                      <hr>
+                  </div>
+              </div>
+          $endfor$
+    </div>
+    <button role="button" aria-label="Previous" class="glider-prev">«</button>
+    <button role="button" aria-label="Next" class="glider-next">»</button>
+    <div role="tablist" class="dots"></div>
+</div>
+
+<script>
+  function random(max) { return Math.floor(Math.random() * max); }
+  function shuffleTestimonials() {
+      var testimonials = document.getElementsByName("testimonial");
+      var parent = testimonials[0].parentNode;
+      var testimonialCount = testimonials.length
+      while(testimonialCount) {
+          idx = random(testimonialCount);
+          parent.append(testimonials[idx]);
+          testimonialCount -= 1;
+      }
+
+  }
+  shuffleTestimonials();
+</script>
+
+<script>new Glider(document.querySelector('.glider'), {
+    // Default configuration for mobile
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    dots: '.dots',
+    responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 300,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 300,
+        duration: 0.25
+      }
+    }
+  ]
+})</script>
