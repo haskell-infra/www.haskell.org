@@ -21,6 +21,11 @@ jobs:
           name: haskell-org
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
 
+      - name: Lint CSS
+        uses: actions/setup-node@v2
+        working-directory: './'
+        run: npx stylelint 'css/*.css' --config .stylelintrc.json --fix
+
       - name: Build Site
         # we run the checks as a separate step
         run: nix build --verbose --print-build-logs --file . built -o built-site --arg doCheck false
