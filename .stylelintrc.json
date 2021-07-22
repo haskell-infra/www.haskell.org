@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "block-no-empty": null,
+    "no-extra-semicolons": true,
+    "max-empty-lines": 1,
+    "unit-allowed-list": ["em", "rem", "s", "%", "px", "ms"],
+    "selector-max-empty-lines": 0,
+    "block-closing-brace-empty-line-before": "never",
+    "block-closing-brace-space-before": "always",
+    "block-opening-brace-space-before": "always",
+    "block-opening-brace-newline-after": "always",
+    "block-closing-brace-newline-after": "always",
+    "at-rule-empty-line-before": ["always", { "ignore": ["after-comment"] }],
+    "selector-type-case": "lower",
+    "selector-list-comma-newline-after": "always",
+    "selector-list-comma-space-before": "never",
+    "rule-empty-line-before": ["always-multi-line", {"ignore": ["first-nested", "after-comment"]}],
+    "indentation": "tab",
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-semicolon-newline-before": "never-multi-line",
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-colon-space-before": "never",
+    "declaration-colon-space-after": "always"
+  }
+}
