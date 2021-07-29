@@ -22,7 +22,7 @@ isDocumentation: true
 ## Intermediate Haskell Books
 
 *   [Developing Web Applications with Haskell and Yesod](http://www.yesodweb.com/book)
-*   [Functional Design and Architecture](https://leanpub.com/functional-design-and-architecture)
+*   [Functional Design and Architecture](https://www.manning.com/books/functional-design-and-architecture)
 *   [Haskell in Depth](https://www.manning.com/books/haskell-in-depth)
 *   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
 *   [Practical Haskell](https://www.apress.com/gp/book/9781484244791)
