@@ -2,6 +2,8 @@
 companyName: Foxhound Systems
 logoURL: logos/foxhoundsystems.png
 shortTestimonial: |
-  At Foxhound Systems use Haskell both for client work and our
-  internal tooling. We're a small custom software development /
-  consulting firm.
+  At Foxhound Systems, we build custom software for a variety of
+  clients. Haskell is our first choice for building production
+  systems because it is unrivaled in the combination of developer
+  productivity, maintainability, reliability, and performance
+  that it offers.
