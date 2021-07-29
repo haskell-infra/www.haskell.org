@@ -1,5 +1,6 @@
 ---
 companyName: Serokell
+companyURL: https://serokell.io
 logoURL: logos/serokell.png
 shortTestimonial: |
   Haskell enables us to build reliable, performant, and maintainable
