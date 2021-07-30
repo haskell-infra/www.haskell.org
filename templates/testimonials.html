@@ -3,11 +3,13 @@
           $for(testimonials)$
               <div class=" span3 col-xs-6 col-sm-3 testimonial-box" name="testimonial">
                   <div class= "thumbnail">
-                      <a href="$companyURL$" target="_blank">
+                      <a href="$companyURL$">
                           <img width="100px" src="./testimonials/$logoURL$" class="img responsive">
                       </a>
                       <div class="testimonial-caption">
-                          <h4>$companyName$</h4>
+                          <a href="$companyURL$">
+                              <h4>$companyName$</h4>
+                          </a>
                           <h5>$shortTestimonial$</h5>
                       </div>
                       <hr>
