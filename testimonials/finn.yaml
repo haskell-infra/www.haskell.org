@@ -1,5 +1,6 @@
 ---
 companyName: finn.no
+companyURL: https://finn.no
 logoURL: logos/finn.png
 shortTestimonial: |
   finn.no is an online classified ad site, and we use Haskell in

@@ -13,6 +13,7 @@ data Testimonial = Testimonial
   { companyName      :: String
   , logoURL          :: String
   , shortTestimonial :: String
+  , companyURL       :: String
   } deriving (Eq, Show, Generic)
 
 instance Binary Testimonial where
@@ -20,8 +21,9 @@ instance Binary Testimonial where
     put companyName
     put logoURL
     put shortTestimonial
+    put companyURL
 
-  get = Testimonial <$> get <*> get <*> get
+  get = Testimonial <$> get <*> get <*> get <*> get
 
 instance Writable Testimonial where
   write path Item{..} =

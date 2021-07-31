@@ -1,5 +1,6 @@
 ---
 companyName: Scarf
+companyURL: https://scarf.sh
 logoURL: logos/scarf.png
 shortTestimonial: |
   Haskell powers Scarf's backend, helping us move fast and not break

@@ -1,5 +1,6 @@
 ---
 companyName: IOHK
+companyURL: https://iohk.io
 logoURL: logos/iohk.png
 shortTestimonial: |
   Smart contract systems are largely about programming languages, 

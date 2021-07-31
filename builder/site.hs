@@ -109,4 +109,5 @@ testimonialContext =
   mconcat [ field "companyName" (pure . companyName . itemBody)
           , field "logoURL" (pure . logoURL . itemBody)
           , field "shortTestimonial" (pure . shortTestimonial . itemBody)
+          , field "companyURL" (pure . companyURL . itemBody)
           ]

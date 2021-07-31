@@ -1,5 +1,6 @@
 ---
 companyName: CentralApp
+companyURL: https://www.centralapp.com
 logoURL: logos/centralapp.png
 shortTestimonial: |
   We use Haskell... Because solving complex problems well requires the

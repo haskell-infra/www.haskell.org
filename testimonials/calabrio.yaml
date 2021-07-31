@@ -1,5 +1,6 @@
 ---
 companyName: Calabrio
+companyURL: https://www.calabrio.com/
 logoURL: logos/calabrio.png
 shortTestimonial: |
   At Calabrio we use Haskell to build our Customer Intelligence and
