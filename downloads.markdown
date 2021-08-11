@@ -33,8 +33,6 @@ Alternative methods to install GHC are listed [here](#ghc-install-manual).
 1. Install GHC, cabal-install and haskell-language-server via [GHCup](https://www.haskell.org/ghcup/)
 2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/)
 
-*Note: Apple Silicon is not yet supported. You will have to install GHC in `arch -x86_64` compatibility mode using rosetta. See [here](https://derflounder.wordpress.com/2020/11/17/installing-rosetta-2-on-apple-silicon-macs/) and [here](https://gitlab.haskell.org/haskell/ghcup-hs/-/issues/101) for more pointers.*
-
 ### Windows { #windows }
 
 1. Install GHC and cabal-install via Chocolatey
