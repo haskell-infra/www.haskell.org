@@ -16,35 +16,16 @@ This page describes the installation of the Haskell toolchain, which consists of
 
 *   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
 
-Select your platform to get more specific installation instructions:
-
-*   [Linux, OS X and FreeBSD](#linux-mac-freebsd)
-
-*   [Windows](#windows)
-
-Alternative methods to install GHC are listed [here](#ghc-install-manual).
-
-* * *
-
-## Platform specific instructions
-
-### Linux, OS X and FreeBSD { #linux-mac-freebsd }
+## Installation instructions
 
 1. Install GHC, cabal-install and haskell-language-server via [GHCup](https://www.haskell.org/ghcup/)
 2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/)
-
-### Windows { #windows }
-
-1. Install GHC and cabal-install via Chocolatey
-	- [Configure Chocolatey](https://chocolatey.org/install) on your machine
-	- At an elevated command prompt, run `choco install haskell-dev`, followed by `refreshenv`.
-2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows)
 
 * * *
 
 ## Alternative installation options { #ghc-install-manual }
 
-*   [Using a package manager on linux](#package-manager)
+*   [Using a package manager](#package-manager)
 
 *   [Official bindists](#bindists)
 
@@ -52,7 +33,9 @@ Alternative methods to install GHC are listed [here](#ghc-install-manual).
 
 *   [Other options](#other-options)
 
-### Using a package manager on Linux { #package-manager }
+### Using a package manager { #package-manager }
+
+#### Linux
 
 Refer to your distribution package manager documentation. For convenience, below are a few distribution specific instructions, outlining 3rd party repository use as well.
 
@@ -162,6 +145,11 @@ sudo emerge --ask dev-lang/ghc dev-haskell/cabal-install
 ```
 
 </div>
+
+#### Windows
+
+1. [Configure Chocolatey](https://chocolatey.org/install) on your machine
+2. At an elevated command prompt, run `choco install haskell-dev haskell-stack`, followed by `refreshenv`.
 
 ### Official bindists { #bindists }
 
