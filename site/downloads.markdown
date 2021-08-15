@@ -157,7 +157,7 @@ sudo emerge --ask dev-lang/ghc dev-haskell/cabal-install
 
 GHC bindists are binary packages built as part of the GHC release process and are guaranteed to have passed the test suite. The installation process is a bit manual, so this is meant for power users.
 
-The [GHC download page](https://www.haskell.org/ghc/download.html) gives an extensive overview of available options. Navigate to the version you seek and click on **Binary packages**. You may also visit [downloads.haskell.org/~ghc](https://downloads.haskell.org/~ghc/) for the complete list. Likewise, to install cabal-install manually visit [downloads.haskell.org/~cabal](https://downloads.haskell.org/~cabal/cabal-install-latest/).
+The [GHC download page](https://www.haskell.org/ghc/download.html) gives an extensive overview of available options. Navigate to the version you seek and click on **Binary packages**. You may also visit [downloads.haskell.org/~ghc](https://downloads.haskell.org/~ghc/) for the complete list. Likewise, to install cabal-install manually visit [downloads.haskell.org/~cabal](https://downloads.haskell.org/~cabal/cabal-install-latest/). Stack binaries can be found on [github.com/commercialhaskell/stack](https://github.com/commercialhaskell/stack/releases).
 
 Haskell-language-server binaries can be found [here](https://github.com/haskell/haskell-language-server/releases/).
 
