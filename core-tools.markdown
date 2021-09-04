@@ -278,13 +278,7 @@ World
 ```
 
 Stack users can also use this feature with `runghc` and `ghc` by replacing
-`ghci` in the command above, and cabal-install users can generate an
-environment file that will make `async` and `say` visible for GHC tools
-in the current directory using this command:
-
-```sh
-cabal install --lib async say --package-env .
-```
+`ghci` in the command above with the wanted command.
 
 Many more packages are waiting for you on [Hackage](https://hackage.haskell.org).
 
