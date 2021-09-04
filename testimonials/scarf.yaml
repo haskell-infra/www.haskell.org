@@ -1,0 +1,9 @@
+---
+companyName: Scarf
+companyURL: https://scarf.sh
+logoURL: logos/scarf.png
+shortTestimonial: |
+  Haskell powers Scarf's backend, helping us move fast and not break
+  things. It offers unparalleled maintainability, so we can quickly
+  and safely adapt our system to the moving target of customer
+  demands.

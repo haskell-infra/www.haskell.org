@@ -2,6 +2,8 @@
 
 This is the website for www.haskell.org built as a hakyll static site, which builds both as a nix derivation and a standalone cabal project. Issues with the site can be raised in this repository, and PRs can be made to change content. More general administrative issues with the site or related haskell.org infrastructure are better raised directly with the admin team on the #haskell-infrastructure channel on freenode, or at the admin@[LANGUAGE].org email address.
 
+* [The PR policy of this repository](https://github.com/haskell-org/committee/blob/main/proposals/0003-pr-process.md)
+
 ### Subsites
 
 Not all subsites of www.haskell.org are built from this repository.
@@ -76,3 +78,7 @@ You may then run the builder binary from the `result` directory:
 ```
 ./result/bin/haskell-org-site build
 ```
+
+### Deploying
+
+The site will automatically be deployed live to <http://www.haskell.org/> every time a branch is merged to `master`. Alternatively an admin for this GitHub repository can deploy the site by visiting the [Deploy workflow page](https://github.com/haskell-infra/www.haskell.org/actions/workflows/deploy.yml), clicking the "Run workflow" dropdown, choosing the branch to build and deploy, and clicking the "Run workflow" button.

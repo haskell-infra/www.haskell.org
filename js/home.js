@@ -54,3 +54,4 @@ function setupFeatures(){
       $this.find('.expand').hide();
   });
 }
+

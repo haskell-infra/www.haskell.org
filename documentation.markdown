@@ -6,7 +6,7 @@ isDocumentation: true
 
 # Documentation
 
-## Books for Learning Haskell
+## Introductory Books for Learning Haskell
 
 *   [Haskell from the Very Beginning](https://www.haskellfromtheverybeginning.com/)
 *   [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
@@ -14,12 +14,19 @@ isDocumentation: true
 *   [Haskell Programming from first principles](http://haskellbook.com)
 *   [Beginning Haskell](http://www.apress.com/9781430262503)
 *   [Thinking Functionally with Haskell](http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/thinking-functionally-haskell)
-*   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
 *   [Programming in Haskell](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
 *   [Haskell: The Craft of Functional Programming](http://www.haskellcraft.com/craft3e/Home.html)
 *   [The Haskell School of Music](http://euterpea.com/haskell-school-of-music/)
-*   [Developing Web Applications with Haskell and Yesod](http://www.yesodweb.com/book)
 *   [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell)
+
+## Intermediate Haskell Books
+
+*   [Developing Web Applications with Haskell and Yesod](http://www.yesodweb.com/book)
+*   [Functional Design and Architecture](https://www.manning.com/books/functional-design-and-architecture)
+*   [Haskell in Depth](https://www.manning.com/books/haskell-in-depth)
+*   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
+*   [Practical Haskell](https://www.apress.com/gp/book/9781484244791)
+*   [Production Haskell](https://leanpub.com/production-haskell)
 
 ## Courses
 
@@ -81,7 +88,6 @@ The Cabal guide is a good start but there's a lot to learn:
 Documentation for Haskell libraries is typically available on Hackage. We also have specialized tools for searching across it, not only by name, but by type.
 
 *   [Hoogle API Search](http://www.haskell.org/hoogle/)
-*   [Hayoo! API Search](http://hayoo.fh-wedel.de)
 *   [Hackage](http://hackage.haskell.org/)
 *   [Stackage (with API Search)](https://www.stackage.org)
 *   [The Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)

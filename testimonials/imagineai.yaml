@@ -1,0 +1,8 @@
+---
+companyName: Imagine AI
+companyURL: https://www.imagine.ai
+logoURL: logos/imagineai.png
+shortTestimonial: |
+  ImagineAI is a smart code generator written in Haskell that
+  instantly turns your app spec into clean Django and Node source
+  code.
