@@ -3,7 +3,7 @@ companyName: finn.no
 companyURL: https://finn.no
 logoURL: logos/finn.png
 shortTestimonial: |
-  finn.no is an online classified ad site, and we use Haskell in
+  FINN.no is an online classified ad site, and we use Haskell in
   production. It allows us to express business logic with focus on
   correctness and we benefit greatly from the safe and joyful
   refactoring Haskell brings.
