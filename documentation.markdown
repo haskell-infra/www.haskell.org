@@ -79,7 +79,6 @@ Manuals and guides that cover common Haskell tooling:
 The Cabal guide is a good start but there's a lot to learn:
 
 *   [Stephen Diehl's Cabal Quickstart](http://dev.stephendiehl.com/hask/#cabal)
-*   [An Introduction to Cabal Sandboxes](http://coldwa.st/e/blog/2013-08-20-Cabal-sandbox.html)
 *   [The Storage and Interpretation of Cabal Packages](http://www.vex.net/~trebla/haskell/sicp.xhtml)
 *   [The Cabal of Cabal](http://www.vex.net/~trebla/haskell/cabal-cabal.xhtml)
 
