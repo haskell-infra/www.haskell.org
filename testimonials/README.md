@@ -60,6 +60,6 @@ good and fits with the theme of the site.
 2. When possible, also provide an SVG file. This will allow us to resize the
    images losslessly if necessary.
 3. Prefer transparent backgrounds when possible.
-4. The file should be square. If the logo is not square, you should include
+4. The file should be a square of 300x300px. If the logo is not square, you should include
    transparent padding with your preferred alignment to get the file to be
    square.
