@@ -38,7 +38,7 @@ jobs:
             --quiet \
             --file . \
             linkchecker \
-            --extra-experimental-features nix-command
+            --extra-experimental-features nix-command \
             --command linkchecker built-site
 
 
