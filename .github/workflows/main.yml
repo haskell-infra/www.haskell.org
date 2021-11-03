@@ -39,7 +39,7 @@ jobs:
             --file . \
             linkchecker \
             --extra-experimental-features nix-command
-            --command linkchecker built-site \
+            --command linkchecker built-site
 
 
       - uses: actions/upload-artifact@v2
