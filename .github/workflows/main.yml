@@ -23,10 +23,24 @@ jobs:
 
       - name: Build Site
         # we run the checks as a separate step
-        run: nix build --verbose --print-build-logs --file . built -o built-site --arg doCheck false
+        run: >
+          nix build \
+            --verbose \
+            --print-build-logs \
+            --file . \
+            built -o built-site \
+            --arg doCheck false \
+            --extra-experimental-features nix-command
 
       - name: Check Links
-        run: nix run --quiet --file . linkchecker --command linkchecker built-site
+        run: >
+          nix shell \
+            --quiet \
+            --file . \
+            linkchecker \
+            --extra-experimental-features nix-command
+            --command linkchecker built-site \
+
 
       - uses: actions/upload-artifact@v2
         with:
