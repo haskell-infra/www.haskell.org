@@ -60,4 +60,4 @@ jobs:
           #   Value: The text of the ssh private key
           WWW_HASKELL_ORG_SSH_KEY: ${{ secrets.WWW_HASKELL_ORG_SSH_KEY }}
         run: |
-          nix run --quiet -f . lftp -c sh ./deploy.sh --DEPLOY-IT-LIVE
+          nix shell --quiet -f . lftp --extra-experimental-features nix-command -c sh ./deploy.sh --DEPLOY-IT-LIVE
