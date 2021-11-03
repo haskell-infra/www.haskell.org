@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Site
         # we run the checks as a separate step
-        run: nix build --verbose --print-build-logs --file . built -o built-site --arg doCheck false
+        run: nix-build --verbose --print-build-logs --file . built -o built-site --arg doCheck false
 
       - name: Check Links
         run: nix run --quiet --file . linkchecker --command linkchecker built-site

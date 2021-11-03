@@ -32,7 +32,7 @@ jobs:
       # couple of minutes.
       - name: Build Site
         # we run the checks as a separate step
-        run: nix build -f . built -o built-site --arg doCheck false
+        run: nix-build -f . built -o built-site --arg doCheck false
 
       - name: Check Links
         run: nix run --quiet -f . linkchecker -c linkchecker built-site
