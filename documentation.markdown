@@ -73,6 +73,7 @@ Manuals and guides that cover common Haskell tooling:
 *   [Haddock User Guide](https://haskell-haddock.readthedocs.io/)
 *   [Haskeleton: A Haskell Project Skeleton](http://taylor.fausak.me/2014/03/04/haskeleton-a-haskell-project-skeleton/)
 *   [How to Write a Haskell Program](https://wiki.haskell.org/How_to_write_a_Haskell_program)
+*   [GHC Developer's Guide](https://ghc.dev/)
 
 ## Package and Dependency Management
 
