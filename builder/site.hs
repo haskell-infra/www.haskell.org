@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
-{-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TupleSections     #-}
+{-# LANGUAGE TypeApplications  #-}
 import           Data.Aeson
 import qualified Data.ByteString.Lazy          as BL
 import           Data.Monoid                   ((<>))
@@ -64,6 +65,7 @@ main = mkContext >>= \ctx -> hakyll $ do
   match "templates/*" $
     compile templateCompiler
 
+  version "redirects" $ createRedirects haskellPlatformRedirects
 
 parseTestimonialCompiler :: Compiler (Item Testimonial)
 parseTestimonialCompiler = do
@@ -111,3 +113,14 @@ testimonialContext =
           , field "shortTestimonial" (pure . shortTestimonial . itemBody)
           , field "companyURL" (pure . companyURL . itemBody)
           ]
+
+haskellPlatformRedirects :: [(Identifier, String)]
+haskellPlatformRedirects = (, "/downloads") <$>
+    [ "platform/index.html"
+    , "platform/mac.html"
+    , "platform/linux.html"
+    , "platform/windows.html"
+    , "platform/prior.html"
+    , "platform/contents.html"
+    , "platform/download.html"
+    ]
