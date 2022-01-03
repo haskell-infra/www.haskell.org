@@ -16,7 +16,7 @@ import           Testimonial
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = mkContext >>= \ctx -> hakyll $ do
+main = mkContext >>= \ctx -> hakyllWith configuration $ do
   match "testimonials/logos/*" $ do
     route idRoute
     compile copyFileCompiler
@@ -64,6 +64,9 @@ main = mkContext >>= \ctx -> hakyll $ do
   match "templates/*" $
     compile templateCompiler
 
+
+configuration :: Configuration
+configuration = defaultConfiguration{ providerDirectory = "site" }
 
 parseTestimonialCompiler :: Compiler (Item Testimonial)
 parseTestimonialCompiler = do
