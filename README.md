@@ -1,6 +1,6 @@
 # Haskell.org Website
 
-This is the website for www.haskell.org built as a hakyll static site, which builds both as a nix derivation and a standalone cabal project. Issues with the site can be raised in this repository, and PRs can be made to change content. More general administrative issues with the site or related haskell.org infrastructure are better raised directly with the admin team on the #haskell-infrastructure channel on [libera.chat](https://libera.chat/), or at the admin@[LANGUAGE].org email address.
+This is the website for www.haskell.org built as a hakyll static site, which builds both as a nix derivation and a standalone cabal project. Issues with the site can be raised in this repository, and PRs can be made to change content. More general administrative issues with the site or related haskell.org infrastructure are better [raised directly with the admin team](https://github.com/haskell-infra/haskell-admins#the-team-and-how-to-contact-them).
 
 * [The PR policy of this repository](https://github.com/haskell-org/committee/blob/main/proposals/0003-pr-process.md)
 
