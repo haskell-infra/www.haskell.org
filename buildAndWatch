@@ -27,9 +27,8 @@ function buildAndWatchWithoutNix() {
 
     pushd builder
     cabal v2-build
-    builderPath=$(find dist-newstyle -name 'haskell-org-site' -type f)
+    builder=$(cabal v2-exec -- which haskell-org-site)
     popd
-    builder="./builder/${builderPath}"
 
     if [[ ! -x "${builder}" ]]; then
         cat <<EOF
