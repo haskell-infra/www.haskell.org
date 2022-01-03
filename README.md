@@ -10,7 +10,6 @@ Not all subsites of www.haskell.org are built from this repository.
 Some of the others are
 
 * www.haskell.org/cabal (built from [cabal-website](https://github.com/haskell/cabal-website))
-* www.haskell.org/platform (built from [haskell-platform](https://github.com/haskell/haskell-platform/tree/master/website))
 * www.haskell.org/ghcup (build from [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www)
 
 ### Contributing Changes
