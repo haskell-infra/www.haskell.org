@@ -60,7 +60,7 @@ name of the executable. From the builder directory, you can find the executable
 path by running:
 
 ```
-find dist-newstyle -name 'haskell-org-site' -type f
+cabal v2-exec -- which haskell-org-site
 ```
 
 Using that path, you can run the builder from the project root directory.
