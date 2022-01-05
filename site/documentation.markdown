@@ -27,7 +27,7 @@ Resources marked with \[$$\] require payment.
 *   \[$$\] [Functional Design and Architecture](https://www.manning.com/books/functional-design-and-architecture)
 *   \[$$\] [Haskell in Depth](https://www.manning.com/books/haskell-in-depth)
 *   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
-*   \{$$\] [Practical Haskell](https://www.apress.com/gp/book/9781484244791)
+*   \[$$\] [Practical Haskell](https://www.apress.com/gp/book/9781484244791)
 *   \[$$\] [Production Haskell](https://leanpub.com/production-haskell)
 
 ## Courses
