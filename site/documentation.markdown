@@ -6,7 +6,7 @@ isDocumentation: true
 
 # Documentation
 
-Resources marked with \[$$\] are paid.
+Resources marked with \[$$\] require payment.
 
 ## Introductory Books for Learning Haskell
 
@@ -54,7 +54,7 @@ Short, dense, classic ways to hit the ground running
 ## Online Resources
 
 Curated resources put together by Haskellers:
- 
+
 *   [The Haskell Wiki](http://wiki.haskell.org)
 *   [The Haskell Wikibook](http://en.wikibooks.org/wiki/Haskell)
 *   [FP Complete's School of Haskell](https://www.schoolofhaskell.com/)
