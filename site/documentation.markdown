@@ -6,7 +6,9 @@ isDocumentation: true
 
 # Documentation
 
-Resources marked with \[$$\] require payment.
+This page lists various resources to help you with Haskell. Resources marked with \[$$\] require payment.
+
+If you are new to Haskell and are not sure where to start from, we recommend [CIS194](https://www.seas.upenn.edu/~cis194/spring13/lectures.html). CIS194 is the introductory Haskell course of the University of Pennsylvania; it is free, thorough, practical and will guide you from the basics to advanced features of the language.
 
 ## Introductory Books for Learning Haskell
 
