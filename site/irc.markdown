@@ -8,7 +8,7 @@ isCommunity: true
 
 The IRC channel can be an excellent place to learn more about Haskell, and to just keep in the loop on new things in the Haskell world. Many new developments in the Haskell world first appear on the IRC channel. Haskell channels have been moving from freenode and are now mainly established on [libera.chat](https://libera.chat).
 
-Point your IRC client to `irc.libera.chat:6697 (TLS)` and then join the `#haskell` channel. Check the [guides](https://libera.chat/guides) for more connection information.
+Point your IRC client to `irc.libera.chat:6697 (TLS)` and then join the `#haskell` channel (or [connect via your web browser](https://web.libera.chat/#haskell)). Check the [guides](https://libera.chat/guides) for more connection information.
 
 ## Logs
 
