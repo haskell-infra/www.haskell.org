@@ -22,6 +22,7 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 *   \[$$\] [Haskell: The Craft of Functional Programming](http://www.haskellcraft.com/craft3e/Home.html)
 *   \[$$\] [The Haskell School of Music](http://euterpea.com/haskell-school-of-music/)
 *   \[$$\] [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell)
+*   [Learn Haskell by building a blog generator](https://lhbg-book.link)
 
 ## Intermediate Haskell Books
 
