@@ -21,7 +21,7 @@ This page describes the installation of the Haskell toolchain, which consists of
 *for Linux, macOS, FreeBSD, Windows or WSL2*
 
 1. Install GHC, cabal-install and haskell-language-server via [GHCup](https://www.haskell.org/ghcup/)
-2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/)
+2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/) *(N.B. stack does not support FreeBSD)*
 
 * * *
 
