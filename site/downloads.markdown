@@ -41,11 +41,11 @@ This page describes the installation of the Haskell toolchain, which consists of
 
 Refer to your distribution package manager documentation. For convenience, below are a few distribution specific instructions, outlining 3rd party repository use as well.
 
-*Note: Most linux distros don't allow different versions of GHC to be installed in parallel. Sometimes the GHC packages are a bit outdated as well. In either case, consider using [GHCup](#ghcup) instead.*
+*Note: Most Linux distros don't allow different versions of GHC to be installed in parallel. Sometimes the GHC packages are a bit outdated as well. In either case, consider using [GHCup](#ghcup) instead.*
 
 *Note: haskell-language-server isn't packaged by most distributions. Instead you will have to install it manually, see the [release page](https://github.com/haskell/haskell-language-server/releases), unless you use VSCode, which bootstraps everything automatically. This is optional.*
 
-<p><a data-toggle="collapse" href="#collapse-linux" class="btn btn-xs btn-primary">Show linux distros</a></p>
+<p><a data-toggle="collapse" href="#collapse-linux" class="btn btn-xs btn-primary">Show Linux distros</a></p>
 
 <div id="collapse-linux" class="collapse">
 ##### <span style="text-decoration: underline">Ubuntu</span>
