@@ -16,7 +16,7 @@ This page describes the installation of the Haskell toolchain, which consists of
 
 *   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
 
-## Installation instructions
+## Installation instructions { #ghcup }
 
 *for Linux, macOS, FreeBSD, Windows or WSL2*
 
