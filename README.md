@@ -6,7 +6,7 @@ This is the website for www.haskell.org built as a hakyll static site, which bui
 
 ### Contributing Changes
 
-The easiest way to make changes is to use the `buildAndWatch` script and then
+The easiest way to see the effect of your changes is to use the `buildAndWatch` script and then
 point your web browser to [http://localhost:8000](http://localhost:8000). When
 you are finished editing or want to re-build the hakyll part of the site, you
 can stop the script by pressing `Control+c` (`C-c`).
