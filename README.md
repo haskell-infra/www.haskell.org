@@ -1,7 +1,7 @@
 # Haskell.org Website
 
 This repository holds the source code and content for
-[www.haskell.org](http://www.haskell.org).  Issues with the site can
+[www.haskell.org](http://www.haskell.org).  Questions about and issues with the site can
 be raised in this repository, and PRs can be made to change
 content. More general administrative issues with the site or related
 haskell.org infrastructure are better [raised directly with the admin
