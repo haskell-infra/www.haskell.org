@@ -16,6 +16,20 @@ repository.  See [the list of other subsites](#subsites) below.
 The website is built as a hakyll static site, which builds both as a
 nix derivation and a standalone cabal project.
 
+### Community contributions
+
+We welcome contributions from the community.  To see which things we
+need particular help with, please see the [community contributions
+meta-ticket](https://github.com/haskell-infra/www.haskell.org/issues/177).
+
+If you have your own idea for a change you would like to see you are
+welcome to [submit a
+PR](https://github.com/haskell-infra/www.haskell.org/pulls). Before
+you start work on your idea you might like to [file a new
+issue](https://github.com/haskell-infra/www.haskell.org/issues/new) to
+discuss it with the maintainers to get an estimate for how likely it
+is to be accepted.
+
 ### Making Changes
 
 The easiest way to see the effect of your changes is to use the `buildAndWatch` script and then
