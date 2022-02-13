@@ -74,7 +74,7 @@ You may then run the builder binary from the `result` directory:
 
 The site will automatically be deployed live to <http://www.haskell.org/> every time a branch is merged to `master`. Alternatively an admin for this GitHub repository can deploy the site by visiting the [Deploy workflow page](https://github.com/haskell-infra/www.haskell.org/actions/workflows/deploy.yml), clicking the "Run workflow" dropdown, choosing the branch to build and deploy, and clicking the "Run workflow" button.
 
-### Subsites
+# Subsites
 
 Not all subsites of www.haskell.org are built from this repository.
 Some of the others are
@@ -99,7 +99,7 @@ Some of the others are
 | [`onlinereport/`](https://www.haskell.org/nhc98/) | | Haskell Prime committee | [Details](#details-onlinereport) |
 | [`tutorial/`](https://www.haskell.org/tutorial/) | | | [Details](#details-tutorial) |
 
-#### Details on subsites
+## Details on subsites
 
 * <a name="details-cabal"></a>
   `cabal/`
