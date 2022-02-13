@@ -1,10 +1,20 @@
 # Haskell.org Website
 
-This is the website for www.haskell.org built as a hakyll static site, which builds both as a nix derivation and a standalone cabal project. Issues with the site can be raised in this repository, and PRs can be made to change content. More general administrative issues with the site or related haskell.org infrastructure are better [raised directly with the admin team](https://github.com/haskell-infra/haskell-admins#the-team-and-how-to-contact-them).
+This repository holds the source code and content for
+[www.haskell.org](http://www.haskell.org).  Issues with the site can
+be raised in this repository, and PRs can be made to change
+content. More general administrative issues with the site or related
+haskell.org infrastructure are better [raised directly with the admin
+team](https://github.com/haskell-infra/haskell-admins#the-team-and-how-to-contact-them).
 
 * [The PR policy of this repository](https://github.com/haskell-org/committee/blob/main/proposals/0003-pr-process.md)
 
-### Contributing Changes
+## Developing the website
+
+The website is built as a hakyll static site, which builds both as a
+nix derivation and a standalone cabal project.
+
+### Making Changes
 
 The easiest way to see the effect of your changes is to use the `buildAndWatch` script and then
 point your web browser to [http://localhost:8000](http://localhost:8000). When
@@ -18,6 +28,8 @@ for you.
 If you want to change the `builder`, or if you encounter an error where your
 changes to the content aren't being picked up, need to stop the script and
 re-start it.
+
+### Submitting Changes
 
 Once you're satisfied with your changes, make a PR and the maintainers will try
 to review it as soon as we can.
