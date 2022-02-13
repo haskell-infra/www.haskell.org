@@ -6,6 +6,8 @@ be raised in this repository, and PRs can be made to change
 content. More general administrative issues with the site or related
 haskell.org infrastructure are better [raised directly with the admin
 team](https://github.com/haskell-infra/haskell-admins#the-team-and-how-to-contact-them).
+Not everything beneath `www.haskell.org` is generated from this
+repository.  See [the list of other subsites](#subsites) below.
 
 * [The PR policy of this repository](https://github.com/haskell-org/committee/blob/main/proposals/0003-pr-process.md)
 
@@ -86,6 +88,7 @@ You may then run the builder binary from the `result` directory:
 
 The site will automatically be deployed live to <http://www.haskell.org/> every time a branch is merged to `master`. Alternatively an admin for this GitHub repository can deploy the site by visiting the [Deploy workflow page](https://github.com/haskell-infra/www.haskell.org/actions/workflows/deploy.yml), clicking the "Run workflow" dropdown, choosing the branch to build and deploy, and clicking the "Run workflow" button.
 
+<a id="subsites"></a>
 # Subsites
 
 Not all subsites of www.haskell.org are built from this repository.
