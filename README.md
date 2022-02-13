@@ -9,8 +9,6 @@ team](https://github.com/haskell-infra/haskell-admins#the-team-and-how-to-contac
 Not everything beneath `www.haskell.org` is generated from this
 repository.  See [the list of other subsites](#subsites) below.
 
-* [The PR policy of this repository](https://github.com/haskell-org/committee/blob/main/proposals/0003-pr-process.md)
-
 ## Developing the website
 
 The website is built as a Hakyll static site, which builds both as a
@@ -28,7 +26,9 @@ PR](https://github.com/haskell-infra/www.haskell.org/pulls). Before
 you start work on your idea you might like to [file a new
 issue](https://github.com/haskell-infra/www.haskell.org/issues/new) to
 discuss it with the maintainers to get an estimate for how likely it
-is to be accepted.
+is to be accepted.  PRs are accepted according to [the PR policy of
+this
+repository](https://github.com/haskell-org/committee/blob/main/proposals/0003-pr-process.md).
 
 ### Making Changes
 
