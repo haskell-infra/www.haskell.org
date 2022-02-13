@@ -13,7 +13,7 @@ repository.  See [the list of other subsites](#subsites) below.
 
 ## Developing the website
 
-The website is built as a hakyll static site, which builds both as a
+The website is built as a Hakyll static site, which builds both as a
 nix derivation and a standalone cabal project.
 
 ### Community contributions
@@ -34,7 +34,7 @@ is to be accepted.
 
 The easiest way to see the effect of your changes is to use the `buildAndWatch` script and then
 point your web browser to [http://localhost:8000](http://localhost:8000). When
-you are finished editing or want to re-build the hakyll part of the site, you
+you are finished editing or want to re-build the Hakyll part of the site, you
 can stop the script by pressing `Control+c` (`C-c`).
 
 If you are only making changes to the content of the site, you can leave this
