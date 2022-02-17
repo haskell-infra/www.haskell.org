@@ -23,6 +23,7 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 *   \[$$\] [The Haskell School of Music](http://euterpea.com/haskell-school-of-music/)
 *   \[$$\] [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell)
 *   [Learn Haskell by building a blog generator](https://lhbg-book.link)
+*   \[$$\] [Effective Haskell (beta)](https://www.pragprog.com/titles/rshaskell/effective-haskell/)
 
 ## Intermediate Haskell Books
 
