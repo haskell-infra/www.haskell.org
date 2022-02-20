@@ -71,7 +71,7 @@ Curated resources put together by Haskellers:
 
 Manuals and guides that cover common Haskell tooling:
 
-*   [GHC User Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/)
+*   [GHC User's Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/)
 *   [Cabal Homepage And Quick Links](https://www.haskell.org/cabal/)
 *   [Cabal User Guide](http://www.haskell.org/cabal/users-guide/)
 *   [Stack User Guide](https://docs.haskellstack.org/)
@@ -99,9 +99,7 @@ Documentation for Haskell libraries is typically available on Hackage. We also h
 
 ## Language Report
 
-The Haskell 2010 language report is available online [here](//haskell.org/onlinereport/haskell2010/).
-
-A PDF version is available [here](//haskell.org/definition/haskell2010.pdf).
+The Haskell 2010 language report is available online as [HTML](https://haskell.org/onlinereport/haskell2010/) and as [PDF](https://haskell.org/definition/haskell2010.pdf).
 
 It can also be downloaded as a git repository:
 
@@ -109,4 +107,4 @@ It can also be downloaded as a git repository:
 $$ git clone -b h2010 https://github.com/haskell/haskell-report
 ```
 
-The differences between GHC and the report can be found in the GHC User Guide [here](http://www.haskell.org/ghc/docs/latest/html/users_guide/bugs.html#haskell-standards-vs-glasgow-haskell-language-non-compliance).
+The differences between GHC and the report can be found [in the GHC User's Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/bugs.html#haskell-standards-vs-glasgow-haskell-language-non-compliance).
