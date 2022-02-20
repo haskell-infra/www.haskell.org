@@ -108,3 +108,5 @@ It can also be downloaded as a git repository:
 ```
 $$ git clone -b h2010 https://github.com/haskell/haskell-report
 ```
+
+The differences between GHC and the report can be found in the GHC User Guide [here](http://www.haskell.org/ghc/docs/latest/html/users_guide/bugs.html#haskell-standards-vs-glasgow-haskell-language-non-compliance).
