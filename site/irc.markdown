@@ -10,10 +10,6 @@ The IRC channel can be an excellent place to learn more about Haskell, and to ju
 
 Point your IRC client to `irc.libera.chat:6697 (TLS)` and then join the `#haskell` channel (or [connect via your web browser](https://web.libera.chat/#haskell)). Check the [guides](https://libera.chat/guides) for more connection information.
 
-## Logs
-
-Plain text logs for #haskell are available at [tunes](http://tunes.org/~nef/logs/haskell/).
-
 ## Related channels
 
 <div class="table">
