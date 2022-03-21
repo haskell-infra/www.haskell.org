@@ -12,7 +12,7 @@ Point your IRC client to `irc.libera.chat:6697 (TLS)` and then join the `#haskel
 
 ## Logs
 
-Plain text logs for #haskell are available at [tunes](http://tunes.org/~nef/logs/haskell/).
+Plain text logs for #haskell from before the move to libera.chat (2021) are available at [tunes](http://tunes.org/~nef/logs/haskell/).
 
 ## Related channels
 
