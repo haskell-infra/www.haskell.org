@@ -149,6 +149,8 @@ Some of the others are
 * <a name="details-alex"></a>
   `alex/`
 
+  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
+
 * <a name="details-communities"></a>
   `communities/`
 
@@ -166,6 +168,8 @@ Some of the others are
 
 * <a name="details-happy"></a>
   `happy/`
+
+  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
 
 * <a name="details-haskell-workshop"></a>
   `haskell-workshop/`
