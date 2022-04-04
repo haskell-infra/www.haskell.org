@@ -12,7 +12,7 @@ This page describes the installation of the Haskell toolchain, which consists of
 
 *   [cabal-install](https://cabal.readthedocs.io): the Cabal installation tool for managing Haskell software
 
-*   [stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
+*   [Stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
 
 *   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
 
@@ -21,7 +21,7 @@ This page describes the installation of the Haskell toolchain, which consists of
 *for Linux, macOS, FreeBSD, Windows or WSL2*
 
 1. Install GHC, cabal-install and haskell-language-server via [GHCup](https://www.haskell.org/ghcup/)
-2. To install stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/) *(N.B. stack does not support FreeBSD)*
+2. To install Stack, follow the instructions [here](https://docs.haskellstack.org/en/stable/install_and_upgrade/) *(N.B. Stack does not support FreeBSD)*
 
 * * *
 
@@ -61,17 +61,17 @@ sudo apt-get install -y cabal-install-XXX ghc-YYY
 
 Packages are installed into `/opt/ghc/bin` and `/opt/cabal/bin`
 
-Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#ubuntu).
+Steps to setup Stack are [on the Stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#ubuntu).
 
 ##### <span style="text-decoration: underline">Debian</span>
 
 Steps to setup ghc and cabal are given in the [ghc debian apt repository](https://downloads.haskell.org/~debian/)
 
-Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
+Steps to setup Stack are [on the Stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
 
 ##### <span style="text-decoration: underline">Fedora</span>
 
-GHC, cabal-install and stack are in the official Fedora repos, to install:
+GHC, cabal-install and Stack are in the official Fedora repos, to install:
 
 `sudo dnf install ghc cabal-install`
 
