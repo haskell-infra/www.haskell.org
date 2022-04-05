@@ -148,7 +148,11 @@ Some of the others are
 
 * <a name="details-alex"></a>
   `alex/`
-
+  
+  Owned by the Alex maintainers.
+  Source at https://github.com/haskell/alex/blob/master/www/index.html.
+  Last update: 6 April 2022.
+  
   See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
 
 * <a name="details-communities"></a>
