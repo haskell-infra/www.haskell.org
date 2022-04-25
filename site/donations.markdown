@@ -16,9 +16,9 @@ A significant part of the Haskell community infrastructure—like Hackage, Hoogl
   
     > Haskell.org, Inc. c/o Ryan Trinkle, Treasurer
     >
-    > P.O. Box 1206
+    > 2093 Philadelphia Pike #8119
     >
-    > New York, NY 10159-1206
+    > Claymont, DE 19703
   
   * [Amazon Smile][smile], where you can select Haskell.org to receive 0.5% of your eligible Amazon purchases ([more details][smile-details]).
   
