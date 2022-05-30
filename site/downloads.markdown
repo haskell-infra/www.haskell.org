@@ -70,6 +70,22 @@ Alternatively, many operating systems provide GHC, cabal and Stack through their
 #### Arch
 
 **Do not use the Haskell development tools provided by Arch, they are broken.** For more information see [[1]](https://dixonary.co.uk/blog/haskell/cabal-2020) [[2]](https://stackoverflow.com/questions/65643699/what-is-the-suggested-way-of-setting-up-haskell-on-archlinux/65644318#65644318).
+</div>
+
+<p><a data-toggle="collapse" href="#collapse-nixos" class="btn btn-xs btn-primary">Show Nix/NixOS instructions</a></p>
+
+<div id="collapse-nixos" class="collapse">
+<!-- This installation method is owned by @maralorn -->
+
+*for Nix the package manager on the distribution NixOS and other OS*
+
+* **Using ghcup on NixOS does not work.** Use the official packages instead.
+* You can get started by installing
+    [GHC](https://search.nixos.org/packages?show=ghc&type=packages&query=ghc),
+    [Haskell Language Server](https://search.nixos.org/packages?show=haskell-language-server&type=packages&query=haskell-language-server) and
+    [cabal-install](https://search.nixos.org/packages?show=cabal-install&type=packages&query=cabal-install) (or
+    [Stack](https://search.nixos.org/packages?show=stack&type=packages&query=stack)) via Nix.
+* Read the [documentation](https://haskell4nix.readthedocs.io/nixpkgs-users-guide.html#how-to-create-a-development-environment) to learn more about development environments and packaging for Haskell with Nix.
 
 </div>
 
