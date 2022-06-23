@@ -39,6 +39,7 @@ Plain text logs for #haskell from before the move to libera.chat (2021) are avai
 | #haskell-se | Swedish speakers |
 | #haskell-tw | Chinese speakers (mainly in Taiwan) |
 | #haskell-vn | Vietnamese speakers |
+| #haskell-beginners | A quieter channel for beginner Haskell questions |
 | #haskell-blah | Haskell people talking about anything except Haskell itself |
 | #haskell-docs | The chatroom for coordinating contributions to the documentation |
 | #haskell-game | The hub for Haskell-based game development |
@@ -50,6 +51,7 @@ Plain text logs for #haskell from before the move to libera.chat (2021) are avai
 | #haskell-overflow | Overflow conversations |
 | #haskell-web | Friendly, practical discussion of haskell web app/framework/server development |
 | #haskell-language-server | Haskell lsp based ide |
+| #numerical-haskell | For the larger numerical Haskell community |
 
 </div>
 
@@ -75,6 +77,7 @@ Plain text logs for #haskell from before the move to libera.chat (2021) are avai
 | #diagrams | Diagrams EDSL |
 | #disciplined | The Disciplined Disciple Compiler (DDC) |
 | #hackage | Haskell's software distribution infrastructure |
+| #haskell-beam | Beam interface to relational databases |
 | #haskell-lens | Lens discussions |
 | #happs | Happstack web framework |
 | #tasty | Tasty test framework |
