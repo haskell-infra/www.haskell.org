@@ -101,12 +101,4 @@ Documentation for Haskell libraries is typically available on Hackage. We also h
 
 ## Language Report
 
-The Haskell 2010 language report is available online as [HTML](https://haskell.org/onlinereport/haskell2010/) and as [PDF](https://haskell.org/definition/haskell2010.pdf).
-
-It can also be downloaded as a git repository:
-
-```
-$$ git clone -b h2010 https://github.com/haskell/haskell-report
-```
-
-The differences between GHC and the report can be found [in the GHC User's Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/bugs.html#haskell-standards-vs-glasgow-haskell-language-non-compliance).
+The Haskell 2010 language report is available online as [HTML](https://haskell.org/onlinereport/haskell2010/) and as [PDF](https://haskell.org/definition/haskell2010.pdf). The [source is available on GitHub](https://github.com/haskell/haskell-report). The differences between GHC and the report can be found [in the GHC User's Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/bugs.html#haskell-standards-vs-glasgow-haskell-language-non-compliance).
