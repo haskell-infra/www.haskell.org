@@ -4,7 +4,7 @@ page: start-coding
 isSetUp: true
 ---
 
-## Set up a local development environment in three steps
+## Install development environment in three steps
 
 A Haskell development environment consist in:
 
