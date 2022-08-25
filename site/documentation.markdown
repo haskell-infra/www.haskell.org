@@ -12,9 +12,10 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 
 ## Introductory Books for Learning Haskell
 
-*   \[$$\] [Haskell from the Very Beginning](https://www.haskellfromtheverybeginning.com/)
 *   [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
 *   [Real World Haskell](http://book.realworldhaskell.org/)
+*   [Learn Haskell by building a blog generator](https://lhbg-book.link)
+*   \[$$\] [Haskell from the Very Beginning](https://www.haskellfromtheverybeginning.com/)
 *   \[$$\] [Haskell Programming from first principles](http://haskellbook.com)
 *   \[$$\] [Beginning Haskell](http://www.apress.com/9781430262503)
 *   \[$$\] [Thinking Functionally with Haskell](http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/thinking-functionally-haskell)
@@ -22,16 +23,15 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 *   \[$$\] [Haskell: The Craft of Functional Programming](http://www.haskellcraft.com/craft3e/Home.html)
 *   \[$$\] [The Haskell School of Music](http://euterpea.com/haskell-school-of-music/)
 *   \[$$\] [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell)
-*   [Learn Haskell by building a blog generator](https://lhbg-book.link)
 *   \[$$\] [Effective Haskell (beta)](https://www.pragprog.com/titles/rshaskell/effective-haskell/)
 *   \[$$\] [Haskell: Uma introdução à programação funcional (PT-BR)](https://www.casadocodigo.com.br/products/livro-haskell)
 
 ## Intermediate Haskell Books
 
 *   [Developing Web Applications with Haskell and Yesod](http://www.yesodweb.com/book)
+*   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
 *   \[$$\] [Functional Design and Architecture](https://www.manning.com/books/functional-design-and-architecture)
 *   \[$$\] [Haskell in Depth](https://www.manning.com/books/haskell-in-depth)
-*   [Parallel and Concurrent Programming in Haskell](https://simonmar.github.io/pages/pcph.html)
 *   \[$$\] [Practical Haskell](https://www.apress.com/gp/book/9781484244791)
 *   \[$$\] [Production Haskell](https://leanpub.com/production-haskell)
 
