@@ -4,6 +4,13 @@ page: downloads
 isDownloads: true
 ---
 
+<div class="bs-callout bs-callout-info" style="padding: 0px 0px 10px 20px">
+  <p>
+    <h4>Psssst!</h4>
+    Looking to get started with Haskell? If so, check out the [Get Started](/get-started) page!
+  </p>
+</div>
+
 # Downloads
 
 ## Recommended installation instructions
