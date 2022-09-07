@@ -10,7 +10,7 @@ A Haskell development environment consists of:
 
 - a compiler (`ghc`)
 - a language server (`hls`)
-- a building tool (`cabal` and/or `stack`)
+- a build tool (`cabal` and/or `stack`)
 - an editor compatible with the language server protocol.
 
 It is recommended to use `ghcup` to manage your haskell toolchain and `vscode` as your editor.
