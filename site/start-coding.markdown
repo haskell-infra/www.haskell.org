@@ -1,5 +1,5 @@
 ---
-title: Start Coding now
+title: Start Coding Now
 page: start-coding
 isSetUp: true
 ---
@@ -21,6 +21,10 @@ It is recommended to use `ghcup` to manage your haskell toolchain and `vscode` a
 
 ## Try without installing Haskell
 
-If you don't want to install the Haskell toolchain locally, you have a ready-to-use environment in Gitpod.
+If you don't want to install the Haskell toolchain locally, you can:
+
+- Try it in the [Haskell Playground](https://play-haskell.tomsmeding.com/)
+
+- Use a complete visual studio code environment in Gitpod.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-haskell)
