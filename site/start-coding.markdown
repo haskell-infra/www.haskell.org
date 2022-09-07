@@ -6,7 +6,7 @@ isSetUp: true
 
 ## Install a development environment in three steps
 
-A Haskell development environment consist in:
+A Haskell development environment consists of:
 
 - a compiler (`ghc`)
 - a language server (`hls`)
