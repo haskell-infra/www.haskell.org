@@ -3,5 +3,6 @@ companyName: Mercury
 companyURL: https://mercury.com
 logoURL: logos/mercury.png
 shortTestimonial: |
-  Mercury is a bank for businesses. We use Haskell to meet our
-  customers' high standards for correctness and security.
+  Mercury offers banking for startups — at any size or stage. We use
+  Haskell to meet our customers' high standards for correctness and
+  security.
