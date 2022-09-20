@@ -28,3 +28,7 @@ If you don't want to install the Haskell toolchain locally, you can:
 - Use a complete visual studio code environment in Gitpod.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-haskell)
+
+## Learn Haskell
+
+Now you are ready to code. Pick up a learning resource from the [documentation page](/documentation/) and start to learn Haskell. Also is recommended to familiarize with the build tool of your choice and the library ecosystem. Check out sections [Manuals and guides](/documentation/#manuals-and-guides) and [Library Documentation](/documentation/#library-documentation) for this purpose.
