@@ -31,4 +31,4 @@ If you don't want to install the Haskell toolchain locally, you can:
 
 ## Learn Haskell
 
-Now you are ready to code. Pick up a learning resource from the [documentation page](/documentation/) and start to learn Haskell. Also is recommended to familiarize with the build tool of your choice and the library ecosystem. Check out sections [Manuals and guides](/documentation/#manuals-and-guides) and [Library Documentation](/documentation/#library-documentation) for this purpose.
+Now you are ready to code. Pick up a learning resource from the [documentation page](/documentation/) and start to learn Haskell. Also, you may want to familiarize yourself with the build tool of your choice and the library ecosystem. Check out sections [Manuals and guides](/documentation/#manuals-and-guides) and [Library Documentation](/documentation/#library-documentation) for this purpose.
