@@ -77,7 +77,7 @@ Alternatively, many operating systems provide GHC, cabal and Stack through their
 <div id="collapse-nixos" class="collapse">
 <!-- This installation method is owned by @maralorn -->
 
-*for Nix the package manager on the distribution NixOS and other OS*
+*For Nix the package manager on the distribution NixOS and other OS:*
 
 * **Using ghcup on NixOS does not work.** Use the official packages instead.
 * You can get started by installing
