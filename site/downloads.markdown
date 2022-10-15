@@ -6,13 +6,6 @@ isDownloads: true
 
 # Downloads
 
-This page describes the installation of the Haskell toolchain, which consists of the following tools:
-
-*   [GHC](https://www.haskell.org/ghc/): the Glasgow Haskell Compiler
-*   [cabal-install](https://cabal.readthedocs.io): the Cabal installation tool for managing Haskell software
-*   [Stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
-*   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
-
 ## Recommended installation instructions
 
 *for Linux, macOS, FreeBSD, Windows or WSL2*
@@ -21,7 +14,16 @@ This page describes the installation of the Haskell toolchain, which consists of
 
 * * *
 
-### Via native OS package manager
+### Find out more about the Haskell toolchain
+
+The Haskell toolchain consists of the following tools:
+
+*   [GHC](https://www.haskell.org/ghc/): the Glasgow Haskell Compiler
+*   [cabal-install](https://cabal.readthedocs.io): the Cabal installation tool for managing Haskell software
+*   [Stack](https://docs.haskellstack.org): a cross-platform program for developing Haskell projects
+*   [haskell-language-server](https://github.com/haskell/haskell-language-server) (optional): A language server for developers to integrate with their editor/IDE
+
+### Installation via native OS package manager
 
 Alternatively, many operating systems provide GHC, cabal and Stack through their native package manager.  The packages are often out-of-date but if you prefer to use this method of installation then you will find useful links below.
 
