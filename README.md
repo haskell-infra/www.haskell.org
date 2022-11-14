@@ -120,7 +120,6 @@ Some of the others are
 | [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
 | [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
 | [`definition/`](https://www.haskell.org/definition/) | | Haskell Prime committee | [Details](#details-definition) |
-| [`happy/`](https://www.haskell.org/happy/) | | Happy maintainers | [Details](#details-happy) |
 | [`haskell-workshop/`](https://www.haskell.org/haskell-workshop/) | | Haskell Symposium organisers | [Details](#details-haskell-workshop) |
 | [`hugs/`](https://www.haskell.org/hugs/) | | | [Details](#details-hugs) |
 | [`nhc98/`](https://www.haskell.org/nhc98/) | | York Functional Programming Group | [Details](#details-nhc98) |
@@ -159,11 +158,6 @@ Some of the others are
 
 * <a name="details-haddock"></a>
   `haddock/`
-
-* <a name="details-happy"></a>
-  `happy/`
-
-  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
 
 * <a name="details-haskell-workshop"></a>
   `haskell-workshop/`
