@@ -117,7 +117,6 @@ Some of the others are
 | [`haddock/`](https://www.haskell.org/haddock/) | Redirect | Haddock maintainers | [Details](#details-haddock) |
 | [`haskell-symposium/`](https://www.haskell.org/haskell-symposium/) | | Haskell Symposium organisers | |
 | [`platform/`](https://www.haskell.org/platform/) | Redirect | | |
-| [`alex/`](https://www.haskell.org/alex/) | | Alex maintainers | [Details](#details-alex) |
 | [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
 | [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
 | [`definition/`](https://www.haskell.org/definition/) | | Haskell Prime committee | [Details](#details-definition) |
@@ -145,15 +144,6 @@ Some of the others are
   `ghc-perf/`
 
   Same as https://perf.haskell.org
-
-* <a name="details-alex"></a>
-  `alex/`
-  
-  Owned by the Alex maintainers.
-  Source at https://github.com/haskell/alex/blob/master/www/index.html.
-  Last update: 6 April 2022.
-  
-  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
 
 * <a name="details-communities"></a>
   `communities/`

@@ -36,6 +36,10 @@ main = mkContext >>= \ctx -> hakyllWith configuration $ do
     route   idRoute
     compile copyFileCompiler
 
+  match "alex/**" $ do
+    route   idRoute
+    compile copyFileCompiler
+
   match "css/*" $ do
     route   idRoute
     compile compressCssCompiler
