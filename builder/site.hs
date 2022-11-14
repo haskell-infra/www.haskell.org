@@ -35,8 +35,12 @@ main = mkContext >>= \ctx -> hakyllWith configuration $ do
   match "img/*" $ do
     route   idRoute
     compile copyFileCompiler
-
+    
   match "happy/**" $ do
+    route   idRoute
+    compile copyFileCompiler
+
+  match "alex/**" $ do
     route   idRoute
     compile copyFileCompiler
 
