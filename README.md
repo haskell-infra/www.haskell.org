@@ -117,9 +117,11 @@ Some of the others are
 | [`haddock/`](https://www.haskell.org/haddock/) | Redirect | Haddock maintainers | [Details](#details-haddock) |
 | [`haskell-symposium/`](https://www.haskell.org/haskell-symposium/) | | Haskell Symposium organisers | |
 | [`platform/`](https://www.haskell.org/platform/) | Redirect | | |
+| [`alex/`](https://www.haskell.org/alex/) | Redirect | Alex maintainers | [Details](#details-alex) |
 | [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
 | [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
 | [`definition/`](https://www.haskell.org/definition/) | | Haskell Prime committee | [Details](#details-definition) |
+| [`happy/`](https://www.haskell.org/happy/) | Redirect | Happy maintainers | [Details](#details-happy) |
 | [`haskell-workshop/`](https://www.haskell.org/haskell-workshop/) | | Haskell Symposium organisers | [Details](#details-haskell-workshop) |
 | [`hugs/`](https://www.haskell.org/hugs/) | | | [Details](#details-hugs) |
 | [`nhc98/`](https://www.haskell.org/nhc98/) | | York Functional Programming Group | [Details](#details-nhc98) |
@@ -144,6 +146,11 @@ Some of the others are
 
   Same as https://perf.haskell.org
 
+* <a name="details-alex"></a>
+  Redirect to https://haskell-alex.readthedocs.io
+
+  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
+
 * <a name="details-communities"></a>
   `communities/`
 
@@ -157,7 +164,12 @@ Some of the others are
   the same owners as [`onlinereport`](#details-onlinereport).
 
 * <a name="details-haddock"></a>
-  `haddock/`
+  Redirect to https://haskell-haddock.readthedocs.io
+
+* <a name="details-happy"></a>
+  Redirect to https://haskell-happy.readthedocs.io
+
+  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
 
 * <a name="details-haskell-workshop"></a>
   `haskell-workshop/`
