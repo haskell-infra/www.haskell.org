@@ -101,7 +101,7 @@ Haskell Hackathons are a long tradition, with lots of learning and social exchan
 *   [Industrial Haskell Group](http://industry.haskell.org/)
 *   [Commercial Haskell Group](http://commercialhaskell.com/)
 *   [DataHaskell: data science, machine learning, numerical computation and related](http://www.datahaskell.org/)
-*   [Haskell Art](http://lurk.org/groups/haskell-art/)
+*   [Haskell Art](https://we.lurk.org/mailman3/lists/haskell-art.we.lurk.org/)
 
 ## Supporting the Community
 
