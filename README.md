@@ -125,7 +125,7 @@ Some of the others are
 | [`haskell-workshop/`](https://www.haskell.org/haskell-workshop/) | | Haskell Symposium organisers | [Details](#details-haskell-workshop) |
 | [`hugs/`](https://www.haskell.org/hugs/) | | | [Details](#details-hugs) |
 | [`nhc98/`](https://www.haskell.org/nhc98/) | | York Functional Programming Group | [Details](#details-nhc98) |
-| [`onlinereport/`](https://www.haskell.org/nhc98/) | | Haskell Prime committee | [Details](#details-onlinereport) |
+| [`onlinereport/`](https://www.haskell.org/onlinereport/) | | Haskell Prime committee | [Details](#details-onlinereport) |
 | [`tutorial/`](https://www.haskell.org/tutorial/) | | | [Details](#details-tutorial) |
 
 ## Details on subsites
@@ -147,6 +147,8 @@ Some of the others are
   Same as https://perf.haskell.org
 
 * <a name="details-alex"></a>
+  `alex/`
+
   Redirect to https://haskell-alex.readthedocs.io
 
   See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
@@ -164,9 +166,13 @@ Some of the others are
   the same owners as [`onlinereport`](#details-onlinereport).
 
 * <a name="details-haddock"></a>
+  `haddock/`
+
   Redirect to https://haskell-haddock.readthedocs.io
 
 * <a name="details-happy"></a>
+  `happy/`
+
   Redirect to https://haskell-happy.readthedocs.io
 
   See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
