@@ -83,7 +83,7 @@ The Haskell.org committee was [initially formed in November 2010](https://mail.h
 > To resolve who is responsible for haskell.org’s infrastructure development, open nominations were held to form a haskell.org committee, based on representatives from the open source Haskell community.
 
 [discourse]: https://discourse.haskell.org
-[email]: mailto:committeee@haskell.org
+[email]: mailto:committee@haskell.org
 [Hackage]: https://hackage.haskell.org/
 [Hoogle]: https://hoogle.haskell.org/
 [GHC]: https://www.haskell.org/ghc/
