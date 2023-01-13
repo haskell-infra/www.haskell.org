@@ -45,6 +45,8 @@ Course material created by instructors
 *   [Stanford's cs240h](http://www.scs.stanford.edu/14sp-cs240h/)
 *   [Hendrix's CSCI 360](http://ozark.hendrix.edu/~yorgey/360/f16/)
 *   [University of Helsinki's Haskell MOOC](https://haskell.mooc.fi/)
+*   [University of Nottingham's introductory Haskell course](http://www.cs.nott.ac.uk/~pszgmh/pgp.html)
+*   [University of Nottingham's advanced Haskell course](http://www.cs.nott.ac.uk/~pszgmh/afp.html)
 
 ## Tutorials
 
