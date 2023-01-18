@@ -41,10 +41,10 @@ The Haskell.org Committee serves as the board of directors for Haskell.org. Its 
 
 The committee consists of 7 members serving 3-year terms. The current members are:
 
+  * Rebecca Skinner (term ends 2025)
+  * Théophile "Hécate" Choutri (term ends 2025)
+  * Aaron Allen (term ends 2025)
   * Tom Ellis (term ends 2024)
-  * Jasper Van der Jeugt (Chair) (term ends 2022)
-  * Rebecca Skinner (term ends 2022)
-  * Alexandre Garcia de Oliveira (term ends 2022)
   * Ida Bzowska (term ends 2023)
   * Ryan Trinkle (term ends 2023)
   * Tikhon Jelvis (term ends 2023)
