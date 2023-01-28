@@ -27,7 +27,7 @@ The Haskell toolchain consists of the following tools:
 
 Alternatively, many operating systems provide GHC, cabal and Stack through their native package manager.  The packages are often out-of-date but if you prefer to use this method of installation then you will find useful links below.
 
-<p><a data-toggle="collapse" href="#collapse-linux" class="btn btn-xs btn-primary">Show Linux distros</a></p>
+<p><a data-toggle="collapse" href="#collapse-linux" class="btn btn-xs">Show Linux distros</a></p>
 
 <div id="collapse-linux" class="collapse">
 
@@ -73,7 +73,7 @@ Alternatively, many operating systems provide GHC, cabal and Stack through their
 **Do not use the Haskell development tools provided by Arch, they are broken.** For more information see [[1]](https://dixonary.co.uk/blog/haskell/cabal-2020) [[2]](https://stackoverflow.com/questions/65643699/what-is-the-suggested-way-of-setting-up-haskell-on-archlinux/65644318#65644318).
 </div>
 
-<p><a data-toggle="collapse" href="#collapse-nixos" class="btn btn-xs btn-primary">Show Nix/NixOS instructions</a></p>
+<p><a data-toggle="collapse" href="#collapse-nixos" class="btn btn-xs">Show Nix/NixOS instructions</a></p>
 
 <div id="collapse-nixos" class="collapse">
 <!-- This installation method is owned by @maralorn -->
@@ -92,7 +92,7 @@ Alternatively, many operating systems provide GHC, cabal and Stack through their
 
 </div>
 
-<p><a data-toggle="collapse" href="#collapse-freebsd" class="btn btn-xs btn-primary">Show FreeBSD packages</a></p>
+<p><a data-toggle="collapse" href="#collapse-freebsd" class="btn btn-xs">Show FreeBSD packages</a></p>
 
 <div id="collapse-freebsd" class="collapse">
 
@@ -102,7 +102,7 @@ Alternatively, many operating systems provide GHC, cabal and Stack through their
   [Stack](https://www.freshports.org/devel/stack/)
 </div>
 
-<p><a data-toggle="collapse" href="#collapse-windows" class="btn btn-xs btn-primary">Show Windows packages</a></p>
+<p><a data-toggle="collapse" href="#collapse-windows" class="btn btn-xs">Show Windows packages</a></p>
 
 <div id="collapse-windows" class="collapse">
 
