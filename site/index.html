@@ -5,22 +5,27 @@ isHome: true
 ---
 <div class="header">
    <div class=" container ">
-      <div class=" row ">
-         <div class=" span12 col-sm-12 hidden-xs"><br></div>
+      <div class="row">
+         <div class=" span12 col-sm-12 hidden-xs"><br><br></div>
+      </div>
+      <div class="row" style="display: flex; align-items: center">
          <div class=" span6 col-md-6">
             <div class="branding">
-               <br class="hidden-xs"><img src="/img/haskell-logo.svg" class="img-responsive">
+               <br class="hidden-xs">
+               <img src="/img/haskell-logo.svg" class="img-responsive">
                <h4 class="summary">An advanced, purely functional programming language</h4>
             </div>
          </div>
          <div class=" span6 col-md-6">
-            <div class="branding sample">
-               <br class="visible-xs visible-sm">
-               <h4 class="tag">Declarative, statically typed code.</h4>
-               <div title="This example is contrived in order to demonstrate what Haskell looks like, including: (1) where syntax, (2) enumeration syntax, (3) pattern matching, (4) consing as an operator, (5) list comprehensions, (6) infix functions. Don&#39;t take it seriously as an efficient prime number generator." class="code-sample">
-                  <pre><span class='hs-definition'>primes</span> <span class='hs-keyglyph'>=</span> <span class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span class='hs-num'>2</span><span class='hs-keyglyph'>..</span><span class='hs-keyglyph'>]</span>
-  <span class='hs-keyword'>where</span> <span class='hs-varid'>filterPrime</span> <span class='hs-layout'>(</span><span class='hs-varid'>p</span><span class='hs-conop'>:</span><span class='hs-varid'>xs</span><span class='hs-layout'>)</span> <span class='hs-keyglyph'>=</span>
-          <span class='hs-varid'>p</span> <span class='hs-conop'>:</span> <span class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span class='hs-varid'>x</span> <span class='hs-keyglyph'>|</span> <span class='hs-varid'>x</span> <span class='hs-keyglyph'>&lt;-</span> <span class='hs-varid'>xs</span><span class='hs-layout'>,</span> <span class='hs-varid'>x</span> <span class='hs-varop'>`mod`</span> <span class='hs-varid'>p</span> <span class='hs-varop'>/=</span> <span class='hs-num'>0</span><span class='hs-keyglyph'>]</span></pre>
+            <div class="row" id="code-example">
+               <div class="branding sample">
+                  <br class="visible-xs visible-sm">
+                  <h4 class="tag">Declarative, statically typed code.</h4>
+                  <div title="This example is contrived in order to demonstrate what Haskell looks like, including: (1) where syntax, (2) enumeration syntax, (3) pattern matching, (4) consing as an operator, (5) list comprehensions, (6) infix functions. Don&#39;t take it seriously as an efficient prime number generator." class="code-sample">
+                     <pre><span class='hs-definition'>primes</span> <span class='hs-keyglyph'>=</span> <span class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span class='hs-num'>2</span><span class='hs-keyglyph'>..</span><span class='hs-keyglyph'>]</span>
+      <span class='hs-keyword'>where</span> <span class='hs-varid'>filterPrime</span> <span class='hs-layout'>(</span><span class='hs-varid'>p</span><span class='hs-conop'>:</span><span class='hs-varid'>xs</span><span class='hs-layout'>)</span> <span class='hs-keyglyph'>=</span>
+              <span class='hs-varid'>p</span> <span class='hs-conop'>:</span> <span class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span class='hs-varid'>x</span> <span class='hs-keyglyph'>|</span> <span class='hs-varid'>x</span> <span class='hs-keyglyph'>&lt;-</span> <span class='hs-varid'>xs</span><span class='hs-layout'>,</span> <span class='hs-varid'>x</span> <span class='hs-varop'>`mod`</span> <span class='hs-varid'>p</span> <span class='hs-varop'>/=</span> <span class='hs-num'>0</span><span class='hs-keyglyph'>]</span></pre>
+                  </div>
                </div>
             </div>
             <div class="row" id="get-started-button">
@@ -35,7 +40,13 @@ isHome: true
       </div>
    </div>
 </div>
-<br><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
+
+<br>
+<br class="hidden-sm">
+<br class="hidden-sm">
+<br class="hidden-xs hidden-sm">
+<br class="hidden-xs hidden-sm">
+
 <div class="pattern-bg">
    <div class=" container ">
       <div class=" row ">
@@ -63,7 +74,13 @@ isHome: true
       </div>
    </div>
 </div>
+
 <br>
+<br class="hidden-sm">
+<br class="hidden-sm">
+<br class="hidden-xs hidden-sm">
+<br class="hidden-xs hidden-sm">
+
 <div id="community-wrapper">
    <div class="videos">
       <div class=" container ">
