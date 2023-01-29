@@ -5,7 +5,10 @@ isGettingStarted: true
 ---
 
 # Get started
-Welcome, new Haskeller! Read on to quickly set up your Haskell dev environment, execute your first lines of code, and get directions for further learning!
+
+Welcome, new Haskeller!
+
+Read on to quickly set up your Haskell dev environment, execute your first lines of code, and get directions for further learning.
 
 ## Content
   - [Set up Haskell dev environment](#set-up-haskell-dev-environment)
@@ -18,42 +21,42 @@ Welcome, new Haskeller! Read on to quickly set up your Haskell dev environment, 
 
 ## Set up Haskell dev environment
 
-Complete Haskell dev environment consists of Haskell toolchain (compiler, language server, build tool) and editor with good haskell support. The quickest way to get this set up is to:
+A complete Haskell dev environment consists of the Haskell toolchain (compiler, language server, build tool) and an editor with good Haskell support. The quickest way to get this set up is to:
 
-1. Use GHCup to install and manage Haskell toolchain.
-2. Use VSCode as the editor, with the Haskell extension installed.
+1. Use **GHCup** to install and manage Haskell toolchain.
+2. Use **VSCode** as the editor, with the Haskell extension installed.
 
 ### GHCup: universal installer
 
 [GHCup](https://www.haskell.org/ghcup/#) is a universal installer for Haskell that will install for you everything you need to program in Haskell, and then will also help you manage those installations in the future (update, switch versions, ...).
 
-Follow instructions at [GHCup webpage](https://www.haskell.org/ghcup/#) to install GHCup. Then, use it to install the Haskell Toolchain, which consists of:
+Follow the instructions on the [GHCup webpage](https://www.haskell.org/ghcup/#) to install GHCup. Then use it to install the Haskell Toolchain, which consists of:
 
-1. **GHC** -> Haskell compiler. We will use it below to run our examples, but in practice, you will mostly be using a build tool like `cabal` or `Stack` to build your code, instead of `GHC` directly.
-2. **HLS** -> Haskell Language Server -> You won't use this directly, instead your code editor will use it in the background to provide you with a great experience while editing Haskell code.
-3. **cabal** -> Haskell build tool -> You will use this to structure your Haskell projects, build them, run them, define dependencies, ...
-4. **Stack** -> Haskell build tool -> alternative to `cabal`
+1. **GHC** -> The Haskell compiler -> We will use it below to run our examples, but in practice, you will mostly be using a build tool like Cabal or Stack to build your code, instead of GHC directly.
+2. **HLS** -> The Haskell Language Server -> You won't use this directly, instead your code editor will use it in the background to provide you with a great experience while editing Haskell code.
+3. **Cabal** -> A Haskell build tool -> You will use this to structure your Haskell projects, build them, run them, define dependencies, ... .
+4. **Stack** -> A Haskell build tool -> An alternative to Cabal.
 
 
 <div class="bs-callout bs-callout-info">
   <p>
-    <h4>cabal and Stack -> which one should I install?</h4>
-    We recommend installing both. Most Haskell projects can be built using Cabal, but some might require Stack. Installing both guarantees that you can use either, and while following the tutorial/book you can use whatever they recommend.
+    <h4>Cabal and Stack -> which one should I install?</h4>
+    We recommend installing both. Most Haskell projects can be built using Cabal, but some might require Stack. Installing both guarantees that you can use either, and while following a tutorial or book you can use whatever they recommend.
   </p>
 </div>
 
 ### Editor
-**Visual Studio Code** is a popular choice with well supported editor integration. Install the [Haskell extension](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) and you are all set. It should work out of the box and use your installation of HLS.
+**Visual Studio Code** is a popular choice with well-supported Haskell integration. Install the [Haskell extension](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) and you are all set. It should work out of the box and use your installation of HLS.
 
 To learn about support for other editors, check out [HLS docs for editor configuration](https://haskell-language-server.readthedocs.io/en/latest/configuration.html#configuring-your-editor).
 
-## Running first lines of code
+## Running your first lines of code
 
 We have everything set up, let's use it!
 
-`GHC` brings an interactive interpreter called `GHCi` together with it, which is great for playing with Haskell and trying things out, so let's give it a spin.
+The Haskell compiler, GHC, comes with an interactive interpreter called GHCi which is great for playing with Haskell and trying things out, so let's give it a spin.
 
-Run `ghci`, which should start a new prompt for you.
+Run `ghci` at your command prompt, which will start a new GHCi prompt for you.
 
 Let's do a simple calculation to check Haskell's computing capabilities:
 ```
