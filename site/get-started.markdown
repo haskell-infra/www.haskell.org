@@ -103,7 +103,7 @@ By participating in the Haskell community you be able to ask for help and learn 
 
  - [Haskell Discourse](https://discourse.haskell.org/)
  - [Haskell subreddit](https://www.reddit.com/r/haskell/)
- - [https://wiki.haskell.org/IRC_channel](https://wiki.haskell.org/IRC_channel)
+ - [IRC](https://www.haskell.org/irc/)
 
 We recommend joining right now, and don't be shy to ask for help! Check [https://www.haskell.org/community](https://www.haskell.org/community) for a full list of resources relating to the Haskell community.
 
