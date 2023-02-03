@@ -4629,7 +4629,7 @@ pre .hs-keyglyph {
   .glider,.glider-contain{margin:0 auto;position:relative;}
   .glider,.glider-track{transform:translateZ(0)}
   .glider-dot,.glider-next,.glider-prev{border:0;padding:0;user-select:none;outline:0}
-  .glider-contain{width:100%}
+  .glider-contain{width:100%;overflow-x: hidden;}
   .glider{overflow:auto;scrollbar-width: none; overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:none; justify-content: space-between; display: flex;
     align-items: flex-start;}
   .glider-track{width:100%;margin:0;padding:0;display:flex;z-index:1}
