@@ -18,9 +18,6 @@ let
       ] ./.;
     buildInputs = [ builder pkgs.linkchecker ];
 
-    LOCALE_ARCHIVE = "${pkgs.glibcLocales}/lib/locale/locale-archive";
-    LC_ALL = "C.UTF-8";
-
     buildPhase = ''
       ${builder}/bin/haskell-org-site build
     '';
