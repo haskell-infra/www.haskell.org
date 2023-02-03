@@ -26,7 +26,7 @@ A complete Haskell development environment consists of the Haskell toolchain (co
 
 ### GHCup: universal installer
 
-[GHCup](https://www.haskell.org/ghcup/#) is a universal installer for Haskell that will install everything you need to program in Haskell, and will help you manage those installations (update, switch versions, ...). Follow the instructions on the [GHCup webpage](https://www.haskell.org/ghcup/#) to install GHCup. Then use it to install the Haskell toolchain, which consists of:
+[GHCup](https://www.haskell.org/ghcup/#) is a universal installer for Haskell that will install everything you need to program in Haskell, and will help you manage those installations (update, switch versions, ...). GHCup does not require root/admin access. Follow the instructions on the [GHCup webpage](https://www.haskell.org/ghcup/#) to install GHCup. Then use it to install the Haskell toolchain, which consists of:
 
 1. **GHC** (The Haskell compiler) We will use GHC below to run our examples, but in practice you will mostly use a tool like Cabal or Stack to build your code, instead of GHC directly.
 2. **HLS** (The Haskell Language Server) You won't use HLS directly, instead your code editor will use it in the background to provide you with a great experience while editing Haskell code.
