@@ -283,13 +283,26 @@
 	    }, 0);
 	});
 
+    //helper function to figure out new character added to input
+    difference = function(value1, value2) {
+        var output = [];
+        for (i = 0; i < value2.length; i++) {
+            if (value1[i] !== value2[i]) {
+                output.push(value2[i]);
+            }
+        }
+        return output.join("");
+    }
+
 	////////////////////////////////////////////////////////////////////////
 	// Handle key hit before translation
 	// For picking up control characters like up/left/down/right
 
 	typer.keydown(function(e){
+        typer.oldValue = typer.val();
+        oldValue = typer.val();
 	    cancelKeyPress = 0;
-	    var keyCode = e.keyCode;
+        var keyCode = e.which || e.code;
 	    // C-c: cancel the execution
 	    if(e.ctrlKey && keyCode == 67) {
 		cancelKeyPress = keyCode;
@@ -311,12 +324,7 @@
 		    return false;
 		}
 	    }
-	});
 
-	////////////////////////////////////////////////////////////////////////
-	// Handle key press
-	typer.keypress(function(e){
-	    var keyCode = e.keyCode || e.which;
 	    if (isIgnorableKey(e)) {
 		return false;
 	    }
@@ -326,17 +334,15 @@
 	    }
 	    if (acceptInput && cancelKeyPress != keyCode && keyCode >= 32){
 		if (cancelKeyPress) return false;
-		if (
-		    typeof config.charInsertTrigger == 'undefined' || (
-			typeof config.charInsertTrigger == 'function' &&
-			    config.charInsertTrigger(keyCode,promptText)
-		    )
-		){
-		    typer.consoleInsert(keyCode);
-		}
 	    }
-	    if (isWebkit) return false;
 	});
+
+    //after input event get new string, figure out the difference and add the character to the typer.
+    typer.on("input", function(e) {
+        var newValue = typer.val();
+        typer.consoleInsert(difference(typer.oldValue, newValue));
+        typer.val("");
+    })
 
 	function isIgnorableKey(e) {
 	    // for now just filter alt+tab that we receive on some platforms when
