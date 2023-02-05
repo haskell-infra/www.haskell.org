@@ -1,11 +1,12 @@
 --------------------------------------------------------------------------------
-{-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TypeApplications  #-}
 import           Data.Aeson
 import qualified Data.ByteString.Lazy          as BL
 import           Data.Monoid                   ((<>))
 import           Data.Time.Calendar
 import           Data.Time.Clock
+import qualified GHC.IO.Encoding               as Encoding
 import           Hakyll
 import           Hakyll.Core.Compiler
 import           Hakyll.Core.Compiler.Internal
@@ -13,56 +14,58 @@ import           Hakyll.Core.Provider
 import           System.FilePath.Posix
 import           Testimonial
 
-
 --------------------------------------------------------------------------------
 main :: IO ()
-main = mkContext >>= \ctx -> hakyllWith configuration $ do
-  match "testimonials/logos/*" $ do
-    route idRoute
-    compile copyFileCompiler
+main = do
+  Encoding.setLocaleEncoding Encoding.utf8
+  ctx <- mkContext
+  hakyllWith configuration $ do
+    match "testimonials/logos/*" $ do
+      route idRoute
+      compile copyFileCompiler
 
-  match "testimonials/*.yaml" $ do
-    compile parseTestimonialCompiler
+    match "testimonials/*.yaml" $ do
+      compile parseTestimonialCompiler
 
-  create ["testimonials.json"] $ do
-    route idRoute
-    compile $ do
-      testimonials <- loadAll @Testimonial "testimonials/*.yaml"
-      item <- (makeItem . BL.unpack . encode . map itemBody) testimonials
-      saveSnapshot "_final" item
-      pure item
+    create ["testimonials.json"] $ do
+      route idRoute
+      compile $ do
+        testimonials <- loadAll @Testimonial "testimonials/*.yaml"
+        item <- (makeItem . BL.unpack . encode . map itemBody) testimonials
+        saveSnapshot "_final" item
+        pure item
 
-  match "img/*" $ do
-    route   idRoute
-    compile copyFileCompiler
+    match "img/*" $ do
+      route   idRoute
+      compile copyFileCompiler
 
-  match "css/*" $ do
-    route   idRoute
-    compile compressCssCompiler
+    match "css/*" $ do
+      route   idRoute
+      compile compressCssCompiler
 
-  match "js/*" $ do
-    route   idRoute
-    compile copyFileCompiler
+    match "js/*" $ do
+      route   idRoute
+      compile copyFileCompiler
 
-  match "index.html" $ do
-    route idRoute
-    compile $ do
-      testimonials <- loadAll @Testimonial "testimonials/*.yaml"
-      let
-        indexCtx = listField "testimonials" testimonialContext (pure testimonials) `mappend`
-                   ctx
-      defCompiler indexCtx
+    match "index.html" $ do
+      route idRoute
+      compile $ do
+        testimonials <- loadAll @Testimonial "testimonials/*.yaml"
+        let
+          indexCtx = listField "testimonials" testimonialContext (pure testimonials) `mappend`
+                     ctx
+        defCompiler indexCtx
 
-  match ("**/*.markdown" .||. "*.markdown") $ do
-    route cleanRoute
-    compile $ mdCompiler ctx
+    match ("**/*.markdown" .||. "*.markdown") $ do
+      route cleanRoute
+      compile $ mdCompiler ctx
 
-  match "*.pdf" $ do
-    route   idRoute
-    compile copyFileCompiler
+    match "*.pdf" $ do
+      route   idRoute
+      compile copyFileCompiler
 
-  match "templates/*" $
-    compile templateCompiler
+    match "templates/*" $
+      compile templateCompiler
 
 
 configuration :: Configuration
