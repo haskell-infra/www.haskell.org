@@ -66,7 +66,7 @@ Curated resources put together by Haskellers:
 *   [The Haskell Wiki](http://wiki.haskell.org)
 *   [The Haskell Wikibook](http://en.wikibooks.org/wiki/Haskell)
 *   [FP Complete's School of Haskell](https://www.schoolofhaskell.com/)
-*   [Stephen Diehl's What I Wish I Knew When Learning Haskell](http://dev.stephendiehl.com/hask/)
+*   [Stephen Diehl's What I Wish I Knew When Learning Haskell](https://web.archive.org/web/20220513191346/http://dev.stephendiehl.com/hask/)
 *   [Chris Allen's List of Learning Haskell Resources](https://github.com/bitemyapp/learnhaskell)
 *   [Bob Ippolito's Getting Started with Haskell](http://bob.ippoli.to/archives/2013/01/11/getting-started-with-haskell/)
 *   [Albert Y.C. Lai's Haskell Notes and Examples](http://www.vex.net/~trebla/haskell/index.xhtml)
@@ -88,7 +88,7 @@ Manuals and guides that cover common Haskell tooling:
 
 The Cabal guide is a good start but there's a lot to learn:
 
-*   [Stephen Diehl's Cabal Quickstart](http://dev.stephendiehl.com/hask/#cabal)
+*   [Stephen Diehl's Cabal Quickstart](https://web.archive.org/web/20220513191346/http://dev.stephendiehl.com/hask/#cabal)
 *   [The Storage and Interpretation of Cabal Packages](http://www.vex.net/~trebla/haskell/sicp.xhtml)
 *   [The Cabal of Cabal](http://www.vex.net/~trebla/haskell/cabal-cabal.xhtml)
 
