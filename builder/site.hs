@@ -56,6 +56,12 @@ main = do
                      ctx
         defCompiler indexCtx
 
+    let redirects = [ ("humor/index.html", "https://wiki.haskell.org/Humor")
+                    , ("hat/index.html", "https://wiki.haskell.org/Hat")
+                    , ("development/views.html", "http://web.archive.org/web/20040107202217/http://haskell.org/development/views.html")
+                    ]
+    version "redirects" $ createRedirects redirects
+
     match ("**/*.markdown" .||. "*.markdown") $ do
       route cleanRoute
       compile $ mdCompiler ctx
