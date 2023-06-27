@@ -3395,6 +3395,9 @@ a.badge:hover, a.badge:focus {
     word-wrap: break-word;
   }
 
+a.thumbnail {
+  /* No text-decoration for <a> tags in thumbnails */
+  text-decoration: none; }
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
