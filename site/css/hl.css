@@ -275,7 +275,7 @@ textarea {
 
 a {
   color: #9E358F;
-  text-decoration: underline dotted; }
+  text-decoration: underline ; }
   a:hover, a:focus {
     color: #65225b;
     text-decoration: underline; }
