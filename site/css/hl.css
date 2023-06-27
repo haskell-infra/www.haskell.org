@@ -2032,6 +2032,9 @@ select[multiple].input-lg,
     -webkit-box-shadow: none;
     box-shadow: none; }
 
+a.btn {
+  /* No text-decoration for <a> tags in buttons */
+  text-decoration: none; }
 a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none; }
@@ -2762,6 +2765,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
+      text-decoration: none; /* No text-decoration for <a> tags in navbars */
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
