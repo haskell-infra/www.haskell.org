@@ -27,6 +27,7 @@ Haskellers are active on a number of online areas, but the most busy are below:
 *   [Haskell Weekly e-mail newsletter](https://haskellweekly.news/)
 *   [Haskell Gitter Community Chat](https://gitter.im/haskell-chat)
 *   [Haskell Communities and Activities Report](https://wiki.haskell.org/Haskell_Communities_and_Activities_Report)
+*   [Kbin](https://kbin.social/m/haskell)
 
 ## In-person Groups and Meetups
 
