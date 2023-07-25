@@ -63,10 +63,8 @@
             36: moveToStart,
             // return
             13: commandTrigger,
-            // tab
+            // alt
             18: doNothing,
-            // tab
-            9: doComplete
         };
         var ctrlCodes = {
             // C-a
@@ -198,7 +196,6 @@
         };
 
         var focusConsole = function() {
-            inner.addClass('jquery-console-focus');
             typer.focus();
         };
 
@@ -283,6 +280,12 @@
             inner.addClass('jquery-console-nofocus');
         });
 
+        // Handle receiving focus, helpful now that we can use keyboard to navigate to element
+        typer.focus(function() {
+            inner.removeClass('jquery-console-nofocus');
+            inner.addClass('jquery-console-focus');
+        })
+
         ////////////////////////////////////////////////////////////////////////
         // Bind to the paste event of the input box so we know when we
         // get pasted data
@@ -320,6 +323,12 @@
                 cancelExecution();
                 return false;
             }
+            // Handle tab key
+            if (keyCode == 9) {
+                typer.blur();
+                return true
+            }
+            
             if (acceptInput) {
                 if (e.shiftKey && keyCode in shiftCodes) {
                     cancelKeyPress = keyCode;
