@@ -46,6 +46,10 @@ main = do
     match "js/*" $ do
       route   idRoute
       compile copyFileCompiler
+    
+    match "fonts/*" $ do
+      route   idRoute
+      compile copyFileCompiler
 
     match "index.html" $ do
       route idRoute
