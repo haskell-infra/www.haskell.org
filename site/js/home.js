@@ -1,57 +1,26 @@
 // Main entry point
-$(function(){
-  //setupVids();
-  //setupFeatures();
-
-  $('.features .col-md-6').click(function(){
-    $(this).find('.collapse').collapse('toggle');
-  });
+$(function () {
+  handleFeaturesCollapse();
 });
 
-// Setup hovering of video thumbnails
-function setupVids(){
-  var $community = $('.community');
-  var $videos = $('.videos');
-  var $tagline = $('#tagline');
-  var $videoDesc = $('#video-description');
-  var $videoAnchor = $('#video-anchor');
-  var $videoView = $('#video-view');
-  var originalBackground = $community.css('background');
+function handleFeaturesCollapse() {
+  // Allows the area/wrapper around feature copy to toggle collapse,
+  // not just the expand link as set in the markup
+  // https://getbootstrap.com/docs/4.0/components/collapse/#via-data-attributes
+  $(".features .col-md-6").click(function () {
+    $(this).find(".collapse").collapse("toggle");
+  });
 
-  $videoDesc.hide();
-  // To keep a consistent height between transitions
-  $videoDesc.css('height',$tagline.height());
+  const ELEMENT_SHOWN_EVENT = "shown.bs.collapse";
+  const ELEMENT_HIDDEN_EVENT = "hidden.bs.collapse";
 
-  $('.vid-thumbnail').each(function(){
-    var $this = $(this);
-    var title = $this.attr('title');
-    var href = $this.attr('href');
-    $this.click(select);
-    function select(){
-      $videos.find('.current').removeClass('current');
-      $this.addClass('current');
-      $videoAnchor.text(title);
-      $videoAnchor.attr('href',href);
-      $videoView.attr('href',href);
-      $tagline.hide();
-      $videoDesc.show();
-      $community.css('background','#111111');
-      return false;
-    }
+  $(".collapse").on(ELEMENT_HIDDEN_EVENT, function () {
+    const featureSelector = $(this).context.id;
+    $(`.features a[href="#${featureSelector}"]`).text("Show more");
+  });
+
+  $(".collapse").on(ELEMENT_SHOWN_EVENT, function () {
+    const featureSelector = $(this).context.id;
+    $(`.features a[href="#${featureSelector}"]`).text("Show less");
   });
 }
-
-// Expandable features
-function setupFeatures(){
-  $('.features .span6').each(function(){
-    var $this = $(this);
-    $this.click(function(){
-      $this.find('.expandable').slideToggle(function(){
-        $this.find('.expand').slideToggle('fast');
-      });
-    });
-    if ($this.find('.expandable').size() == 0)
-      $this.find('.expand').hide();
-  });
-}
-
