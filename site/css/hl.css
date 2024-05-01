@@ -294,6 +294,17 @@ img {
   max-width: 100%;
   height: auto; }
 
+.uwu-visible {
+  display: none; }
+
+.uwu .uwu-visible,.uwu-hidden {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.uwu .uwu-hidden {
+  display: none; }
+
 .img-rounded {
   border-radius: 6px; }
 
