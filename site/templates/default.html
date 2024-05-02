@@ -27,13 +27,13 @@
                   localStorage.setItem('uwu', true);
                   
                   document.documentElement.classList.add('uwu');
-                  console.log('uwu mode enabled. turn off with ?uwu=false')
-                  console.log('logo credit to @sawaratsuki1004 via https://github.com/SAWARATSUKI/ServiceLogos');
+                  console.log('alternative logo enabled. turn off with ?uwu=false')
+                  console.log('logo credit to @sawaratsuki1004 via https://github.com/SAWARATSUKI/ServiceLogos. Slightly tweaked by @Tritlo');
                 } else {
                   localStorage.removeItem('uwu', false);
                 }
               } else if (preferredUwu) {
-                document.documentElement.classList.add('uwu');
+                document.documentElement.classList.add('alternative-logo');
               }
             } catch (err) { }
           })();
