@@ -294,15 +294,15 @@ img {
   max-width: 100%;
   height: auto; }
 
-.uwu-visible {
+.alternative-logo-visible {
   display: none; }
 
-.uwu .uwu-visible,.uwu-hidden {
+.alternative-logo .alternative-logo-visible,.alternative-logo-hidden {
   display: block;
   max-width: 100%;
   height: auto; }
 
-.uwu .uwu-hidden {
+.alternative-logo .alternative-logo-hidden {
   display: none; }
 
 .img-rounded {
