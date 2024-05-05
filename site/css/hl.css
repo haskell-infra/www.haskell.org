@@ -294,6 +294,21 @@ img {
   max-width: 100%;
   height: auto; }
 
+.alternative-logo {
+  filter: drop-shadow(0px 0px 1px black);
+  padding-right: 40px; }
+
+.alternative-logo-visible {
+  display: none; }
+
+.alternative-logo .alternative-logo-visible,.alternative-logo-hidden {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.alternative-logo .alternative-logo-hidden {
+  display: none; }
+
 .img-rounded {
   border-radius: 6px; }
 
