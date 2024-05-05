@@ -15,7 +15,12 @@
       <script>
          (function () {
             try {
-              var preferredUwu = localStorage.getItem('uwu');
+              var preferredUwu = false;
+              // localStorage might be inaccessible due to device permissions,
+              // hence the try-catch.
+              try {
+                preferredUwu = localStorage.getItem('uwu');
+              } catch (err) {} ;
               
               const isUwuValue = window.location 
                 && window.location.search
@@ -24,13 +29,17 @@
               if (isUwuValue) {
                 const isUwu = isUwuValue[1] === 'true';
                 if (isUwu) {
-                  localStorage.setItem('uwu', true);
+                  try {
+                    localStorage.setItem('uwu', true);
+                  } catch (err) {} ;
                   
                   document.documentElement.classList.add('alternative-logo');
                   console.log('alternative logo enabled. turn off with ?uwu=false')
-                  console.log('logo credit to @sawaratsuki1004 via https://github.com/SAWARATSUKI/ServiceLogos. Slightly tweaked by @Tritlo');
+                  console.log('logo credit to @sawaratsuki1004. Slightly tweaked by @Tritlo');
                 } else {
-                  localStorage.removeItem('uwu', false);
+                  try {
+                    localStorage.removeItem('uwu', false);
+                  } catch (err) {} ;
                 }
               } else if (preferredUwu) {
                 document.documentElement.classList.add('alternative-logo');
