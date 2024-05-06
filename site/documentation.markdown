@@ -79,6 +79,7 @@ Manuals and guides that cover common Haskell tooling:
 *   [GHC User's Guide](http://www.haskell.org/ghc/docs/latest/html/users_guide/)
 *   [Cabal Homepage And Quick Links](https://www.haskell.org/cabal/)
 *   [Cabal User Guide](http://www.haskell.org/cabal/users-guide/)
+*   [Haskell Language Server](https://haskell-language-server.readthedocs.io/en/stable/)
 *   [Stack User Guide](https://docs.haskellstack.org/)
 *   [Haddock User Guide](https://haskell-haddock.readthedocs.io/)
 *   [Haskeleton: A Haskell Project Skeleton](http://taylor.fausak.me/2014/03/04/haskeleton-a-haskell-project-skeleton/)
