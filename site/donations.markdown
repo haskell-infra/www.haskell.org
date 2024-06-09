@@ -9,19 +9,19 @@ isDonations: true
 A significant part of the Haskell community infrastructure—like Hackage, Hoogle, the GHC build infrastructure and this website—runs on monetary and in-kind donations from the Haskell community. If you would like to support these efforts, you have several options for donating:
 
   * PayPal (preferred)
-  
+
       <a rel="nofollow" class="external text" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=TED2EBG653TAN"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif"></a>
-  
+
   * Checks payable to Haskell.org, Inc. mailed to:
-  
+
     > Haskell.org, Inc. c/o Ryan Trinkle, Treasurer
     >
     > 2093 Philadelphia Pike #8119
     >
     > Claymont, DE 19703
-  
+
   * [Amazon Smile][smile], where you can select Haskell.org to receive 0.5% of your eligible Amazon purchases ([more details][smile-details]).
-  
+
   * Donations through employers via Benevity using the unique ID 475236502
 
   * Through SPI - Haskell.org is an associated project of Software in the Public Interest, also a registered non-profit organization under the laws of New York State. Donations via the SPI can be made online via credit card, invoice, PO or eCheck through clickandpledge.com or by mailing an earmarked check directly to SPI: http://www.spi-inc.org/donations/. Recurring donations can be set up in addition to one-time donations. Note that donations through SPI require more overhead from the Committee, so we encourage you to use the other ways of donating.
@@ -52,7 +52,7 @@ Haskell.org, Inc. is a non-profit registered in New York, dedicated to promoting
   * [mailing lists][mailing]
   * [Discourse][discourse]
   * [Hoogle], a type-aware Haskell search engine
-  
+
 Haskell.org also organizes Haskell's participation in the [Google Summer of Code program][summer].
 
 #### Contact
@@ -69,5 +69,5 @@ If you have any questions or would like to discuss sponsorships, official recogn
 [discourse]: https://discourse.haskell.org
 [Hoogle]: https://hoogle.haskell.org/
 [summer]: https://summer.haskell.org/
-[committee]: /haskell-org-committee
+[committee]: /haskell-org-committee/
 [committee-email]: mailto:committee@haskell.org

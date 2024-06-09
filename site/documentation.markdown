@@ -39,6 +39,7 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 
 Course material created by instructors
 
+*   [Well-Typed's Introduction to Haskell](https://teaching.well-typed.com/intro/)
 *   [University of Pennsylvania's CIS 194](https://www.seas.upenn.edu/~cis1940/spring13/)
 *   [Data61 Functional Programming Course](https://github.com/data61/fp-course)
 *   [Stanford's cs240h](http://www.scs.stanford.edu/14sp-cs240h/)
