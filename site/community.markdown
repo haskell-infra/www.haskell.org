@@ -76,15 +76,12 @@ There are a number of conferences and events featuring Haskell, some focusing on
 ### Non-Academic Conferences
 
 *   [Commercial Users of Functional Programming (Roving)](http://cufp.org/)
-*   [YOW! LambdaJam (Sydney, AU)](http://lambdajam.yowconference.com.au/)
 *   [Functional Conf (Bangalore, IN)](http://functionalconf.com/)
 *   [BOB (Berlin, DE)](http://bobkonf.de/)
 *   [Skills Matter's Haskell eXchange (London, GB)](https://skillsmatter.com/conferences/11741-haskell-exchange-2019)
 *   [LambdaConf (Boulder, CO, USA)](http://lambdaconf.us/)
 *   [Lambda World (Cádiz, Spain and Seattle, USA)](http://www.lambda.world/)
 *   [Compose :: Conference (NY, NY, USA)](http://composeconference.org)
-*   [Compose :: Melbourne (Melbourne, VIC, AU)](http://composeconference.org)
-*   [Curry On (Europe, roving)](http://www.curry-on.org/)
 *   [LambdAle (London, GB)](https://lambdale.org/)
 *   [Haskell Love Conference (online)](https://haskell.love)
 
