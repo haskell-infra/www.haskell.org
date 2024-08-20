@@ -12,7 +12,7 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 
 ## Introductory Books for Learning Haskell
 
-*   [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
+*   [Learn You a Haskell for Great Good!](https://learnyouahaskell.github.io/)
 *   [Real World Haskell](http://book.realworldhaskell.org/)
 *   [Learn Haskell by building a blog generator](https://learn-haskell.blog)
 *   \[$$\] [Haskell from the Very Beginning](https://www.haskellfromtheverybeginning.com/)
