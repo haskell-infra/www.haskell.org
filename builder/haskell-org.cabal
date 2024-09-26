@@ -9,7 +9,7 @@ executable haskell-org-site
   main-is:          site.hs
   other-modules:    Testimonial
   build-depends:    base == 4.*
-                  , hakyll >=4.12 && <4.16
+                  , hakyll >=4.12 && <4.17
                   , aeson
                   , binary
                   , bytestring
