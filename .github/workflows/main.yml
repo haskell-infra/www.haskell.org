@@ -42,12 +42,7 @@ jobs:
             --command linkchecker built-site
 
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: www.haskell.org
-          path: built-site*  # Uses glob pattern because
-                             # actions/upload-artifact@v2 gets
-                             # confused by symlinks otherwise
-                             #
-                             # See:
-                             # https://github.com/actions/upload-artifact/issues/92
+          path: built-site*
