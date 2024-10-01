@@ -6,16 +6,49 @@ isGettingStarted: true
 
 # Get started
 
-Welcome, new Haskeller! Read on to quickly set up your Haskell development environment, execute your first lines of code, and get directions for further learning.
+Welcome, new Haskeller! Read on to run your first lines of code, set up your Haskell development environment, and get directions for further learning.
 
 ## Content
+
+  - [Running your first lines of code](#running-your-first-lines-of-code)
   - [Set up a Haskell development environment](#set-up-a-haskell-development-environment)
     - [GHCup: universal installer](#ghcup-universal-installer)
     - [Editor](#editor)
-  - [Running your first lines of code](#running-your-first-lines-of-code)
   - [Writing your first Haskell program](#writing-your-first-haskell-program)
   - [Participate in the community](#participate-in-the-community)
   - [Next steps](#next-steps)
+
+## Running your first lines of code
+
+The Haskell compiler is called GHC. It comes with an interactive interpreter called GHCi which is great for playing with Haskell and trying things out.
+
+The simplest way to give it a spin is to [install Nix](https://nix.dev/install-nix), which allows running `ghci` without installing it permanently:
+
+```shell-session
+nix-shell -p ghc --run ghci
+```
+
+Let's do a simple calculation to check Haskell's computing capabilities:
+
+```
+> 6 + 3^2 * 4
+42
+```
+
+42 is a nice even number, but what about the first 10 even numbers after it?
+```
+> take 10 (filter even [43..])
+[44,46,48,50,52,54,56,58,60,62]
+```
+
+What is the sum of those?
+```
+> sum it
+530
+```
+**NOTE**: We used a special feature of GHCi here, which is a special `it` variable that remembers the result of the last expression.
+
+Great, you got the first taste of Haskell! Now let's get to running a real program.
 
 ## Set up a Haskell development environment
 
@@ -42,32 +75,12 @@ A complete Haskell development environment consists of the Haskell toolchain (co
 </div>
 
 ### Editor
+
 [**Visual Studio Code**](https://code.visualstudio.com/) ([**VSCode**](https://code.visualstudio.com/)) is a popular choice with well-supported Haskell integration. Install the [Haskell extension](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) and you are all set. It should work out of the box and use your installation of HLS. To learn about support for other editors, check out [HLS docs for editor configuration](https://haskell-language-server.readthedocs.io/en/latest/configuration.html#configuring-your-editor).
 
-## Running your first lines of code
-
-We have everything set up, let's use it! The Haskell compiler, GHC, comes with an interactive interpreter called GHCi which is great for playing with Haskell and trying things out, so let's give it a spin. Run `ghci` at your command prompt, which will start a new GHCi prompt for you. Let's do a simple calculation to check Haskell's computing capabilities:
-```
-> 6 + 3^2 * 4
-42
-```
-
-42 is a nice even number, but what about the first 10 even numbers after it?
-```
-> take 10 (filter even [43..])
-[44,46,48,50,52,54,56,58,60,62]
-```
-
-What is the sum of those?
-```
-> sum it
-530
-```
-**NOTE**: We used a special feature of GHCi here, which is a special `it` variable that remembers the result of the last expression.
-
-Great, you got the first taste of Haskell! Now let's get to running a real program.
-
 ## Writing your first Haskell program
+
+We have everything set up, let's use it!
 
 In your editor, create a new file named `hello.hs`. Write the following in it:
 ```hs
