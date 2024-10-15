@@ -37,7 +37,7 @@ There are a number of Haskell Users groups where haskellers meet to learn and co
 *   [Bay Area Haskell Users Group](http://www.meetup.com/Bay-Area-Haskell-Users-Group/)
 *   [Boston Haskell](http://www.meetup.com/Boston-Haskell/)
 *   [Berlin Haskell Users Group](http://www.meetup.com/berlinhug/)
-*   [Brisbane Functional Programming Group](http://www.meetup.com/Brisbane-Functional-Programming-Group/)
+*   [Brisbane Functional Programming Group (BFPG)](https://bfpg.org/)
 *   [Chicago Haskell](http://ChicagoHaskell.com/)
 *   [Dublin Haskell Meetup](https://www.meetup.com/haskell-dublin-meetup/)
 *   [Haskell DC](https://www.meetup.com/Haskell-DC/)
