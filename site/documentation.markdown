@@ -25,6 +25,7 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 *   \[$$\] [Effective Haskell](https://www.pragprog.com/titles/rshaskell/effective-haskell/)
 *   \[$$\] [Haskell: Uma introdução à programação funcional (PT-BR)](https://www.casadocodigo.com.br/products/livro-haskell)
 *   \[$$\] [Learn Physics with Functional Programming: A Hands-on Guide to Exploring Physics with Haskell](https://lpfp.io/)
+*   \[$$\] [Learn Haskell by Example](https://www.manning.com/books/learn-haskell-by-example)
 
 ## Intermediate Haskell Books
 
