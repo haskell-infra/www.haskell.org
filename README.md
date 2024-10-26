@@ -110,22 +110,22 @@ Some of the others are
 
 | Subsite | Source | Owner | Details |
 | --------------- | --------------- | --------------- | --------------- |
-| [`cabal/`](https://www.haskell.org/cabal/) | [cabal-website](https://github.com/haskell/cabal-website) | Cabal maintainers | [Details](#details-cabal) |
+| [`alex/`](https://www.haskell.org/alex/) | Redirect | Alex maintainers | [Details](#details-alex) |
+| [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
+| [`cabal/`](https://www.haskell.org/cabal/) | [cabal-website](https://github.com/haskell/cabal-website) | Cabal maintainers | [Deta| [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
+ils](#details-cabal) |
+| [`definition/`](https://www.haskell.org/definition/) | | Haskell Prime committee | [Details](#details-definition) |
 | [`ghc/`](https://www.haskell.org/ghc/) | |  | [Details](#details-ghc) |
 | [`ghc-perf/`](https://www.haskell.org/ghc-perf/) | | Joachim Breitner | [Details](#details-ghc-perf) |
 | [`ghcup/`](https://www.haskell.org/ghcup/) | [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www) | Julian Ospald | |
 | [`haddock/`](https://www.haskell.org/haddock/) | Redirect | Haddock maintainers | [Details](#details-haddock) |
-| [`haskell-symposium/`](https://www.haskell.org/haskell-symposium/) | | Haskell Symposium organisers | |
-| [`platform/`](https://www.haskell.org/platform/) | Redirect | | |
-| [`alex/`](https://www.haskell.org/alex/) | Redirect | Alex maintainers | [Details](#details-alex) |
-| [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
-| [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
-| [`definition/`](https://www.haskell.org/definition/) | | Haskell Prime committee | [Details](#details-definition) |
 | [`happy/`](https://www.haskell.org/happy/) | Redirect | Happy maintainers | [Details](#details-happy) |
+| [`haskell-symposium/`](https://www.haskell.org/haskell-symposium/) | | Haskell Symposium organisers | |
 | [`haskell-workshop/`](https://www.haskell.org/haskell-workshop/) | | Haskell Symposium organisers | [Details](#details-haskell-workshop) |
 | [`hugs/`](https://www.haskell.org/hugs/) | | | [Details](#details-hugs) |
 | [`nhc98/`](https://www.haskell.org/nhc98/) | | York Functional Programming Group | [Details](#details-nhc98) |
 | [`onlinereport/`](https://www.haskell.org/onlinereport/) | | Haskell Prime committee | [Details](#details-onlinereport) |
+| [`platform/`](https://www.haskell.org/platform/) | Redirect | | |
 | [`tutorial/`](https://www.haskell.org/tutorial/) | | | [Details](#details-tutorial) |
 
 ## Details on subsites
