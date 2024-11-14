@@ -47,11 +47,12 @@ The Haskell Security Response Team (SRT) coordinates security
 response for high-impact vulnerabilities, and maintains the advisory
 database and associated tooling.
 
-The SRT is currently composed of 5 active members:
+The current members of the SRT are:
 
-* **Casey Mattingly**
 * **Fraser Tweedale**
 * **Gautier Di Folco**
+* **Lei Zhu**
+* **Montez Fitzpatrick**
 * **Mihai Maruseac**
 * **Tristan de Cacqueray**
 
@@ -73,6 +74,7 @@ project maintainers.  Guides will be added or updated over time.
 The SRT reports quarterly on our completed and ongoing work, and
 future plans.
 
+* [2024 Q3](https://github.com/haskell/security-advisories/blob/main/reports/2024-11-14-Q3-report.md)
 * [2024 Q2](https://github.com/haskell/security-advisories/blob/main/reports/2024-07-18-Q2-report.md)
 * [2024 Q1](https://github.com/haskell/security-advisories/blob/main/reports/2024-04-08-Q1-report.md)
 * [2023 Q3 & Q4](https://github.com/haskell/security-advisories/blob/main/reports/2024-01-10-half-year-report.md)
