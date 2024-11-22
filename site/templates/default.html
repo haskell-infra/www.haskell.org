@@ -12,24 +12,6 @@
       <link rel="stylesheet" href="/css/hl.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
       <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-      <script>
-         (function () {
-            try {
-              const isUwuValue = window.location 
-                && window.location.search
-                && window.location.search.match(/uwu=(true|false)/);
-                
-              if (isUwuValue) {
-                const isUwu = isUwuValue[1] === 'true';
-                if (isUwu) {
-                  document.documentElement.classList.add('alternative-logo');
-                  console.log('alternative logo enabled. turn off with ?uwu=false')
-                  console.log('logo credit to @sawaratsuki1004. Slightly tweaked by @Tritlo');
-                }
-              }
-            } catch (err) { }
-          })();
-      </script>
    </head>
    <body class="page-$page$">
      <div class="wrap">
