@@ -294,18 +294,19 @@ img {
   max-width: 100%;
   height: auto; }
 
-.alternative-logo {
+.alternative-logo-pride,
+.alternative-logo-uwu {
   filter: drop-shadow(0px 0px 1px black); }
 
-.alternative-logo-visible {
+#alternative-logo {
   display: none; }
 
-.alternative-logo .alternative-logo-visible,.alternative-logo-hidden {
+.with-alternative-logo #alternative-logo,.alternative-logo-hidden {
   display: block;
   max-width: 100%;
   height: auto; }
 
-.alternative-logo .alternative-logo-hidden {
+.with-alternative-logo .alternative-logo-hidden {
   display: none; }
 
 .img-rounded {
