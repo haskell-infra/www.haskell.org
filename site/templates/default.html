@@ -15,16 +15,28 @@
       <script>
          (function () {
             try {
-              const isUwuValue = window.location 
-                && window.location.search
-                && window.location.search.match(/uwu=(true|false)/);
-                
-              if (isUwuValue) {
-                const isUwu = isUwuValue[1] === 'true';
-                if (isUwu) {
-                  document.documentElement.classList.add('alternative-logo');
-                  console.log('alternative logo enabled. turn off with ?uwu=false')
-                  console.log('logo credit to @sawaratsuki1004. Slightly tweaked by @Tritlo');
+              const altLogos = {
+                retro: {
+                  src: 'haskell-retro.gif',
+                  credit: 'logo credit to @rhendric and the official Haskell logo designers',
+                },
+                uwu: {
+                  src: 'haskell-uwu.png',
+                  credit: 'logo credit to @sawaratsuki1004. Slightly tweaked by @Tritlo',
+                },
+              };
+              const params = new URLSearchParams(window.location.search);
+              for (const name in altLogos) {
+                const isEnabled = params.get(name);
+                if (isEnabled === 'true') {
+                  document.documentElement.classList.add('with-alternative-logo');
+                  document.addEventListener('DOMContentLoaded', function () {
+                    const img = document.getElementById('alternative-logo');
+                    img.setAttribute('src', '/img/' + altLogos[name].src);
+                    img.classList.add('alternative-logo-' + name);
+                  });
+                  console.log('alternative logo enabled. turn off with ?' + name + '=false')
+                  console.log(altLogos[name].credit);
                 }
               }
             } catch (err) { }
