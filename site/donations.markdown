@@ -24,7 +24,7 @@ A significant part of the Haskell community infrastructure—like Hackage, Hoogl
 
   * Donations through employers via Benevity using the unique ID 475236502
 
-  * Through SPI - Haskell.org is an associated project of Software in the Public Interest, also a registered non-profit organization under the laws of New York State. Donations via the SPI can be made online via credit card, invoice, PO or eCheck through clickandpledge.com or by mailing an earmarked check directly to SPI: http://www.spi-inc.org/donations/. Recurring donations can be set up in addition to one-time donations. Note that donations through SPI require more overhead from the Committee, so we encourage you to use the other ways of donating.
+  * Through SPI - Haskell.org is an associated project of Software in the Public Interest, also a registered non-profit organization under the laws of New York State. Donations via the SPI can be made online via credit card, invoice, PO or eCheck through clickandpledge.com or by mailing an earmarked check directly to SPI: https://www.spi-inc.org/donations/. Recurring donations can be set up in addition to one-time donations. Note that donations through SPI require more overhead from the Committee, so we encourage you to use the other ways of donating.
 
 Haskell.org is a 501(c)(3) non-profit, so donations may be tax-deductible in your jurisdiction.
 
