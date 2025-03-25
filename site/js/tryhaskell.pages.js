@@ -518,7 +518,7 @@ tryhaskell.pages.list =
             "<code>let abc@(a,b,c) = (10,20,30) in (abc,a,b,c)</code>"
         },
          trigger:function(result){
-             return result.expr.match(/^[ ]*let[ ]*\(_,\(?a:_\)?\)[ ]*=[ ]*\(10,\"abc\"\)[ ]*in[ ]*a[ ]*$/) &&
+            return result.expr.match(/^[ ]*let[ ]*\(_,[ ]*\(?a:_\)?\)[ ]*=[ ]*\(10,[ ]*\"abc\"\)[ ]*in[ ]*a[ ]*$/) &&
                  result.type == "Char";
          }},
         {guide:function(result){
