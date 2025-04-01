@@ -103,7 +103,7 @@ Documentation for Haskell libraries is typically available on Hackage. We also h
 *   [Hackage](https://hackage.haskell.org/)
 *   [Stackage (with API Search)](https://www.stackage.org)
 *   [The Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
-*   [Haddocks for Libraries included with GHC](https://downloads.haskell.org/~ghc/latest/docs/html/libraries/index.html)  According to Issue #209,This Link is tested and now its working without Error 404
+*   [Haddocks for Libraries included with GHC](https://downloads.haskell.org/~ghc/latest/docs/html/libraries/index.html)  # According to Issue #209,This Link is tested and now its working without Error 404
 
 ## Language Report
 
