@@ -74,6 +74,7 @@ project maintainers.  Guides will be added or updated over time.
 The SRT reports quarterly on our completed and ongoing work, and
 future plans.
 
+* [2025 Q1](https://github.com/haskell/security-advisories/blob/main/reports/2025-04-04-Q1-report.md)
 * [2024 Q4](https://github.com/haskell/security-advisories/blob/main/reports/2025-02-06-Q4-report.md)
 * [2024 Q3](https://github.com/haskell/security-advisories/blob/main/reports/2024-11-14-Q3-report.md)
 * [2024 Q2](https://github.com/haskell/security-advisories/blob/main/reports/2024-07-18-Q2-report.md)
