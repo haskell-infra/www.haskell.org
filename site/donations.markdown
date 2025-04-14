@@ -8,9 +8,7 @@ isDonations: true
 
 A significant part of the Haskell community infrastructure—like Hackage, Hoogle, the GHC build infrastructure and this website—runs on monetary and in-kind donations from the Haskell community. If you would like to support these efforts, you have several options for donating:
 
-  * PayPal (preferred)
-
-      <a rel="nofollow" class="external text" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=TED2EBG653TAN"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="btn_donate_LG.gif"></a>
+  * <a rel="nofollow" class="external text" href="https://donorbox.org/donation-button-52?">Donorbox</a> (preferred)
 
   * Checks payable to Haskell.org, Inc. mailed to:
 
