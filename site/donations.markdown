@@ -18,16 +18,11 @@ A significant part of the Haskell community infrastructure—like Hackage, Hoogl
     >
     > Claymont, DE 19703
 
-  * [Amazon Smile][smile], where you can select Haskell.org to receive 0.5% of your eligible Amazon purchases ([more details][smile-details]).
-
   * Donations through employers via Benevity using the unique ID 475236502
 
   * Through SPI - Haskell.org is an associated project of Software in the Public Interest, also a registered non-profit organization under the laws of New York State. Donations via the SPI can be made online via credit card, invoice, PO or eCheck through clickandpledge.com or by mailing an earmarked check directly to SPI: https://www.spi-inc.org/donations/. Recurring donations can be set up in addition to one-time donations. Note that donations through SPI require more overhead from the Committee, so we encourage you to use the other ways of donating.
 
 Haskell.org is a 501(c)(3) non-profit, so donations may be tax-deductible in your jurisdiction.
-
-[smile]: https://smile.amazon.com
-[smile-details]: https://smile.amazon.com/about
 
 ### Why should I donate?
 
