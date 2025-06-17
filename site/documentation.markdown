@@ -58,7 +58,6 @@ Short, dense, classic ways to hit the ground running
 *   [Yet Another Haskell Tutorial](https://en.wikibooks.org/wiki/Yet_Another_Haskell_Tutorial/Preamble)
 *   [Write Yourself a Scheme in 48 Hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
 *   [Write Yourself a Scheme 2.0](https://wespiser.com/writings/wyas/home.html)
-*   [Learning Haskell](http://learn.hfm.io)
 *   [Haskell Beginners Course 2022](https://github.com/haskell-beginners-2022/course-plan)
 
 ## Online Resources
