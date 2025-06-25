@@ -112,8 +112,8 @@ Some of the others are
 | --------------- | --------------- | --------------- | --------------- |
 | [`alex/`](https://www.haskell.org/alex/) | Redirect | Alex maintainers | [Details](#details-alex) |
 | [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
-| [`cabal/`](https://www.haskell.org/cabal/) | [cabal-website](https://github.com/haskell/cabal-website) | Cabal maintainers | [Deta| [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
-ils](#details-cabal) |
+| [`cabal/`](https://www.haskell.org/cabal/) | [cabal-website](https://github.com/haskell/cabal-website) | Cabal maintainers | [Details](#details-cabal) |
+| [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
 | [`definition/`](https://www.haskell.org/definition/) | | Haskell Prime committee | [Details](#details-definition) |
 | [`ghc/`](https://www.haskell.org/ghc/) | |  | [Details](#details-ghc) |
 | [`ghc-perf/`](https://www.haskell.org/ghc-perf/) | | Joachim Breitner | [Details](#details-ghc-perf) |
