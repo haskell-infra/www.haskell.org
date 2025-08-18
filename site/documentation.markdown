@@ -36,6 +36,7 @@ If you are new to Haskell and are not sure where to start from, we recommend [CI
 *   \[$$\] [Haskell in Depth](https://www.manning.com/books/haskell-in-depth)
 *   \[$$\] [Practical Haskell](https://www.apress.com/gp/book/9781484244791)
 *   \[$$\] [Production Haskell](https://leanpub.com/production-haskell)
+*   \[$$\] [Algorithm Design with Haskell](https://www.cs.ox.ac.uk/publications/books/adwh/)
 
 ## Courses
 
