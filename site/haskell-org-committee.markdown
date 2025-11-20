@@ -66,7 +66,7 @@ are:
   * Rebecca Skinner (term ends 2025)
   * Théophile "Hécate" Choutri (term ends 2025)
   * Aaron Allen (term ends 2025)
-  * Tom Ellis (vice chair, vice treasurer) (term ends 2024)
+  * Tom Ellis (vice chair, vice treasurer) (term ends 2027)
 
 Committee members do not need to be deep technical Haskell experts. Instead we
 look for enthusiasm towards improving the Haskell community. We aim to represent
