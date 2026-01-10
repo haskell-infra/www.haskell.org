@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Haskell 2013</title>
+<description>ACM SIGPLAN Haskell Symposium, 23-24 September 2013, Boston, MA, USA</description>
+<link>http://www.haskell.org/haskell-symposium/2013/</link>
+<item>
+  <pubDate>Thu, 22 Aug 2013 12:08:14 -0400</pubDate>
+  <title>Posted tentative schedule. Our invited speaker is John Launchbury.</title>
+  <description>2013-08-22 Posted tentative schedule. Our invited speaker is John Launchbury.</description>
+  <link>http://www.haskell.org/haskell-symposium/2013/</link>
+</item>
+<item>
+  <pubDate>Wed, 25 Sep 2013 16:00:53 -0400</pubDate>
+  <title>Please fill out the survey about this year's symposium format!</title>
+  <description>2013-09-25 Please fill out the survey about this year's symposium format!</description>
+  <link>http://www.haskell.org/haskell-symposium/2013/survey</link>
+</item>
+<item>
+  <pubDate>Mon, 15 Jul 2013 14:32:38 -0400</pubDate>
+  <title>Posted list of accepted submissions.</title>
+  <description>2013-07-15 Posted list of accepted submissions.</description>
+  <link>http://www.haskell.org/haskell-symposium/2013/</link>
+</item>
+<item>
+  <pubDate>Mon, 15 Apr 2013 12:36:20 -0400</pubDate>
+  <title>ACM no longer requires authors to transfer copyright to ACM upon acceptance.</title>
+  <description>2013-04-15 ACM <a href="http://www.acm.org/news/featured/author-rights-management">no longer requires</a> authors to transfer copyright to ACM upon acceptance.</description>
+  <link>http://www.haskell.org/haskell-symposium/2013/</link>
+</item>
+<item>
+  <pubDate>Fri, 29 Mar 2013 12:50:51 -0400</pubDate>
+  <title>Posted call for submissions.</title>
+  <description>2013-03-29 Posted call for submissions.</description>
+  <link>http://www.haskell.org/haskell-symposium/2013/</link>
+</item>
+</channel>
+</rss>

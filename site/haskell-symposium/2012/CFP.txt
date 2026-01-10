@@ -1,0 +1,150 @@
+========================================================================
+                             "Haskell 2012"
+
+                   ACM SIGPLAN Haskell Symposium 2012
+                          Copenhagen, Denmark
+                          13th September, 2012
+                          (directly after ICFP)
+
+                            CALL FOR PAPERS
+
+             http://www.haskell.org/haskell-symposium/2012/
+========================================================================
+
+
+The ACM SIGPLAN Haskell Symposium 2012 will be co-located with the 2012
+International Conference on Functional Programming (ICFP), in
+Copenhagen, Denmark.
+
+The purpose of the Haskell Symposium is to discuss experiences with
+Haskell and future developments for the language. Topics of interest
+include, but are not limited to:
+
+* Language Design, with a focus on possible extensions and modifications
+  of Haskell as well as critical discussions of the status quo;
+
+* Theory, such as formal treatments of the semantics of the present
+  language or future extensions, type systems, and foundations for
+  program analysis and transformation;
+
+* Implementations, including program analysis and transformation, static
+  and dynamic compilation for sequential, parallel, and distributed
+  architectures, memory management as well as foreign function and
+  component interfaces;
+
+* Tools, in the form of profilers, tracers, debuggers, pre-processors,
+  testing tools, and suchlike;
+
+* Applications, using Haskell for scientific and symbolic computing,
+  database, multimedia, telecom and web applications, and so forth;
+
+* Functional Pearls, being elegant, instructive examples of using
+  Haskell;
+
+* Experience Reports, general practice and experience with Haskell,
+  e.g., in an education or industry context.
+
+Papers in the latter three categories need not necessarily report
+original research results; they may instead, for example, report
+practical experience that will be useful to others, reusable programming
+idioms, or elegant new ways of approaching a problem. (Links with more
+advice appear on the symposium web page.) The key criterion for such a
+paper is that it makes a contribution from which other Haskellers can
+benefit. It is not enough simply to describe a program!
+
+Regular papers should explain their research contributions in both
+general and technical terms, identifying what has been accomplished,
+explaining why it is significant, and relating it to previous work (also
+for other languages where appropriate).
+
+In addition, we solicit proposals for system demonstrations, based on
+running (perhaps prototype) software rather than necessarily on novel
+research results. Such short demo proposals should explain why a
+demonstration would be of interest to the Haskell community.
+
+
+Travel Support:
+===============
+
+Student attendees with accepted papers can apply for a SIGPLAN PAC grant
+to help cover travel expenses. PAC also offers other support, such as
+for child-care expenses during the meeting or for travel costs for
+companions of SIGPLAN members with physical disabilities, as well as for
+travel from locations outside of North America and Europe. For details
+on the PAC programme, see its web page (http://www.sigplan.org/PAC.htm).
+
+
+Proceedings:
+============
+
+There will be formal proceedings published by ACM Press. In addition to
+printed proceedings, accepted papers will be included in the ACM Digital
+Library. Authors must transfer copyright to ACM upon acceptance (for
+government work, to the extent transferable), but retain various rights
+(http://www.acm.org/publications/policies/copyright_policy). Authors are
+encouraged to publish auxiliary material with their paper (source code,
+test data, etc.); they retain copyright of auxiliary material.
+
+Accepted demo proposals, assessed for relevance by the PC, will be
+published on the symposium web page, but not formally published in the
+proceedings.
+
+
+Submission Details:
+===================
+
+* Abstract Submission: Thu 31st May 2012
+* Paper Submission   : Sat 2nd June 2012 anywhere on inhabited Earth
+                       (disregarding Baker and Howland Islands)
+* Author Notification: Wed 27th June 2012
+* Final Papers Due   : Tue 10th July 2012
+
+Submitted papers should be in portable document format (PDF), formatted
+using the ACM SIGPLAN style guidelines (9pt format, more details appear
+on the symposium web page). The length is restricted to 12 pages, except
+for "Experience Report" papers, which are restricted to 6 pages. Each
+paper submission must adhere to SIGPLAN's republication policy, as
+explained on the web.
+
+Demo proposals are limited to 2-page abstracts, in the same format.
+
+"Functional Pearls", "Experience Reports", and "Demo Proposals" should
+be marked as such with those words in the title at time of submission.
+
+The paper submission deadline and length limitations are firm. There
+will be no extensions, and papers violating the length limitations will
+be summarily rejected.
+
+Submission is via EasyChair: 
+
+  https://www.easychair.org/conferences/?conf=haskell2012
+
+
+Programme Committee:
+====================
+
+* Amal Ahmed, Northeastern University
+* Jost Berthold, University of Copenhagen
+* Nils Anders Danielsson, University of Gothenburg
+* Iavor Diatchki, Galois Inc.
+* Jeremy Gibbons, University of Oxford
+* Jurriaan Hage, Utrecht University
+* Zhenjiang Hu, National Institute of Informatics Tokyo
+* Daan Leijen, Microsoft Research
+* Ben Lippmeier, University of New South Wales
+* Simon Peyton Jones, Microsoft Research
+* Colin Runciman, University of York
+* Eijiro Sumii, Tohoku University
+* Janis Voigtländer (chair), University of Bonn
+* Brent Yorgey, University of Pennsylvania
+
+
+Links:
+======
+
+* http://www.haskell.org/haskell-symposium
+  (the permanent web page of the Haskell Symposium)
+* http://www.haskell.org/haskell-symposium/2012
+  (the 2012 Haskell Symposium web page)
+* http://www.icfpconference.org/icfp2012
+  (the ICFP 2012 web page)

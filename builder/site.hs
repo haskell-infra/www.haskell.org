@@ -51,6 +51,10 @@ main = do
       route   idRoute
       compile copyFileCompiler
 
+    match "haskell-symposium/**" $ do
+      route   idRoute
+      compile copyFileCompiler
+
     match "index.html" $ do
       route idRoute
       compile $ do

@@ -1,0 +1,285 @@
+================================================================================
+ ACM SIGPLAN                                              CALL FOR SUBMISSIONS
+
+                          Haskell Symposium 2021
+
+                              ** virtual **
+                       Thu 26 -- Fri 27 August, 2021
+
+              http://www.haskell.org/haskell-symposium/2021/
+
+================================================================================
+
+The ACM SIGPLAN Haskell Symposium 2021 will be co-located with the 2021
+International Conference on Functional Programming (ICFP). Due to COVID-19
+it will take place **virtually** this year.
+
+Like last year, we will be using a lightweight double-blind reviewing process.
+See further information below. Different from last year is that
+we offer a new submission category: the tutorial. Details can be found below.
+
+The Haskell Symposium presents original research on Haskell,
+discusses practical experience and future development of the language, and
+promotes other forms of declarative programming.
+
+Topics of interest include:
+
+  * Language design, with a focus on possible extensions and modifications of
+    Haskell as well as critical discussions of the status quo;
+
+  * Theory, such as formal semantics of the present language or future
+    extensions, type systems, effects, metatheory, and foundations for
+    program analysis and transformation;
+
+  * Implementations, including program analysis and transformation,
+    static and dynamic compilation for sequential, parallel, and distributed
+    architectures, memory management, as well as foreign function and
+    component interfaces;
+
+  * Libraries, that demonstrate new ideas or techniques for functional
+    programming in Haskell;
+
+  * Tools, such as profilers, tracers, debuggers, preprocessors,
+    and testing tools;
+
+  * Applications, to scientific and symbolic computing, databases, multimedia,
+    telecommunication, the web, and so forth;
+
+  * Functional Pearls, being elegant and instructive programming examples;
+
+  * Experience Reports, to document general practice and experience in
+    education, industry, or other contexts;
+    
+  * Tutorials, to document how to use a particular language feature,
+    programming technique, tool or library within the Haskell ecosystem;
+
+  * System Demonstrations, based on running software rather than novel
+    research results.
+
+Regular papers should explain their research contributions in both general and
+technical terms, identifying what has been accomplished, explaining why it is
+significant, and relating it to previous work, and to other languages where
+appropriate.
+
+Experience reports and functional pearls need not necessarily report original
+academic research results. For example, they may instead report reusable
+programming idioms, elegant ways to approach a problem, or practical experience
+that will be useful to other users, implementers, or researchers. The key
+criterion for such a paper is that it makes a contribution from which other
+Haskellers can benefit. It is not enough simply to describe a standard solution
+to a standard programming problem, or report on experience where you used
+Haskell in the standard way and achieved the result you were expecting.
+
+A new submission category for this year's Haskell Symposium is the tutorial.
+Like with the experience report and the functional pearl, the key criterion for
+such a paper is that it makes a contribution from which other Haskellers can
+benefit. What distinguishes a tutorial is that its
+focus is on explaining an aspect of the Haskell language and/or ecosystem in a
+way that is generally useful to a Haskell audience. Tutorials for many
+such topics can be found online; the distinction here is that by writing it up
+for formal review it will be vetted by experts and formally published.
+
+System demonstrations should summarize the system capabilities that would be
+demonstrated. The proposals will be judged on whether the ensuing session is
+likely to be important and interesting to the Haskell community at large,
+whether on grounds academic or industrial, theoretical or practical, technical,
+social or artistic. Please contact the program chair with any questions about
+the relevance of a proposal.
+
+If your contribution is not a research paper, please mark the title of your
+experience report, functional pearl, tutorial or system demonstration as such,
+by supplying a subtitle (Experience Report, Functional Pearl, Tutorial Paper, System Demonstration).
+
+Submission Details
+==================
+
+Early and Regular Track
+-----------------------
+
+The Haskell Symposium uses a two-track submission process so that some papers
+can gain early feedback. Strong papers submitted to the early track are
+accepted outright, and the others will be given their reviews and invited to
+resubmit to the regular track. Papers accepted via the early and regular
+tracks are considered of equal value and will not be distinguished in the
+proceedings. Although all papers may be submitted to the early track, authors
+of functional pearls and experience reports are particularly encouraged to use
+this mechanism. The success of these papers depends heavily on the way they
+are presented, and submitting early will give the program committee a chance
+to provide feedback and help draw out the key ideas.
+
+Formatting
+----------
+
+Submitted papers should be in portable document format (PDF), formatted using
+the ACM SIGPLAN style guidelines. Authors should use the `acmart` format, with
+the `sigplan` sub-format for ACM proceedings. For details, see:
+
+  http://www.sigplan.org/Resources/Author/#acmart-format
+
+It is recommended to use the `review` option when submitting a paper; 
+this option enables line numbers for easy reference in reviews.
+
+Functional pearls, experience reports, tutorials and demo proposals should be
+labelled clearly as such.
+
+Lightweight Double-blind Reviewing
+----------------------------------
+
+Haskell Symposium 2021 will use a lightweight double-blind reviewing process.
+To facilitate this, submitted papers must adhere to two rules:
+
+ 1. Author names and institutions must be omitted, and
+ 2. References to authors' own related work should be in the third person
+    (e.g., not "We build on our previous work" but rather "We build on the work of ").
+
+The purpose of this process is to help the reviewers come to an initial
+judgment about the paper without bias, not to make it impossible for them to
+discover the authors if they were to try. Nothing should be done in the name
+of anonymity that weakens the submission or makes the job of reviewing the
+paper more difficult (e.g., important background references should not be
+omitted or anonymized). In addition, authors should feel free to disseminate
+their ideas or draft versions of their paper as they normally would. For
+instance, authors may post drafts of their papers on the web or give talks on
+their research ideas.
+
+A reviewer will learn the identity of the author(s) of a paper after a review
+is submitted.
+
+Page Limits
+-----------
+
+The length of submissions should not exceed the following limits:
+
+Regular paper:      12 pages
+Functional pearl:   12 pages
+Tutorial:           12 pages
+Experience report:   6 pages
+Demo proposal:       2 pages
+
+There is no requirement that all pages are used. For example, a
+functional pearl may be much shorter than 12 pages. In all cases,
+the list of references is not counted against these page limits.
+
+Deadlines
+---------
+
+Early track:
+  Submission deadline:    19 March 2021     (Fri)
+  Notification:           23 April 2021     (Fri)
+
+Regular track and demos:
+  Submission deadline:    21 May  2021      (Fri)
+  Notification:           23 June 2021      (Wed)
+
+
+Deadlines are valid anywhere on Earth.
+
+Submission
+----------
+
+Submissions must adhere to SIGPLAN's republication policy
+(http://sigplan.org/Resources/Policies/Republication/), and authors
+should be aware of ACM's policies on plagiarism
+(https://www.acm.org/publications/policies/plagiarism).
+Program Committee members are allowed to submit papers, but their papers will
+be held to a higher standard.
+
+The paper submission deadline and length limitations are firm.
+There will be no extensions, and papers violating the length
+limitations will be summarily rejected.
+
+Papers should be submitted through HotCRP at:
+
+  https://haskell21.hotcrp.com/
+
+Improved versions of a paper may be submitted at any point before the
+submission deadline using the same web interface.
+
+Supplementary material: Authors have the option to attach supplementary
+material to a submission, on the understanding that reviewers may choose not
+to look at it. This supplementary material should not be submitted as part of
+the main document; instead, it should be uploaded as a separate PDF document
+or tarball. Supplementary material should be uploaded at submission time, not by
+providing a URL in the paper that points to an external repository.
+Authors can distinguish between anonymized and non-anonymized supplementary
+material. Anonymized supplementary material will be visible to reviewers
+immediately; non-anonymized supplementary material will be revealed to
+reviewers only after they have submitted their review of the paper and learned
+the identity of the author(s).
+
+Resubmitted Papers: authors who submit a revised version of a paper that has
+previously been rejected by another conference have the option to attach an
+annotated copy of the reviews of their previous submission(s), explaining how
+they have addressed these previous reviews in the present submission. If a
+reviewer identifies him/herself as a reviewer of this previous submission and
+wishes to see how his/her comments have been addressed, the conference chair
+will communicate to this reviewer the annotated copy of his/her previous
+review. Otherwise, no reviewer will read the annotated copies of the previous
+reviews.
+
+Proceedings
+===========
+
+Accepted papers will be included in the ACM Digital Library. Their authors 
+will be required to choose one of the following options:
+- Author retains copyright of the work and grants ACM a non-exclusive
+  permission-to-publish license (and, optionally, licenses the work with a
+  Creative Commons license); 
+- Author retains copyright of the work and grants ACM an exclusive
+  permission-to-publish license; 
+- Author transfers copyright of the work to ACM. 
+For more information, please see ACM Copyright Policy
+(http://www.acm.org/publications/policies/copyright-policy) and ACM Author
+Rights (http://authors.acm.org/main.html).
+
+Accepted proposals for system demonstrations will be posted on the
+symposium website but not formally published in the proceedings.
+
+Publication date: The official publication date of accepted papers is
+the date the proceedings are made available in the ACM Digital
+Library. This date may be up to two weeks prior to the first day of the
+conference. The official publication date affects the deadline for any
+patent filings related to published work.
+
+Artifacts
+=========
+
+Authors of accepted papers are encouraged to make auxiliary material (artifacts
+like source code, test data, etc.) available with their paper. They can opt to
+have these artifacts published alongside their paper in the ACM Digital Library
+(copyright of artifacts remains with the authors).
+
+If an accepted paper's artifacts are made permanently available for retrieval in a
+publicly accessible archival repository like the ACM Digital Library, that paper
+qualifies for an Artifacts Available badge
+(https://www.acm.org/publications/policies/artifact-review-badging#available).
+Applications for such a badge can be made after paper acceptance and will be
+reviewed by the PC chair.
+
+Program Committee
+=================
+
+Edwin Brady               University of St Andrews
+Koen Claessen             Chalmers University of Technology 
+Dominique Devriese        Vrije Universiteit Brussel
+Andy Gill                 University of Kansas
+Jurriaan Hage (chair)     Universiteit Utrecht
+Zhenjiang Hu              Peking University
+Ranjit Jhala              University of California
+Patricia Johann           Appalachian State University
+Yukiyoshi Kameyama        University of Tsukuba
+George Karachalias        Tweag
+Ralf Laemmel              University of Koblenz-Landau
+Daan Leijen               Microsoft Research
+Ben Lippmeier             Ghost Locomotion
+Neil Mitchell             Facebook
+Alberto Pardo             Universidad de la Republica, Uruguay
+Matt Roberts              Macquarie University
+Janis Voigtlaender        University of Duisburg-Essen
+Nicolas Wu                Imperial College London
+
+If you have questions, please contact the chair at: j.hage@uu.nl
+
+================================================================================
+
+

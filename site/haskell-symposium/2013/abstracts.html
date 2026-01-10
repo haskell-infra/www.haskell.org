@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta content="Chung-chieh Shan" name="author">
+    <title>Abstracts | ACM SIGPLAN Haskell Symposium 2013</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="index.rss">
+</head>
+<body>
+<h1 class="title"><img style="float: left; width: 122px; height: 91px; border: none" alt="" src="../Images/logo7000.png"><img style="float: right; width: 96px; height: 95px; border: none" alt="" src="../Images/acmlogo.gif">Haskell Symposium 2013</h1>
+<h2 class="title">Boston, MA, USA<br>
+    23&ndash;24 September 2013<br>
+    (directly before ICFP)</h2>
+
+<ul class="menu">
+    <li><a href=".">Home (schedule)</a></li>
+    <li class="menuCurrent">Abstracts</li>
+    <li><a href="call.html">Call</a></li>
+    <li><a href="committee.html">Committee</a></li>
+</ul>
+
+<H1>
+   Schedule and abstracts
+</H1>
+<TABLE CLASS = "scheduleTable">
+   <TR>
+      <TD CLASS = "scheduleDate" COLSPAN = "2">
+         Monday, 23 September 2013
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Kathleen Fisher</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         09:00–10:00
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         John Launchbury
+         <BR>
+         Haskell in Practice at Galois (invited talk)
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         10:00–10:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Jean-Philippe Bernardy and Nicolas Pouillard
+         <BR>
+         Names For Free—Polymorphic Views of Names and Binders
+         <p class="abstract">We propose a novel technique to represent names and binders in Haskell. The dynamic (run-time) representation is based on de Bruijn indices, but it features an interface to write and manipulate variables conviently, using Haskell-level lambdas and variables. The key idea is to use rich types: a subterm with an additional free variable is viewed either as ∀v.v→Term(a+v) or ∃v.v×Term(a+v) depending on whether it is constructed or analysed. We demonstrate on a number of examples how this approach permits to express term construction and manipulation in a natural way, while retaining the good properties of representations based on de Bruijn indices.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Ohad Kammar</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         11:00–11:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Oleg Kiselyov, Amr Sabry, and Cameron Swords
+         <BR>
+         Extensible Effects: An Alternative to Monad Transformers
+         <p class="abstract">We design and implement a library that solves the long-standing problem of combining effects without imposing restrictions on their interactions (such as static ordering). Effects arise from interactions between a client and an effect handler (interpreter); interactions may vary throughout the program and dynamically adapt to execution conditions. Existing code that relies on monad transformers may be used with our library with minor changes, gaining efficiency over long monad stacks. In addition, our library has greater expressiveness, allowing for practical idioms that are inefficient, cumbersome, or outright impossible with monad transformers.</p>
+         <p class="abstract">Our alternative to a monad transformer stack is a single monad, for the coroutine-like communication of a client with its handler. Its type reflects possible requests, i.e., possible effects of a computation. To support arbitrary effects and their combinations, requests are values of an extensible union type, which allows adding and, notably, subtracting summands. Extending and, upon handling, shrinking of the union of possible requests is reflected in its type, yielding a type-and-effect system for Haskell. The library is lightweight, generalizing the extensible exception handling to other effects and accurately tracking them in types.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         11:30–12:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Ohad Kammar, Sam Lindley, Oleg Kiselyov, Daan Leijen, Tom Schrijvers, Tarmo Uustalu, and Philip Wadler
+         <BR>
+         <a href="http://www.cl.cam.ac.uk/~ok259/foeh/abstract.html">The Future of Effects in Haskell (panel)</a>
+         <p class="abstract">Haskell provides rich abstractions for augmenting code with user defined effects, notably monads and monad transformers. However, the standard abstractions suffer from various shortcomings relating to readability, modularity, and compositionality. Recently, a number of researchers have explored alternative approaches to effectful programming that aim to address such shortcomings. The goal of this panel is to discuss the merits and drawbacks of these alternative approaches, and how best to incorporate them into Haskell practice.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Lunch</td></tr>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Neil Sculthorpe</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         14:00–14:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Atze van der Ploeg
+         <BR>
+         Monadic Functional Reactive Programming
+         <p class="abstract">Functional Reactive Programming (FRP) is a way to program reactive systems in functional style, eliminating many of the problems that arise from imperative techniques. In this paper, we present an alternative FRP formulation that is based on the notion of a reactive computation: a monadic computation which may require the occurrence of external events to continue. A signal computation is a reactive computation that may also emit values. In contrast to signals in other FRP formulations, signal computations can end, leading to a monadic interface for sequencing signal phases. This interface has several advantages: routing is implicit, sequencing signal phases is easier and more intuitive than when using the switching combinators found in other FRP approaches, and dynamic lists require much less boilerplate code. In other FRP approaches, either the entire FRP expression is re-evaluated on each external stimulus, or impure techniques are used to prevent redundant re-computations. We show how Monadic FRP can be implemented straightforwardly in a purely functional way while preventing redundant re-computations.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         14:30–14:50
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Niki Vazou, Eric Seidel, and Ranjit Jhala
+         <BR>
+         <a href="liquid.pdf">Liquid Types for Haskell (demo)</a>
+         <p class="abstract">We present LiquidHaskell, a verifier for Haskell programs which uses Liquid Types to reduce the verification of higher-order, polymorphic, recursive programs over complex data types, into first-order Horn Clauses over integers, booleans and uninterpretated functions, which are then solved using classical predicate abstraction. In this demo proposal, we present an overview of this approach, and describe how we handle Haskell specific features like type classes, algebraic data structures and laziness.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         14:50–15:20
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Richard Bird, Jeremy Gibbons, Stefan Mehner, Tom Schrijvers, and Janis Voigtländer
+         <BR>
+         Understanding Idiomatic Traversals Backwards and Forwards
+         <p class="abstract">We present new ways of reasoning about a particular class of effectful Haskell programs, namely those expressed as idiomatic traversals. Starting out with a specific problem about labelling and unlabelling binary trees, we extract a general inversion law, applicable to any monad, relating a traversal over the elements of an arbitrary traversable type to a traversal that goes in the opposite direction. This law can be invoked to show that, in a suitable sense, unlabelling is the inverse of labelling. The inversion law, as well as a number of other properties of idiomatic traversals, is a corollary of a more general theorem characterising traversable functors as finitary containers: an arbitrary traversable object can be decomposed uniquely into shape and contents, and traversal be understood in terms of those. Proof of the theorem involves the properties of traversal in a special idiom related to the free applicative functor.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Andreas Abel</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         16:00–16:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Sam Lindley and Conor McBride
+         <BR>
+         Hasochism: The Pleasure and Pain of Dependently Typed Haskell Programming
+         <p class="abstract">Haskell's type system has outgrown its Hindley-Milner roots to the extent that it now stretches to the basics of dependently typed programming. In this paper, we collate and classify techniques for programming with dependent types in Haskell, and contribute some new ones. In particular, through extended examples&mdash;merge-sort and rectangular tilings&mdash;we show how to exploit Haskell's constraint solver as a theorem prover, delivering code which, as Agda programmers, we envy. We explore the compromises involved in simulating variations on the theme of the dependent function space in an attempt to help programmers put dependent types to work, and to inform the evolving language design both of Haskell and of dependently typed languages more broadly.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         16:30–17:00
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Joe Leslie-Hurd
+         <BR>
+         Maintaining Verified Software
+	 <p class="abstract">Maintaining software in the face of evolving dependencies is a challenging problem, and in addition to good release practices there is a need for automatic dependency analysis tools to avoid errors creeping in. Verified software reveals more semantic information in the form of mechanized proofs of functional specifications, and this can be used for dependency analysis. In this paper we present a scheme for automatic dependency analysis of verified software, which for each program checks that the collection of installed libraries is sufficient to guarantee its functional correctness. We illustrate the scheme with a case study of Haskell packages verified in higher order logic. The dependency analysis reduces the burden of maintaining verified Haskell packages by automatically computing version ranges for the packages they depend on, such that any combination provides the functionality required for correct operation.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Aaron Contorer</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         17:30–18:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Aaron Contorer, Andres Löh, Bryan O'Sullivan, Dmitriy Traytel, and Stephanie Weirich
+         <BR>
+         <a href="teaching.html">Teaching Haskell in Academia and Industry (panel)</a>
+         <p class="abstract">Many professional imperative programmers and undergraduate students share a common belief: <em>Haskell is hard learn</em>. Yet there are also some great success stories. Is Haskell indeed harder to learn than imperative programming, or just different? What is needed to lower the barriers to learning and adopting Haskell? What techniques and tools can developers, managers, and educators employ to accelerate and spread Haskell proficiency?</p>
+         <p class="abstract">More precisely, the panel will try to find answers to the following questions: What makes a good syllabus for Haskell?  Should Haskell be taught as an alternative approach, as a peer to imperative programming, as a replacement, as a complement?  Are teaching techniques applied in industry also suitable for academia and vice versa?  What tools for instructors to support teaching are there or are missing?  What tools for students to learn through self-guided or online study are there or are missing?</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD CLASS = "scheduleDate" COLSPAN = "2">
+         Tuesday, 24 September 2013
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         09:00–09:10
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Chung-chieh Shan
+         <BR>
+	 <a href="program-chair-report.pdf">Program Chair Report</a>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Lennart Augustsson</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         09:10–09:40
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Hai Liu, Neal Glew, Leaf Petersen, and Todd Anderson
+         <BR>
+         The Intel Labs Haskell Research Compiler
+         <p class="abstract">The Glasgow Haskell Compiler (GHC) is a well supported optimizing compiler for the Haskell programming language, along with its own extensions to the language and libraries. Haskell's lazy semantics imposes a runtime model which is in general difficult to implement efficiently. GHC achieves good performance across a wide variety of programs via aggressive optimization taking advantage of the lack of side effects, and by targeting a carefully tuned virtual machine. The Intel Labs Haskell Research Compiler uses GHC as a frontend, but provides a new whole-program optimizing backend by compiling the GHC intermediate representation to a relatively generic functional language compilation platform. We found that GHC's external Core language was relatively easy to use, but reusing GHC's libraries and achieving full compatibility were harder. For certain classes of programs, our platform provides substantial performance benefits over GHC alone, performing 2x faster than GHC with the LLVM backend on selected modern performance-oriented benchmarks; for other classes of programs, the benefits of GHC's tuned virtual machine continue to outweigh the benefits of more aggressive whole program optimization. Overall we achieve parity with GHC with the LLVM backend. In this paper, we describe our Haskell compiler stack, its implementation and optimization approach, and present benchmark results comparing it to GHC.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         09:40–10:10
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Andreas Voellmy, Junchang Wang, Paul Hudak, and Kazuhiko Yamamoto
+         <BR>
+         Mio: A High-Performance Multicore IO Manager for GHC
+         <p class="abstract">Haskell threads provide a key, lightweight concurrency abstraction to simplify the programming of important network applications such as web servers and software-defined network (SDN) controllers. The flagship Glasgow Haskell Compiler (GHC) introduces a run-time system (RTS) to achieve a high-performance multicore implementation of Haskell threads, by introducing effective components such as a multicore scheduler, a parallel garbage collector, an IO manager, and efficient multicore memory allocation. Evaluations of the GHC RTS, however, show that it does not scale well on multicore processors, leading to poor performance of many network applications that try to use lightweight Haskell threads. In this paper, we show that the GHC IO manager, which is a crucial component of the GHC RTS, is the scaling bottleneck. Through a series of experiments, we identify key data structure, scheduling, and dispatching bottlenecks of the GHC IO manager. We then design a new multicore IO manager named Mio that eliminates all these bottlenecks. Our evaluations show that the new Mio manager improves realistic web server throughput by 6.5x and reduces expected web server response time by 5.7x. We also show that with Mio, McNettle (an SDN controller written in Haskell) can scale effectively to 40+ cores, reach a throughput of over 20 million new requests per second on a single machine, and hence become the fastest of all existing SDN controllers.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Simon Thompson</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         10:30–11:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Simon Thompson, Bastiaan Heeren, Anil Madhavapeddy, Guy Steele, Bryan O'Sullivan, and Simon Peyton Jones
+         <BR>
+         Haskell and GHC: Too Big to Fail? (panel)
+         <p class="abstract">Haskell's future hinges on managing the sheer weight and complexity of the language and its standard libraries.  The role of GHC and its extensions also deserves special concern.  As our community grows in size and diversity, this panel will solicit opinions and advice from experienced designers and implementors of Haskell and other widely used functional languages.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Janis Voigtländer</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         11:50–12:10
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Luite Stegeman
+         <BR>
+         <a href="ghcjs.pdf">GHCJS, Concurrent Haskell in the Browser (demo)</a>
+         <p class="abstract">GHCJS is a Haskell to JavaScript compiler that uses the GHC API. GHCJS implements many modern Haskell features, including lightweight threading, STM and asynchronous exceptions. The GHCJS runtime has specific provisions to deal with multithreaded Haskell code in the singlethreaded JavaScript runtime.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         12:10–12:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Susumu Katayama
+         <BR>
+         <a href="magichaskeller.pdf">MagicHaskeller on the Web: Automated Programming as a Service (demo)</a>
+         <p class="abstract">Our Web-based automatic programming tool, named MagicHaskeller on the Web, can help casual programming in Haskell. We will show how simple to use the tool is, and then evaluates its ability.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Lunch</td></tr>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Gabriele Keller</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         14:00–14:30
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Johan Ankner and Josef Svenningsson
+         <BR>
+         An EDSL Approach to High Performance Haskell Programming
+         <p class="abstract">This paper argues for a new methodology for writing high performance Haskell programs by using Embedded Domain Specific Languages.</p>
+         <p class="abstract">We exemplify the methodology by describing a complete library, meta-repa, which is a reimplementation of parts of the repa library. The paper describes the implementation of meta-repa and contrasts it with the standard approach to writing high performance libraries. We conclude that even though the embedded language approach has an initial cost of defining the language and some syntactic overhead it gives a more tailored programming model, stronger performance guarantees, better control over optimizations, simpler implementation of fusion and inlining and allows for moving type level programming down to value level programming in some cases. We also provide benchmarks showing that meta-repa is as fast, or faster, than repa.</p>
+         <p class="abstract">Furthermore, meta-repa also includes push arrays and we demonstrate their usefulness for writing certain high performance kernels such as FFT.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         14:30–15:00
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Koen Claessen and Michał Pałka
+         <BR>
+         Splittable Pseudorandom Number Generators Using Cryptographic Hashing
+         <p class="abstract">We propose a new splittable pseudorandom number generator (PRNG) based on a cryptographic hash function. Splittable PRNGs, in contrast to linear PRNGs, allow the creation of two (seemingly) independent generators from a given random number generator. Splittable PRNGs are very useful for structuring purely functional programs, as they avoid the need for threading around state. We show that the currently known and used splittable PRNGs are either not efficient enough, have inherent flaws, or lack formal arguments about their randomness. In contrast, our proposed generator can be implemented efficiently, and comes with a formal statements and proofs that quantify how 'random' the results are that are generated. The provided proofs give strong randomness guarantees under assumptions commonly made in cryptography.</p>
+      </TD>
+   </TR>
+   <tr><td valign=baseline class=session colspan=2>Session chair: Norman Ramsey</td></tr>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         15:20–15:50
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Ben Lippmeier, Manuel Chakravarty, Gabriele Keller, and Amos Robinson
+         <BR>
+         Data Flow Fusion with Series Expressions in Haskell
+         <p class="abstract">Existing approaches to array fusion can deal with straight-line producer consumer pipelines, but cannot fuse branching data flows where a generated array is consumed by several different consumers. Branching data flows are common and natural to write, but a lack of fusion leads to the creation of an intermediate array at every branch point. We present a new array fusion system that handles branches, based on Waters's series expression framework, but extended to work in a functional setting. Our system also solves a related problem in stream fusion, namely the introduction of duplicate loop counters. We demonstrate speedup over existing fusion systems for several key examples.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTime">
+         15:50–16:20
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Peter Wortmann and David Duke
+         <BR>
+         Causality of Optimized Haskell: What is Burning Our Cycles?
+         <p class="abstract">Profiling real-world Haskell programs is hard, as compiler optimizations make it tricky to establish causality between the source code and program behavior. In this paper we attack the root issue by performing a causality analysis of functional programs under optimization. We apply our findings to build a novel profiling infrastructure on top of the Glasgow Haskell Compiler, allowing for performance analysis even of aggressively optimized programs.</p>
+      </TD>
+   </TR>
+   <TR>
+      <TD VALIGN = "baseline" CLASS = "scheduleTimeFirst">
+         16:40–17:10
+      </TD>
+      <TD VALIGN = "baseline" CLASS = "scheduleText">
+         Mario Blažević
+         <BR>
+         Adding Structure to Monoids
+         <p class="abstract">This paper presents the rationale and design of <em>monoid-subclasses</em>. This Haskell library consists of a collection of type classes that generalize the interface of several common data types, most importantly those used to represent strings. We demonstrate that the mathematical theory behind <em>monoid-subclasses</em> can bring substantial practical benefits to the Haskell library ecosystem by generalizing attoparsec, one of the most popular Haskell parsing libraries.</p>
+      </TD>
+   </TR>
+</TABLE>
+
+<!--h2>Contact</h2-->
+<address>
+<a href="http://www.haskell.org/haskell-symposium/2013/abstracts.html">http://www.haskell.org/haskell-symposium/2013/abstracts.html</a>
+&middot;
+<a href="mailto:haskell2013@easychair.org">haskell2013@easychair.org</a>
+</address>
+
+</body>
+</html>
