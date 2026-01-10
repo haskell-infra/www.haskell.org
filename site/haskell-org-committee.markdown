@@ -63,9 +63,9 @@ are:
   * Avi Press (term ends 2026)
   * Matthías Páll Gissurarson (term ends 2026)
   * Moritz Angermann (term ends 2026)
-  * Rebecca Skinner (term ends 2025)
-  * Théophile "Hécate" Choutri (term ends 2025)
-  * Aaron Allen (term ends 2025)
+  * Rebecca Skinner (term ends 2028)
+  * Arnaud Bailly (term ends 2028)
+  * Jeff Young (term ends 2028)
   * Tom Ellis (vice chair, vice treasurer) (term ends 2027)
 
 Committee members do not need to be deep technical Haskell experts. Instead we
