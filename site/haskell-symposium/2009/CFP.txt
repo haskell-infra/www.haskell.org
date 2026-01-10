@@ -1,0 +1,100 @@
+                           Haskell 09
+
+               ACM SIGPLAN Haskell Symposium 2009
+                    Edinburgh, Scotland, UK
+                       September 3, 2009
+
+                       CALL FOR PAPERS
+
+             http://haskell.org/haskell-symposium/2009/
+
+   The ACM SIGPLAN Haskell Symposium 2009 will be co-located with the
+   2009 International Conference on Functional Programming (ICFP).
+
+   The purpose of the Haskell Symposium is to discuss experiences with
+   Haskell and future developments for the language. The scope of the
+   symposium includes all aspects of the design, semantics, theory,
+   application, implementation, and teaching of Haskell. 
+
+   Topics of interest include, but are not limited to, the following:
+     * Language Design, with a focus on possible extensions and
+       modifications of Haskell as well as critical discussions of the
+       status quo;
+     * Theory, in the form of a formal treatment of the semantics of the
+       present language or future extensions, type systems, and
+       foundations for program analysis and transformation;
+     * Implementations, including program analysis and transformation,
+       static and dynamic compilation for sequential, parallel, and
+       distributed architectures, memory management as well as foreign
+       function and component interfaces;
+     * Tools, in the form of profilers, tracers, debuggers,
+       pre-processors, and so forth;
+     * Applications, Practice, and Experience, with Haskell for scientific
+       and symbolic computing, database, multimedia and Web applications,
+       and so forth as well as general experience with Haskell in
+       education and industry;
+     * Functional Pearls, being elegant, instructive examples of using
+       Haskell.
+
+   Papers in the latter two categories need not necessarily report
+   original research results; they may instead, for example, report
+   practical experience that will be useful to others, re-usable
+   programming idioms, or elegant new ways of approaching a
+   problem. The key criterion for such a paper is that it makes a
+   contribution from which other Haskellers can benefit. It is not
+   enough simply to describe a program!
+
+   Before 2008, the Haskell Symposium was known as the Haskell
+   Workshop.  The name change reflects both the steady increase of
+   influence of the Haskell Workshop on the wider community as well as
+   the increasing number of high quality submissions. The acceptance
+   process is highly competitive.  After eleven Haskell Workshops
+   between 1995 and 2007, the first Haskell Symposium was held in
+   Victoria in 2008.
+
+Submission Details
+
+     * Submission Deadline: Friday, May 8th 2009  (3:00 pm, Eastern US Time)
+     * Author Notification: Monday, June 1st 2009
+     * Final Papers Due   : Monday, June 15th 2009
+
+   Submitted papers should be in portable document format (PDF), formatted
+   using the ACM SIGPLAN style guidelines
+   (http://www.acm.org/sigs/sigplan/authorInformation.htm). The length is
+   restricted to 12 pages, and the font size 9pt. Each submission must
+   adhere to SIGPLAN's republication policy, as explained on the web.
+   Violation risks summary rejection of the offending submission.
+
+   Accepted papers will be published by the ACM and will appear in the ACM
+   Digital Library.
+
+   If there is sufficient demand, we will try to organize a time slot for
+   system or tool demonstrations. If you are interested in demonstrating a
+   Haskell related tool or application, please send a brief demo proposal
+   to Stephanie Weirich, sweirich@cis.upenn.edu.
+
+
+Links
+
+     * http://haskell.org/haskell-symposium, the permanent homepage of the
+       Haskell Symposium.
+     * http://haskell.org/haskell-symposium/2009/, the 2009 Haskell
+       Symposium web page.
+     * http://www.icfpconference.org/icfp2009, the ICFP 2009 web page.
+
+Program Committee
+
+     * Jeremy Gibbons, Oxford University
+     * Bastiaan Heeren, Open Universiteit Nederland
+     * John Hughes, Chalmers/Quviq
+     * Mark Jones, Portland State University
+     * Simon Marlow, Microsoft Research
+     * Ulf Norell, Chalmers
+     * Chris Okasaki, United States Military Academy
+     * Ross Paterson, City University London
+     * Alexey Rodriguez Yakushev, Vector Fabrics
+     * Don Stewart, Galois
+     * Janis Voigtlaender, TU Dresden
+     * Stephanie Weirich, University of Pennsylvania (Chair)
+
+

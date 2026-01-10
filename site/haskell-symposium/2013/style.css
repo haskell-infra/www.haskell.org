@@ -1,0 +1,60 @@
+body {
+    max-width: 44em;
+    margin: 2em auto 2em auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h1.title { font-size: x-large; border-top: solid black 2px }
+h2.title { font-weight: normal }
+.title { text-align: center }
+
+.menu { font-size: 90%; display: block; border-top: solid black 1px; border-bottom: solid black 1px; margin: 2ex 0 0 0; padding: .5ex 0 .5ex 0 }
+.menu li { display: inline; margin: 0; padding: .5ex 1ex .5ex 1ex }
+.menu li.menuCurrent { background: #E1D8B7 }
+.menu + h1, .menu + div.news, div.news + h1 { margin-top: 0; border-top: none }
+
+div.news { border: dotted black 1px; background: #ffffee; margin: 3ex 0 1ex 0; padding: 0 }
+div.feeds { float: right }
+div.feeds a, div.feeds img { border: none }
+dl.news { padding: 0.75ex; margin: 0 }
+dl.news dd { margin-left: 1em }
+
+.scheduleTable          { margin: 0; padding: 0; width: 100% }
+.scheduleDate           { margin: 0; font-weight: bold;   padding: 0.5em 0 0.5em 0; border-top: solid black 1px }
+.session                { margin: 0; font-style: italic;  padding: 0 0.75em 0.5em 0 }
+.scheduleTimeFirst,
+.scheduleTime           { margin: 0; white-space: nowrap; padding: 0 0.75em 0.5em 0 }
+.scheduleTimeFirst + td,
+.scheduleTime      + td { margin: 0; padding: 0 0 0.5em 0 }
+.abstract               { margin: 0.5em 0 0 0; font-size: 95% }
+
+h1 { font-size: x-large; padding: 1ex 0 0 0; margin: 1.5ex 0 1.25ex 0; border-top: solid black 1px }
+h2 { font-size: large; padding: 0; margin: 1ex 0 1ex 0 }
+h3 { margin-bottom: 0 }
+body, h3, address { font-size: medium }
+h1, h2, h3 { font-weight: bold }
+address { margin-top: 2ex; padding: 1ex 0 0 0; border-top: solid black 2px; text-align: center }
+
+a { cursor: pointer; text-decoration: none }
+a:hover, a:active, a:focus { text-decoration: underline }
+
+table {
+    border-collapse: collapse;
+    padding: 0;
+}
+tr, th, td {
+    vertical-align: baseline;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0.2ex;
+}
+th, dt { font-weight: normal; font-style: italic }
+dt .remark { font-style: normal }
+th { font-weight: normal; font-style: italic; white-space: nowrap }
+
+.format { border:none; margin:0 1ex 0 1ex; padding:0px 2px 0px 2px; text-align:center; color:white; background-color:#e07000; font-family: sans-serif; font-weight:bold; font-size:12px; line-height:12px }
+
+span.title { font-style: italic }

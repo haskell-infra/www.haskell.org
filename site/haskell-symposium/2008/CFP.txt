@@ -1,0 +1,105 @@
+
+                           Haskell 08
+
+               ACM SIGPLAN 2008 Haskell Symposium
+               Victoria, British Columbia, Canada
+                Thursday, 25th September, 2008
+
+                     FINAL CALL FOR PAPERS
+
+             http://haskell.org/haskell-symposium/2008
+
+   The Haskell Symposium 2008 is part of the 2008 International Conference
+   on Functional Programming (ICFP) as an associated ACM SIGPLAN sponsored
+   symposium.
+
+   The purpose of the Haskell Symposium is to discuss experience with
+   Haskell, and future developments for the language. The scope of the
+   symposium includes all aspects of the design, semantics, theory,
+   application, implementation, and teaching of Haskell. Topics of
+   interest include, but are not limited to, the following:
+     * Language Design, with a focus on possible extensions and
+       modifications of Haskell as well as critical discussions of the
+       status quo;
+     * Theory, in the form of a formal treatment of the semantics of the
+       present language or future extensions, type systems, and
+       foundations for program analysis and transformation;
+     * Implementations, including program analysis and transformation,
+       static and dynamic compilation for sequential, parallel, and
+       distributed architectures, memory management as well as foreign
+       function and component interfaces;
+     * Tools, in the form of profilers, tracers, debuggers,
+       pre-processors, and so forth;
+     * Applications, Practice, and Experience, with Haskell for scientific
+       and symbolic computing, database, multimedia and Web applications,
+       and so forth as well as general experience with Haskell in
+       education and industry;
+     * Functional Pearls, being elegant, instructive examples of using
+       Haskell.
+
+   Papers in the latter two categories need not necessarily report
+   original research results; they may instead, for example, report
+   practical experience that will be useful to others, re-usable
+   programming idioms, or elegant new ways of approaching a problem. The
+   key criterion for such a paper is that it makes a contribution from
+   which other practitioners can benefit. It is not enough simply to
+   describe a program!
+
+   Before 2008, the Haskell Symposium was known as the Haskell
+   Workshop.  The name change reflects the steady increase of
+   influence of the Haskell Workshop on the wider community, as well
+   as an increasing numbers of high quality submissions making the
+   acceptance process highly competitive.  Previously, Haskell
+   Workshops have been held in La Jolla (1995), Amsterdam (1997),
+   Paris (1999), Montreal (2000), Firenze (2001), Pittsburgh (2002),
+   Uppsala (2003), Snowbird (2004), Tallinn (2005), 
+   Portland, Oregon (2006), Freiburg (2007).
+
+Submission Details
+
+     * Submission Deadline: Tuesday, June 24rd 2008 
+          (8:00 pm, Central US Time)
+     * Author Notification: Friday, July 18th 2008
+     * Final Papers Due: Monday, July 28th 2008
+
+   Submitted papers should be in portable document format (PDF), formatted
+   using the ACM SIGPLAN style guidelines
+   (http://www.acm.org/sigs/sigplan/authorInformation.htm). The length is
+   restricted to 12 pages, and the font size 9pt. Each submission must
+   adhere to SIGPLAN's republication policy, as explained on the web.
+   Violation risks summary rejection of the offending submission.
+
+   Paper submissions can be made via the easychair webpage
+   http://www.easychair.org/conferences/?conf=haskell08
+
+   Accepted papers will be published by the ACM and will appear in the ACM
+   Digital Library.
+
+   If there is sufficient demand, we will try to organize a time slot for
+   system or tool demonstrations. If you are interested in demonstrating a
+   Haskell related tool or application, please send a brief demo proposal
+   to Andy Gill, andygill@ku.edu.
+
+Links
+
+     * http://haskell.org/haskell-symposium, the permanent homepage of the
+       Haskell Symposium.
+     * http://haskell.org/haskell-symposium/2008, the 2008 Haskell
+       Symposium web page.
+     * http://www.icfpconference.org/icfp2008, the ICFP 2008 web page.
+
+Program Committee
+
+     * Arthur Baars, Instituto Tecnologico de Informatica, Valencia, Spain
+     * Jeremy Gibbons, Oxford University, UK
+     * Andy Gill, University of Kansas, USA (Program Chair)
+     * William Harrison, University of Missouri, Columbia, USA
+     * Roman Leshchinskiy, University of New South Wales, Australia
+     * Bernie Pope, University of Melbourne, Australia
+     * Colin Runciman, University of York, UK
+     * Tim Sheard, Portland State University, USA
+     * Mary Sheeran, Chalmers University of Technology, Sweden
+     * Satnam Singh, Microsoft Research, UK
+     * Wouter Swierstra, Nottingham University, UK
+     * Varmo Vene, University of Tartu, Estonia
+

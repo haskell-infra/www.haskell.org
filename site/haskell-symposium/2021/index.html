@@ -1,0 +1,632 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <style>
+
+    ul.papers li { margin-bottom: 1em; }
+    div.paper { color: #666; font-weight: bold; }
+
+     tr.spaceunder > td
+     { padding-bottom: 1ex; }
+
+     td.session
+     { color: #008000; }
+
+     td.paper
+     { font-weight: bold; }
+
+@media screen and (min-width: 900px) {
+     .on_the_side {
+      float: right;
+     }
+}
+
+     .boxed {
+      border: 1px solid black;
+      padding: 1em;
+      margin: 1em;
+      position: relative;
+      background-color: white;
+      color: black;
+     }
+     table.timeline th { text-align: left; }
+     table.timeline td { padding-left: 1em; }
+     .boxed>.heading {
+        position: absolute;
+        top:  -1ex;
+        right: 1em;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        text-align: center;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        background-color: white;
+        font-size: 14pt;
+        font-family: Arial,Helvetica,sans-serif;
+      }
+
+      .note {
+        font-size: smaller;
+        font-style: italic;
+      }
+    </style>
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>ACM SIGPLAN Haskell Symposium 2021</title>
+</head>
+
+<body style="background-color: white;">
+
+<hr>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="150">
+        <img style="width: 122px; height: 91px;"
+             alt="Haskell logo" border="0"
+             src="images/logo7000.png">
+      </td>
+      <td align="center">
+        <h1>Haskell Symposium 2021</h1>
+        <font size="+2">
+          <em>** Virtual **, 26&ndash;27 August 2021</em>
+        </font>
+      </td>
+      <td width="150">
+        <img src="images/acmlogo.gif" alt="ACM logo" align="right" border="0">
+      </td>
+      </tr>
+  </tbody>
+</table>
+
+<hr>
+<div class="on_the_side">
+
+<div class="boxed">
+<div class="heading">Timeline</div>
+<table class="timeline">
+<tr><th colspan="3">Early track:</td></tr>
+<tr><td>Submission deadline:    </td><td>19 March 2021   </td><td class="note">Friday</td><tr>
+<tr><td>Notification:           </td><td>23 April 2021  </td><td class="note">Friday</td><tr>
+<tr><td colspan="3"></td></tr>
+<tr><th colspan="3">Regular track and demos:</td></tr>
+<tr><td>Submission deadline:    </td><td>21 May  2021     </td><td class="note">Friday</td><tr>
+<tr><td>Notification:           </td><td>23 June 2021     </td><td class="note">Friday</td><tr>
+<tr><td>Camera ready:           </td><td>5 July 2021     </td><td class="note">Monday</td><tr>
+<tr><td colspan="3" class="note" style="text-align: center">Deadlines valid <a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth">anywhere on Earth</a>
+<tr><td colspan="3" class="note" style="text-align: center"><a href="#submission-details">Submission details</a></td></tr>
+</table>
+</div>
+
+<div class="boxed">
+<div class="heading">Program Committee</div>
+<table>
+
+<tr><td>Chair's e-mail:</td>             <td class="note">j.hage@uu.nl</td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td> Edwin Brady</td><td class="note">University of St Andrews              </td></tr>
+<tr><td> Koen Claessen	 </td><td class="note">Chalmers University of Technology                        </td></tr>
+<tr><td> Dominique Devriese </td><td class="note">Vrije Universiteit Brussel</td></tr>
+<tr><td> Andy Gill		 </td><td class="note">University of Kansas           </td></tr>
+<tr><td> Jurriaan Hage (chair)		 </td><td class="note">Universiteit Utrecht                    </td></tr>
+<tr><td> Zhenjiang Hu	 </td><td class="note">Peking University                                    </td></tr>
+<tr><td> Ranjit Jhala		 </td><td class="note">University of California      </td></tr>
+<tr><td> Patricia Johann		 </td><td class="note">Appalachian State University             </td></tr>
+<tr><td> Yukiyoshi Kameyama 	 </td><td class="note">University of Tsukuba                     </td></tr>
+<tr><td> George Karachalias		 </td><td class="note">Tweag             </td></tr>
+<tr><td> Ralf L&auml;mmel		 </td><td class="note">University of Koblenz-Landau                             </td></tr>
+<tr><td> Daan Leijen		 </td><td class="note">Microsoft Research                       </td></tr>
+<tr><td> Ben Lippmeier	 </td><td class="note">Ghost Locomotion </td></tr>
+<tr><td> Neil Mitchell	 </td><td class="note">Facebook          </td></tr>
+<tr><td> Alberto Pardo		 </td><td class="note">Universidad de la Rep&uacute;blica, Uruguay                      </td></tr>
+<tr><td> Matt Roberts		 </td><td class="note">Macquarie University                                   </td></tr>
+<tr><td> Janis Voigtl&auml;nder	 </td><td class="note">University of Duisburg-Essen                            </td></tr>
+<tr><td> Nicolas Wu </td><td class="note">Imperial College London</td></tr>
+
+</table>
+</div>
+
+</div>
+
+
+
+
+<p>The <a href="http://www.acm.org">ACM</a>
+  <a href="http://www.sigplan.org">SIGPLAN</a>
+  <a href="http://www.haskell.org/">Haskell</a>
+  Symposium 2021 will be co-located with the
+  <a href="http://icfp21.sigplan.org">2021 International Conference on Functional Programming (ICFP)</a>,
+  that will be held ** virtually **.
+</p>
+<!--
+<p><b>The main Haskell Symposium website is hosted on the ICFP
+  website:</b></p>
+<p><a href="https://icfp21.sigplan.org/home/haskellsymp-2021">https://icfp21.sigplan.org/home/haskellsymp-2021</a></p>
+-->
+<p><b>Please use the <a href="http://icfp21.sigplan.org">ICFP website</a> to register for the Symposium.
+
+Note: this website has the same content as <a href="https://icfp21.sigplan.org/home/haskellsymp-2021">this one</a>, under
+the ICFP umbrella.
+</b></p>
+
+<!--
+<h2>Symposium Schedule</h2>
+
+<h3>Day 1, Thursday, September 7</h3>
+
+<h4>9:00&ndash;10:00</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Ornaments: exploiting parametricity for safer, more automated code refactorization and code reuse (Invited Talk)</div>
+  <div class="author">Didier Rémy</div>
+  <div class="note">INRIA Paris, France</div>
+</li>
+</ul>
+
+<h4>10:00&ndash;10:30: Break</h4>
+
+<h4>10:30&ndash;11:30</h4>
+
+<ul class="papers">
+<li>
+  <div class="paper">Algebraic Graphs with Class (Functional Pearl)</div>
+  <div class="author">Andrey Mokhov</div>
+  <div class="note">Newcastle University, UK</div>
+</li>
+<li>
+  <div class="paper">Packrats Parse in Packs</div>
+  <div class="author">Mario Blažević and Jacques Légaré</div>
+  <div class="note">Stilo International plc., Canada</div>
+</ul>
+
+<h4>11:30&ndash;12:00: Break</h4>
+
+<h4>12:00&ndash;12:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Ode on a Random Urn (Functional Pearl)</div>
+  <div class="author">Leonidas Lampropoulos, Antal Spector-Zabusky, and Kenneth Foner</div>
+  <div class="note">University of Pennsylvania, USA</div>
+</li>
+</ul>
+
+<h4>12:30&ndash;14:00: Lunch</h4>
+
+<h4>14:00&ndash;15:00</h4>
+
+<ul class="papers">
+<li>
+  <div class="paper">QuickSpec: A Lightweight Theory Exploration Tool for Programmers (System Demonstration)</div>
+  <div class="author">Maximilian Algehed, Koen Claessen, Moa Johansson, and Nicholas Smallbone</div>
+  <div class="note">Chalmers University of Technology, Sweden</div>
+</li>
+
+<li>
+  <div class="paper">Speculate: Discovering Conditional Equations and Inequalities about Black-Box Functions by Reasoning from Test Results</div>
+  <div class="author">Rudy Braquehais and Colin Runciman</div>
+  <div class="note">University of York, UK</div>
+</li>
+</ul>
+
+<h4>15:00&ndash;15:30: Break</h4>
+
+<h4>15:30&ndash;16:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Using Coq to Write Fast and Correct Haskell</div>
+  <div class="author">John Wiegley and Ben Delaware</div>
+  <div class="note">BAE Systems, USA; Purdue University, USA</div>
+</li>
+<li>
+  <div class="paper">A Tale of Two Provers: Verifying Monoidal String Matching in Liquid Haskell and Coq</div>
+  <div class="author">Niki Vazou, Leonidas Lampropoulos, and Jeff Polakow</div>
+  <div class="note">University of Maryland, USA; University of Pennsylvania, USA; Awake Networks, USA</div>
+</li>
+</ul>
+
+<h4>16:30&ndash;16:50: Break</h4>
+
+<h4>16:50&ndash;17:50</h4>
+<ul class="papers">
+<li>
+  <div class="paper">A Meta-EDSL for Distributed Web Applications</div>
+  <div class="author">Anton Ekblad</div>
+  <div class="note">Chalmers University of Technology, Sweden</div>
+</li>
+<li>
+  <div class="paper">Composable Network Stacks and Remote Monads</div>
+  <div class="author">Justin Dawson, Mark Grebe, and Andy Gill</div>
+  <div class="note">University of Kansas, USA</div>
+</li>
+</ul>
+
+
+
+<h3>Day 2, Friday, September 8</h3>
+
+<h4>9:00&ndash;10:00</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Algorithmic Music in Haskell (Invited Talk)</div>
+  <div class="author">Donya Quick</div>
+  <div class="note">Stevens Institute of Technology</div>
+</li>
+</ul>
+
+<h4>10:00&ndash;10:30: Break</h4>
+
+<h4>10:30&ndash;11:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Well-Typed Music Does Not Sound Wrong (Experience Report)</div>
+  <div class="author">Dmitrij Szamozvancev and Michael Gale</div>
+  <div class="note">University of Cambridge, UK</div>
+</li>
+<li>
+  <div class="paper">Back to the Future: Time Travel in FRP</div>
+  <div class="author">Ivan Perez</div>
+  <div class="note">University of Nottingham, UK</div>
+</li>
+</ul>
+
+<h4>12:00&ndash;12:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">The Linearity Monad </div>
+  <div class="author">Jennifer Paykin and Steve Zdancewic</div>
+  <div class="note">University of Pennsylvania, USA</div>
+</li>
+</ul>
+
+<h4>12:30&ndash;14:00: Lunch</h4>
+
+<h4>14:00&ndash;15:00</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Elaboration on Functional Dependencies</div>
+  <div class="author">Georgios Karachalias and Tom Schrijvers</div>
+  <div class="note">KU Leuven, Belgium</div>
+</li>
+<li>
+  <div class="paper">Quantified Class Constraints</div>
+  <div class="author">Gert-Jan Bottu, Georgios Karachalias, Tom Schrijvers, Bruno C. D. S. Oliveira, and Philip Wadler
+  <div class="note">KU Leuven, Belgium; University of Hong Kong, Hong Kong; University of Edinburgh, UK</div>
+</li>
+</ul>
+
+<h4>15:00&ndash;15:30: Break</h4>
+
+<h4>15:30&ndash;16:30</h4>
+
+<ul class="papers">
+<li>
+  <div class="paper">Hardware Software Co-Design in Haskell</div>
+  <div class="author">Markus Aronsson and Mary Sheeran</div>
+  <div class="note">Chalmers University of Technology, Sweden</div>
+</li>
+<li>
+  <div class="paper">Streaming Irregular Arrays</div>
+  <div class="author">Robert Clifton-Everest, Trevor L. McDonell, Manuel M T Chakravarty, and Gabriele Keller</div>
+  <div class="note">University of New South Wales, Australia</div>
+</li>
+</ul>
+
+<h4>16:30&ndash;16:50: Break</h4>
+
+<h4>16:50&ndash;17:50</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Improving STM Performance with Transactional Structs</div>
+  <div class="author">Ryan Yates and Michael Scott</div>
+  <div class="note">University of Rochester, USA</div>
+</li>
+<li>
+  <div class="paper">Adaptive Lock-Free Data Structures in Haskell: A General Method for Concurrent Implementation Swapping</div>
+  <div class="author">Chao-Hong Chen, Vikraman Choudhury, and Ryan Newton</div>
+  <div class="note">Indiana University, USA</div>
+</li>
+</ul>
+-->
+
+
+<h2>Scope</h2>
+<p>
+The Haskell Symposium presents original research on Haskell, discusses
+practical experience and future development of the language, and promotes
+other forms of declarative programming.
+</p>
+
+<p>
+  Topics of interest include:
+</p>
+
+<ul>
+  <li><em>Language Design</em>, with a focus on possible extensions and
+  modifications of Haskell as well as critical discussions of the status quo;
+  <br><br>
+
+  <li><em>Theory</em>, such as formal semantics of the present language or
+  future extensions, type systems, effects, metatheory, and foundations for
+  program analysis and transformation;
+  <br><br>
+
+  <li><em>Implementations</em>, including program analysis and transformation,
+  static and dynamic compilation for sequential, parallel, and
+  distributed architectures, memory management, as well as foreign
+  function and component interfaces;
+  <br><br>
+
+  <li><em>Libraries</em>, that demonstrate new ideas or techniques for
+  functional programming in Haskell;
+  <br><br>
+
+  <li><em>Tools</em>, such as profilers, tracers, debuggers, preprocessors, and
+  testing tools;
+  <br><br>
+
+  <li><em>Applications</em>, to scientific and symbolic computing, databases,
+  multimedia, telecommunication, the web, and so forth;
+  <br><br>
+
+  <li><em>Functional Pearls</em>, being elegant and instructive programming
+  examples;
+  <br><br>
+
+  <li><em>Experience Reports</em>, to document general practice and experience
+  in education, industry, or other contexts;
+  <br><br>
+
+  <li><em>Tutorials</em>, to document how to use a particular language feature,
+    programming technique, tool or library within the Haskell ecosystem;
+  <br><br>
+  
+  <li><em>System Demonstrations</em>, based on running software rather than
+      novel research results.
+</ul>
+
+<p>
+Regular papers should explain their research contributions in both
+general and technical terms, identifying what has been accomplished,
+explaining why it is significant, and relating it to previous work,
+and to other languages where appropriate.
+</p>
+
+
+<p>
+<em>Experience reports</em> and <em>functional pearls</em> need not necessarily report original
+academic research results. For example, they may instead report reusable
+programming idioms, elegant ways to approach a problem, or practical experience
+that will be useful to other users, implementors, or researchers. The key
+criterion for such a paper is that it makes a contribution from which other
+Haskellers can benefit. It is not enough simply to describe a standard solution
+to a standard programming problem, or report on experience where you used
+Haskell in the standard way and achieved the result you were expecting.
+</p>
+<p>
+A new submission category for this year's Haskell Symposium is the <em>tutorial</em>.
+Like with the experience report and the functional pearl, the key criterion for
+such a paper is that it makes a contribution from which other Haskellers can
+benefit. What distinguishes a tutorial is that its
+focus is on explaining an aspect of the Haskell language and/or ecosystem in a
+way that is generally useful to a Haskell audience. Tutorials for many
+such topics can be found online; the distinction here is that by writing it up
+for formal review it will be vetted by experts and formally published.
+</p>
+<p>
+<em>System demonstrations</em> should summarize the system capabilities
+that would be demonstrated. The proposals will be judged on whether the
+ensuing session is likely to be important and interesting to the Haskell
+community at large, whether on grounds academic or industrial,
+theoretical or practical, technical, social or artistic.
+Please contact the program chair with any questions about the
+relevance of a proposal.
+</p>
+
+<p>
+If your contribution is not a research paper, please mark the title of your
+experience report, functional pearl, tutorial or system demonstration as such,
+by supplying a subtitle (Experience Report, Functional Pearl, Tutorial Paper, System Demonstration).
+</p>
+
+<a name="submission-details">
+<h2>Submission Details</h2>
+
+<div class="on_the_side">
+<div class="boxed">
+<div class="heading">Page Limits</div>
+<table>
+<tr><td>Regular paper</td><td>12 pages</td><tr>
+<tr><td>Functional pearl</td><td>12 pages</td><tr>
+<tr><td>Tutorial</td><td>12 pages</td><tr>
+<tr><td>Experience report</td><td>6 pages</td><tr>
+<tr><td>Demo proposal</td><td>2 pages</td><tr>
+</table>
+</div></div>
+
+<p>
+<b>[Early and Regular Track]</b>
+The Haskell Symposium uses a two-track submission process so that some
+papers can gain early feedback. Strong papers submitted to the
+early track are accepted outright, and the others will be given their
+reviews and invited to resubmit to the regular track.
+Papers accepted via the early and regular tracks are
+considered of equal value and will not be distinguished in the
+proceedings.  Although all papers may be submitted to the early track, authors of
+functional pearls and experience reports are particularly encouraged to
+use this mechanism. The success of these papers depends heavily on the
+way they are presented, and submitting early will give the program
+committee a chance to provide feedback and help draw out the key ideas.<p>
+
+
+<p><b>[Formatting]</b>
+Submitted papers should be in portable document format (PDF),
+formatted using the
+<a href="http://www.sigplan.org/Resources/Author/#acmart-format">ACM
+SIGPLAN style guidelines</a>.
+<ul>
+<li>Authors should use the <b>acmart</b> format, with the <b>sigplan</b>
+sub-format for ACM proceedings.</li>
+For details, see <a href="http://www.sigplan.org/Resources/Author/#acmart-format">http://www.sigplan.org/Resources/Author/#acmart-format </a></li>
+
+<li>Functional pearls, tutorials, experience reports, and demo proposals should be <b>labelled clearly</b> as such.</li>
+</ul>
+</p>
+
+<p><b>[Lightweight Double-blind Reviewing]</b>
+
+Haskell Symposium 2021 will use a lightweight double-blind reviewing process.
+To facilitate this, submitted papers must adhere to two rules:
+
+  <ol>
+    <li>Author names and institutions must be omitted, and</li>
+    <li>References to authors’ own related work should be in the third person
+      (e.g., not “We build on our previous work …” but rather “We build on the work of …”).</li>
+  </ol>
+
+The purpose of this process is to help the reviewers come to an initial
+judgment about the paper without bias, not to make it impossible for them to
+discover the authors if they were to try. Nothing should be done in the name
+of anonymity that weakens the submission or makes the job of reviewing the
+paper more difficult (e.g., important background references should not be
+omitted or anonymized). In addition, authors should feel free to disseminate
+their ideas or draft versions of their paper as they normally would. For
+instance, authors may post drafts of their papers on the web or give talks on
+their research ideas.</p>
+<p>
+A reviewer will learn the identity of the author(s) of a paper after a review
+is submitted.</p>
+
+
+<p><b>[Limits]</b>
+  The length of submissions should not exceed the following limits:
+
+  <table>
+    <tr><td>Regular paper:     </td><td>12 pages</td></tr>
+    <tr><td>Functional pearl:  </td><td>12 pages</td></tr>
+    <tr><td>Tutorial:          </td><td>12 pages</td></tr>
+    <tr><td>Experience report: </td><td>6 pages</td></tr>
+    <tr><td>Demo proposal:     </td><td>2 pages</td></tr>
+  </table>
+  
+There is no requirement that all pages are used. For example, a
+functional pearl may be much shorter than 12 pages. In all cases,
+the list of references is not counted against these page limits.</p>
+
+<p><b>[Submissions]</b>
+
+<!-- Note: this paragraph has been updated since the 2021 symposium to a form that ACM wants to see in the following symposia. In particular, a reference to 
+to the human participants policy has been added. -->
+
+<p>
+As a published ACM author, you and your co-authors are subject to all <a href="https://www.acm.org/publications/policies/toc">ACM Publications Policies</a>, including <a href="http://sigplan.org/Resources/Policies/Republication/">
+    SIGPLAN's republication policy</a>, <a href="https://www.acm.org/publications/policies/plagiarism">ACM's policies on plagiarism</a>, and <a href="https://www.acm.org/publications/policies/research-involving-human-participants-and-subjects">
+ACM's new Publications Policy on Research Involving Human Participants and Subjects<a/>.</p>
+
+<p>Program Committee members are allowed to submit papers, but their papers
+will be held to a higher standard.</p>
+
+<p>The paper submission deadline and length limitations are firm
+There will be no extensions, and papers violating the length limitations will
+be summarily rejected.</p>
+
+<p>Papers should be submitted through <a href="https://haskell21.hotcrp.com/">HotCRP</a>.</p>
+
+<p>
+Improved versions of a paper may be submitted at any point before the
+submission deadline using the same web interface.</p>
+
+<p>Supplementary material: Authors have the option to attach supplementary
+material to a submission, on the understanding that reviewers may choose not
+to look at it. This supplementary material should not be submitted as part of
+the main document; instead, it should be uploaded as a separate PDF document
+or tarball.</p>
+
+<p>Supplementary material should be uploaded at submission time, not by providing
+a URL in the paper that points to an external repository.</p>
+
+<p>Authors are free to upload both anonymized and non-anonymized supplementary
+material. Anonymized supplementary material will be visible to reviewers
+immediately; non-anonymized supplementary material will be revealed to
+reviewers only after they have submitted their review of the paper and learned
+the identity of the author(s).</p>
+
+<p>Resubmitted Papers: Authors who submit a revised version of a paper that has
+previously been rejected by another conference have the option to attach an
+annotated copy of the reviews of their previous submission(s), explaining how
+they have addressed these previous reviews in the present submission. If a
+reviewer identifies him/herself as a reviewer of this previous submission and
+wishes to see how his/her comments have been addressed, the principal editor
+will communicate to this reviewer the annotated copy of his/her previous
+review. Otherwise, no reviewer will read the annotated copies of the previous
+reviews.</p>
+
+<!--
+<h2>Travel Support</h2>
+
+<p>
+Student attendees with accepted papers can apply for a SIGPLAN PAC grant
+to help cover travel expenses. PAC also offers other support, such as
+for child-care expenses during the meeting or for travel costs for
+companions of SIGPLAN members with physical disabilities, as well as for
+travel from locations outside of North America and Europe. For details
+on the PAC program, see <a href="http://pac.sigplan.org">its web page</a>.
+</p>
+
+-->
+
+<h2>Proceedings</h2>
+
+<p>Accepted papers will be included in the ACM Digital Library.
+ Their authors will be required to choose one of the following options:
+<ul>
+<li> Author retains copyright of the work and grants ACM a non-exclusive
+permission-to-publish license (and, optionally, licenses the work with a
+Creative Commons license);</li>
+<li>Author retains copyright of the work and grants ACM an exclusive
+  permssion-to-publish license;</li>
+<li>Author transfers copyright of the work to ACM.</li>
+</ul>
+For more information, please see <a
+href="http://www.acm.org/publications/policies/copyright-policy">ACM Copyright
+Policy</a> and <a href="http://authors.acm.org/main.html">ACM Author
+Rights</a>.</p>
+
+
+<p>Accepted proposals for system demonstrations will be posted on the
+symposium website but not formally published in the proceedings.</p>
+
+<p>Publication date: The official publication date of accepted papers is
+the date the proceedings are made available in the ACM Digital
+Library. This date may be up to two weeks prior to the first day of the
+conference. The official publication date affects the deadline for any
+patent filings related to published work.</p>
+
+<h2>Artifacts</h2>
+
+<p>
+Authors of accepted papers are encouraged to make auxiliary material (artifacts
+like source code, test data, etc.) available with their paper. They can opt to
+have these artifacts published alongside their paper in the ACM Digital Library
+(copyright of artifacts remains with the authors).</p>
+
+<p> <b>[Badge]</b> 
+If an accepted paper's artifacts are made permanently available for retrieval
+in a publicly accessible archival repository like the ACM Digital Library, that
+paper qualifies for an <a
+href="https://www.acm.org/publications/policies/artifact-review-badging#available">Artifacts
+Available badge</a>.  Applications for such a badge can be made after paper
+acceptance and will be reviewed by the PC chair.
+</p>
+
+<h2>Related</h2>
+<ul>
+  <li><a href="cfp.txt">Text only version of call for for submissions</a>
+  <li><a href="http://icfp21.sigplan.org">ICFP 2021</a></li>
+  <li><a href="https://www.haskell.org/haskell-symposium/">Previous Haskell
+              Symposiums</a></li>
+</ul>
+
+</body>
+</html>

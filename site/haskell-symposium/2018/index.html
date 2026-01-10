@@ -1,0 +1,515 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <style>
+    .passed { text-decoration: line-through; }
+
+    ul.papers li { margin-bottom: 1em; }
+    div.paper { color: #666; font-weight: bold; }
+
+     tr.spaceunder > td
+     { padding-bottom: 1ex; }
+
+     td.session
+     { color: #008000; }
+
+     td.paper
+     { font-weight: bold; }
+
+@media screen and (min-width: 900px) {
+     .on_the_side {
+      float: right;
+     }
+}
+
+     .boxed {
+      border: 1px solid black;
+      padding: 1em;
+      margin: 1em;
+      position: relative;
+      background-color: white;
+      color: black;
+     }
+     table.timeline th { text-align: left; }
+     table.timeline td { padding-left: 1em; }
+     .boxed>.heading {
+        position: absolute;
+        top:  -1ex;
+        right: 1em;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        text-align: center;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        background-color: white;
+        font-size: 14pt;
+        font-family: Arial,Helvetica,sans-serif;
+      }
+
+      .note {
+        font-size: smaller;
+        font-style: italic;
+      }
+    </style>
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>ACM SIGPLAN Haskell Symposium 2018</title>
+</head>
+
+<body style="background-color: white;">
+
+<hr>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="150">
+        <img style="width: 122px; height: 91px;"
+             alt="Haskell logo" border="0"
+             src="images/logo7000.png">
+      </td>
+      <td align="center">
+        <h1>Haskell Symposium 2018</h1>
+        <font size="+2">
+          <em>St. Louis, MO, United States, 27&ndash;28 September 2018</em>
+        </font>
+      </td>
+      <td width="150">
+        <img src="images/acmlogo.gif" alt="ACM logo" align="right" border="0">
+      </td>
+      </tr>
+  </tbody>
+</table>
+
+<hr>
+<div class="on_the_side">
+
+<div class="boxed">
+<div class="heading">Timeline</div>
+<table class="timeline">
+<tr><th colspan="3">Early track:</td></tr>
+<tr><td>Submission deadline:    </td><td>30 March 2018   </td><td class="note">Friday</td><tr>
+<tr><td>Notification:           </td><td>18 May   2018  </td><td class="note">Friday</td><tr>
+<tr><td colspan="3"></td></tr>
+<tr><th colspan="3">Regular track and demos:</td></tr>
+<tr><td>Submission deadline:    </td><td> 8 June 2018      </td><td class="note">Friday</td><tr>
+<tr><td>Notification:           </td><td>13 July 2018     </td><td class="note">Friday</td><tr>
+<tr><td colspan="3" class="note" style="text-align: center">Deadlines valid <a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth">anywhere on Earth</a>
+<tr><td colspan="3" class="note" style="text-align: center"><a href="#submission-details">Submission details</a></td></tr>
+</table>
+</div>
+
+<div class="boxed">
+<div class="heading">Program Committee</div>
+<table>
+
+<tr><td>Chair's e-mail:</td>             <td class="note">haskell2018@easychair.org</td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td>Michael D. Adams             </td><td class="note">University of Utah</td>
+<tr><td>Patrick Bahr                 </td><td class="note">IT University of Copenhagen</td>
+<tr><td>Olaf Chitil                  </td><td class="note">University of Kent</td>
+<tr><td>Nils Anders Danielsson       </td><td class="note">University of Gothenburg</td>
+<tr><td>Graham Hutton                </td><td class="note">University of Nottingham</td>
+<tr><td>Mauro Jaskelioff             </td><td class="note">CONICET/Universidad Nacional de Rosario</td>
+<tr><td>Oleg Kiselyov                </td><td class="note">Tohoku University</td>
+<tr><td>Sam Lindley                  </td><td class="note">The University of Edinburgh</td>
+<tr><td>Andres Löh                   </td><td class="note">Well-Typed LLP</td>
+<tr><td>Bruno Oliveira               </td><td class="note">The University of Hong Kong</td>
+<tr><td>Maciej Piróg                 </td><td class="note">University of Wrocław</td>
+<tr><td>Wren Romano                  </td><td class="note">Google</td>
+<tr><td>Mark Shinwell                </td><td class="note">Jane Street</td>
+<tr><td>Niki Vazou                   </td><td class="note">University of California</td>
+<tr><td>Marcos Viera                 </td><td class="note">Universidad de la República</td>
+<tr><td>Nicolas Wu <b>(chair)</b>    </td><td class="note">University of Bristol</td>
+<tr><td>Ryan Yates                   </td><td class="note">University of Rochester</td>
+<tr><td>Brent Yorgey                 </td><td class="note">Hendrix College</td>
+
+
+</table>
+</div>
+
+</div>
+
+
+
+
+<p>The <a href="http://www.acm.org">ACM</a>
+  <a href="http://www.sigplan.org">SIGPLAN</a>
+  <a href="http://www.haskell.org/">Haskell</a>
+  Symposium 2018 will be co-located with the
+  <a href="http://icfp18.sigplan.org">2018 International Conference on Functional Programming (ICFP)</a>,
+  in St. Louis, MO, United States.
+</p>
+<p><b>The main Haskell Symposium website is hosted on the ICFP
+  website:</b></p>
+<p><a href="https://icfp18.sigplan.org/track/haskellsymp-2018-papers">https://icfp18.sigplan.org/track/haskellsymp-2018-papers</a></p>
+<p><b>Please use the <a href="http://icfp18.sigplan.org">ICFP website</a> to register for the Symposium.</b></p>
+
+<!--
+<h2>Symposium Schedule</h2>
+
+<h3>Day 1, Thursday, September 7</h3>
+
+<h4>9:00&ndash;10:00</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Ornaments: exploiting parametricity for safer, more automated code refactorization and code reuse (Invited Talk)</div>
+  <div class="author">Didier Rémy</div>
+  <div class="note">INRIA Paris, France</div>
+</li>
+</ul>
+
+<h4>10:00&ndash;10:30: Break</h4>
+
+<h4>10:30&ndash;11:30</h4>
+
+<ul class="papers">
+<li>
+  <div class="paper">Algebraic Graphs with Class (Functional Pearl)</div>
+  <div class="author">Andrey Mokhov</div>
+  <div class="note">Newcastle University, UK</div>
+</li>
+<li>
+  <div class="paper">Packrats Parse in Packs</div>
+  <div class="author">Mario Blažević and Jacques Légaré</div>
+  <div class="note">Stilo International plc., Canada</div>
+</ul>
+
+<h4>11:30&ndash;12:00: Break</h4>
+
+<h4>12:00&ndash;12:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Ode on a Random Urn (Functional Pearl)</div>
+  <div class="author">Leonidas Lampropoulos, Antal Spector-Zabusky, and Kenneth Foner</div>
+  <div class="note">University of Pennsylvania, USA</div>
+</li>
+</ul>
+
+<h4>12:30&ndash;14:00: Lunch</h4>
+
+<h4>14:00&ndash;15:00</h4>
+
+<ul class="papers">
+<li>
+  <div class="paper">QuickSpec: A Lightweight Theory Exploration Tool for Programmers (System Demonstration)</div>
+  <div class="author">Maximilian Algehed, Koen Claessen, Moa Johansson, and Nicholas Smallbone</div>
+  <div class="note">Chalmers University of Technology, Sweden</div>
+</li>
+
+<li>
+  <div class="paper">Speculate: Discovering Conditional Equations and Inequalities about Black-Box Functions by Reasoning from Test Results</div>
+  <div class="author">Rudy Braquehais and Colin Runciman</div>
+  <div class="note">University of York, UK</div>
+</li>
+</ul>
+
+<h4>15:00&ndash;15:30: Break</h4>
+
+<h4>15:30&ndash;16:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Using Coq to Write Fast and Correct Haskell</div>
+  <div class="author">John Wiegley and Ben Delaware</div>
+  <div class="note">BAE Systems, USA; Purdue University, USA</div>
+</li>
+<li>
+  <div class="paper">A Tale of Two Provers: Verifying Monoidal String Matching in Liquid Haskell and Coq</div>
+  <div class="author">Niki Vazou, Leonidas Lampropoulos, and Jeff Polakow</div>
+  <div class="note">University of Maryland, USA; University of Pennsylvania, USA; Awake Networks, USA</div>
+</li>
+</ul>
+
+<h4>16:30&ndash;16:50: Break</h4>
+
+<h4>16:50&ndash;17:50</h4>
+<ul class="papers">
+<li>
+  <div class="paper">A Meta-EDSL for Distributed Web Applications</div>
+  <div class="author">Anton Ekblad</div>
+  <div class="note">Chalmers University of Technology, Sweden</div>
+</li>
+<li>
+  <div class="paper">Composable Network Stacks and Remote Monads</div>
+  <div class="author">Justin Dawson, Mark Grebe, and Andy Gill</div>
+  <div class="note">University of Kansas, USA</div>
+</li>
+</ul>
+
+
+
+<h3>Day 2, Friday, September 8</h3>
+
+<h4>9:00&ndash;10:00</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Algorithmic Music in Haskell (Invited Talk)</div>
+  <div class="author">Donya Quick</div>
+  <div class="note">Stevens Institute of Technology</div>
+</li>
+</ul>
+
+<h4>10:00&ndash;10:30: Break</h4>
+
+<h4>10:30&ndash;11:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Well-Typed Music Does Not Sound Wrong (Experience Report)</div>
+  <div class="author">Dmitrij Szamozvancev and Michael Gale</div>
+  <div class="note">University of Cambridge, UK</div>
+</li>
+<li>
+  <div class="paper">Back to the Future: Time Travel in FRP</div>
+  <div class="author">Ivan Perez</div>
+  <div class="note">University of Nottingham, UK</div>
+</li>
+</ul>
+
+<h4>12:00&ndash;12:30</h4>
+<ul class="papers">
+<li>
+  <div class="paper">The Linearity Monad </div>
+  <div class="author">Jennifer Paykin and Steve Zdancewic</div>
+  <div class="note">University of Pennsylvania, USA</div>
+</li>
+</ul>
+
+<h4>12:30&ndash;14:00: Lunch</h4>
+
+<h4>14:00&ndash;15:00</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Elaboration on Functional Dependencies</div>
+  <div class="author">Georgios Karachalias and Tom Schrijvers</div>
+  <div class="note">KU Leuven, Belgium</div>
+</li>
+<li>
+  <div class="paper">Quantified Class Constraints</div>
+  <div class="author">Gert-Jan Bottu, Georgios Karachalias, Tom Schrijvers, Bruno C. D. S. Oliveira, and Philip Wadler
+  <div class="note">KU Leuven, Belgium; University of Hong Kong, Hong Kong; University of Edinburgh, UK</div>
+</li>
+</ul>
+
+<h4>15:00&ndash;15:30: Break</h4>
+
+<h4>15:30&ndash;16:30</h4>
+
+<ul class="papers">
+<li>
+  <div class="paper">Hardware Software Co-Design in Haskell</div>
+  <div class="author">Markus Aronsson and Mary Sheeran</div>
+  <div class="note">Chalmers University of Technology, Sweden</div>
+</li>
+<li>
+  <div class="paper">Streaming Irregular Arrays</div>
+  <div class="author">Robert Clifton-Everest, Trevor L. McDonell, Manuel M T Chakravarty, and Gabriele Keller</div>
+  <div class="note">University of New South Wales, Australia</div>
+</li>
+</ul>
+
+<h4>16:30&ndash;16:50: Break</h4>
+
+<h4>16:50&ndash;17:50</h4>
+<ul class="papers">
+<li>
+  <div class="paper">Improving STM Performance with Transactional Structs</div>
+  <div class="author">Ryan Yates and Michael Scott</div>
+  <div class="note">University of Rochester, USA</div>
+</li>
+<li>
+  <div class="paper">Adaptive Lock-Free Data Structures in Haskell: A General Method for Concurrent Implementation Swapping</div>
+  <div class="author">Chao-Hong Chen, Vikraman Choudhury, and Ryan Newton</div>
+  <div class="note">Indiana University, USA</div>
+</li>
+</ul>
+-->
+
+
+<h2>Scope</h2>
+<p>
+The Haskell Symposium aims to present original research on Haskell, discuss
+practical experience and future development of the language, and to promote
+other forms of denotative programming.
+</p>
+
+<p>
+  Topics of interest include:
+</p>
+
+<ul>
+  <li><em>Language Design</em>, with a focus on possible extensions and
+  modifications of Haskell as well as critical discussions of the status quo;
+  <br><br>
+
+  <li><em>Theory</em>, such as formal semantics of the present language or
+  future extensions, type systems, effects, metatheory, and foundations for
+  program analysis and transformation;
+  <br><br>
+
+  <li><em>Implementations</em>, including program analysis and transformation,
+  static and dynamic compilation for sequential, parallel, and
+  distributed architectures, memory management, as well as foreign
+  function and component interfaces;
+  <br><br>
+
+  <li><em>Libraries</em>, that demonstrate new ideas or techniques for
+  functional programming in Haskell;
+  <br><br>
+
+  <li><em>Tools</em>, such as profilers, tracers, debuggers, preprocessors, and
+  testing tools;
+  <br><br>
+
+  <li><em>Applications</em>, to scientific and symbolic computing, databases,
+  multimedia, telecommunication, the web, and so forth;
+  <br><br>
+
+  <li><em>Functional Pearls</em>, being elegant and instructive programming
+  examples;
+  <br><br>
+
+  <li><em>Experience Reports</em>, to document general practice and experience
+  in education, industry, or other contexts.
+  <br><br>
+
+  <li><em>System Demonstrations</em>, based on running software rather than
+      novel research results.
+</ul>
+
+<p>
+Regular papers should explain their research contributions in both
+general and technical terms, identifying what has been accomplished,
+explaining why it is significant, and relating it to previous work,
+and to other languages where appropriate.
+</p>
+
+
+<p>
+<em>Experience reports</em> and <em>functional pearls</em> need not necessarily report original
+academic research results. For example, they may instead report reusable
+programming idioms, elegant ways to approach a problem, or practical experience
+that will be useful to other users, implementors, or researchers. The key
+criterion for such a paper is that it makes a contribution from which other
+Haskellers can benefit. It is not enough simply to describe a standard solution
+to a standard programming problem, or report on experience where you used
+Haskell in the standard way and achieved the result you were expecting. More
+advice
+<a href="http://wiki.haskell.org/HaskellSymposium/ExperienceReports">
+is available via the Haskell wiki.</a>
+</p>
+
+<p>
+<em>System demonstrations</em> should summarize the system capabilities
+that would be demonstrated. The proposals will be judged on whether the
+ensuing session is likely to be important and interesting to the Haskell
+community at large, whether on grounds academic or industrial,
+theoretical or practical, technical, social or artistic.
+Please contact the program chair with any questions about the
+relevance of a proposal.
+</p>
+
+
+<a name="submission-details">
+<h2>Submission Details</h2>
+
+<div class="on_the_side">
+<div class="boxed">
+<div class="heading">Page Limits</div>
+<table>
+<tr><td>Regular paper</td><td>12 pages</td><tr>
+<tr><td>Functional pearl</td><td>12 pages</td><tr>
+<tr><td>Experience report</td><td>6 pages</td><tr>
+<tr><td>Demo proposal</td><td>2 pages</td><tr>
+</table>
+</div></div>
+
+<p>
+<b>[Early and Regular Track]</b>
+The Haskell Symposium uses a two-track submission process so that some
+papers can gain early feedback. Strong papers submitted to the
+early track are accepted outright, and the others will be given their
+reviews and invited to resubmit to the regular track.
+Papers accepted via the early and regular tracks are
+considered of equal value and will not be distinguished in the
+proceedings.  Although all papers may be submitted to the early track, authors of
+functional pearls and experience reports are particularly encouraged to
+use this mechanism. The success of these papers depends heavily on the
+way they are presented, and submitting early will give the program
+committee a chance to provide feedback and help draw out the key ideas.<p>
+
+
+<p><b>[Formatting]</b>
+Submitted papers should be in portable document format (PDF),
+formatted using the
+<a href="http://www.sigplan.org/Resources/Author/#acmart-format">ACM
+SIGPLAN style guidelines</a>.
+<ul>
+<li>Authors should use the <b>acmart</b> format, with the <b>sigplan</b>
+sub-format for ACM proceedings.</li>
+For details, see <a href="http://www.sigplan.org/Resources/Author/#acmart-format">http://www.sigplan.org/Resources/Author/#acmart-format </a></li>
+
+<li>Functional pearls, experience reports, and demo proposals should be <b>labelled clearly</b> as such.</li>
+<li>Papers submissions should not be anonymous.
+</ul>
+</p>
+
+<p><b>[Limits]</b>
+The length of submissions should not exceed the limits, but there is
+no requirement that all pages are used.  For example, a functional pearl may be much shorter than 12 pages.  The paper limits apply to the whole paper, including references, but excluding an optional appendix.
+Submission should adhere to SIGPLAN's republication policy, as explained on the web.
+The paper submission deadline and length limitations are firm
+There will be no extensions, and papers violating the length limitations will
+be summarily rejected.</p>
+
+<p><b>[Submissions]</b>
+Papers should be submitted through easychair at the following URL:
+<a href="https://easychair.org/conferences/?conf=haskell2018">https://easychair.org/conferences/?conf=haskell2018</a>
+</p>
+
+
+<h2>Travel Support</h2>
+
+<p>
+Student attendees with accepted papers can apply for a SIGPLAN PAC grant
+to help cover travel expenses. PAC also offers other support, such as
+for child-care expenses during the meeting or for travel costs for
+companions of SIGPLAN members with physical disabilities, as well as for
+travel from locations outside of North America and Europe. For details
+on the PAC program, see <a href="http://pac.sigplan.org">its web page</a>.
+</p>
+
+
+<h2>Proceedings</h2>
+
+<p>Accepted papers will be included in the ACM Digital Library.
+Authors must grant ACM publication rights upon acceptance;
+see <a href="http://authors.acm.org/main.html">http://authors.acm.org/main.html</a>
+for more details.
+Authors are encouraged to publish
+auxiliary material with their paper (source code, test data, etc.); they
+retain copyright of auxiliary material.
+
+<p>Accepted proposals for system demonstrations will be posted on the
+symposium website but not formally published in the proceedings.</p>
+
+<p>All accepted papers and proposals will be posted on the conference
+website one week before the meeting.</p>
+
+<p>Publication date: The official publication date of accepted papers is
+the date the proceedings are made available in the ACM Digital
+Library. This date may be up to two weeks prior to the first day of the
+conference. The official publication date affects the deadline for any
+patent filings related to published work.</p>
+
+
+<h2>Related</h2>
+<ul>
+  <li><a href="cfp.txt">Text only version of call for for submissions</a>
+  <li><a href="http://icfp18.sigplan.org">ICFP 2018</a></li>
+  <li><a href="https://www.haskell.org/haskell-symposium/">Previous Haskell
+              Symposiums</a></li>
+</ul>
+
+</body>
+</html>

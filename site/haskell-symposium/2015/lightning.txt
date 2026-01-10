@@ -1,0 +1,14 @@
+1.  Amos Robinson          Icicle
+2.  Hamish Mackenzie       Leksah
+3.  Erik de Castro Lopo    GHC ARM port
+4.  Lennart Augustsson     Programmable type errors
+5.  Carter Schonwald	   Sparse array programming
+6.  Gershom Bazerman       Web of trust
+7.  Iavor Diatchki         Type level records with type functions
+8.  Joey Hess              Propellor
+9.  Andy Keep              Nanopass
+10. Ed Kmett               Quine
+11. John Wiegley           Pipes laws in Coq
+12. Luite Stegeman         GHCjs
+12. Simon Peyton Jones     Type-indexed type representations
+

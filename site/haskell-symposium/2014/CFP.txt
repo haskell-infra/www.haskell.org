@@ -1,0 +1,157 @@
+===================================================================
+                ACM SIGPLAN
+                HASKELL SYMPOSIUM 2014
+                CALL FOR SUBMISSIONS
+
+    Gothenburg, Sweden, 4-5 September 2014, directly after ICFP
+    http://www.haskell.org/haskell-symposium/2014
+    haskell2014@easychair.org
+===================================================================
+
+
+The ACM SIGPLAN Haskell Symposium 2014 will be colocated with the 2014
+International Conference on Functional Programming (ICFP) in
+Gothenburg, Sweden. Like last year, the symposium will last 2 days.
+Thanks to broader participation from a growing community, we will be
+able to include more regular papers as well as system demonstrations,
+while upholding the scientific quality of the symposium.
+
+The Haskell Symposium seeks to present original research on Haskell,
+to discuss practical experience and future development of the
+language, as well as to promote other forms of denotative programming.
+Topics of interest include
+
+* Language Design, with a focus on possible extensions and
+  modifications of Haskell as well as critical discussions of the
+  status quo;
+
+* Theory, such as formal semantics of the present language or future
+  extensions, type systems, effects, metatheory, and foundations for
+  program analysis and transformation;
+
+* Implementations, including program analysis and transformation,
+  static and dynamic compilation for sequential, parallel, and
+  distributed architectures, memory management, as well as foreign
+  function and component interfaces;
+
+* Tools, such as profilers, tracers, debuggers, preprocessors, and
+  testing tools;
+
+* Applications, to scientific and symbolic computing, databases,
+  multimedia, telecommunication, the web, and so forth;
+
+* Functional Pearls, being elegant and instructive programming
+  examples;
+
+* Experience Reports, to document general practice and experience in
+  education, industry, or other contexts. Such reports are shorter
+  than regular papers; they are limited to six pages.
+
+Papers in the latter two categories need not necessarily report
+original research results.  They may report instead, for example,
+reusable programming idioms, elegant ways to approach a problem, or
+practical experience that will be useful to other users, implementors,
+or researchers.  The key criterion for such a paper is that it makes a
+contribution from which other Haskellers can benefit.  It is not
+enough simply to describe a program!
+
+Regular papers should explain their research contributions in both
+general and technical terms, identifying what has been accomplished,
+explaining why it is significant, and relating it to previous work
+(also for other languages where appropriate).
+
+In addition, we solicit proposals for
+
+* System Demonstrations (no longer than a regular paper talk), based
+  on running (perhaps prototype) software rather than necessarily on
+  novel research results.
+
+These proposals should summarize the system capabilities that would be
+demonstrated. The proposals should explain (and will be judged on)
+whether the ensuing session is likely to be important and interesting
+to the Haskell community at large, whether on grounds academic or
+industrial, theoretical or practical, technical or social.  Please
+contact the program chair with any questions about the relevance of a
+proposal.
+
+
+Travel Support:
+===============
+
+Student attendees with accepted papers can apply for a SIGPLAN PAC
+grant to help cover travel expenses.  PAC also offers other support,
+such as for child-care expenses during the meeting or for travel costs
+for companions of SIGPLAN members with physical disabilities, as well
+as for travel from locations outside of North America and Europe.  For
+details on the PAC programme, see its web page
+(http://www.sigplan.org/PAC.htm).
+
+
+Proceedings:
+============
+
+ACM Press will publish formal proceedings.  Accepted papers will be
+included in the ACM Digital Library.  Authors must grant ACM
+publication rights upon acceptance (http://authors.acm.org/main.html),
+but may retain copyright if they wish.  Authors are encouraged to
+publish auxiliary material with their paper (source code, test data,
+and so forth).  The proceedings will be freely available for download
+from the ACM Digital Library from one week before the start of the
+conference until two weeks after the conference.
+
+Accepted proposals for system demonstrations will be posted on the
+symposium web page, but not formally published in the proceedings.
+
+Submission Details:
+===================
+
+Submitted papers should be in portable document format (PDF),
+formatted using the ACM SIGPLAN style guidelines
+(http://www.acm.org/sigs/sigplan/authorInformation.htm).  The text
+should be in a 9-point font in two columns.  The length is restricted
+to 12 pages, except for "Experience Report" papers, which are
+restricted to 6 pages.  Papers need not fill the page limit.  Each
+paper submission must adhere to SIGPLAN's republication policy, as
+explained on the web.
+
+Proposals for system demonstrations are limited to 2-page abstracts,
+in the same ACM format as papers.
+
+"Functional Pearls", "Experience Reports", and "Demo Proposals" should
+be marked as such with those words in the title at time of submission.
+
+The paper submission deadline and length limitations are firm.  There
+will be no extensions, and papers violating the length limitations
+will be summarily rejected.
+
+Submission is via EasyChair:
+
+  https://www.easychair.org/conferences/?conf=haskell14
+
+* Abstract submission: Fri 09 May 2014
+* Paper submission   : Mon 12 May 2014
+* Demo submission    : Fri 30 May 2014
+                       (prior abstract submission unnecessary)
+* Author notification: Wed 11 June 2014
+* Final papers due   : Sun 22 June 2014
+
+All deadlines, except the final papers deadline, are in Standard
+Samoan Time.
+
+Programme Committee:
+====================
+
+  George Giorgidze - Standard Chartered Bank
+  Mauro Jaskelioff - Universidad Nacional de Rosario
+  Mark Jones - Portland State University
+  Lindsey Kuper - Indiana University
+  José Pedro Magalhães - University of Oxford
+  Geoffrey Mainland - Drexel University
+  Simon Marlow - Facebook
+  Shin Cheng Mu - Academia Sinica
+  Keiko Nakata - Institute of Cybernetics, Tallinn University of Technology
+  Bruno Oliveira - University of Hong Kong
+  Lee Pike - Galois
+  Josef Svenningsson - Chalmers University of Technology
+  Wouter Swierstra - University of Utrecht (chair)
+  Simon Thompson - University of Kent

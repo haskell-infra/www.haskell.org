@@ -1,0 +1,181 @@
+========================================================================
+ ACM SIGPLAN                                      CALL FOR SUBMISSIONS
+                         Haskell Symposium 2016
+
+         Nara, Japan, 22-23 September 2016, directly after ICFP
+             http://www.haskell.org/haskell-symposium/2016
+========================================================================
+
+    ** The Haskell Symposium has an early track this year   **
+    **      See the Submission Timetable for details.       **
+
+The ACM SIGPLAN Haskell Symposium 2016 will be co-located with the
+International Conference on Functional Programming (ICFP 2016) in
+Nara, Japan.
+
+The Haskell Symposium aims to present original research on Haskell,
+discuss practical experience and future development of the language, and
+to promote other forms of denotative programming.
+
+Topics of interest include:
+
+* Language Design, with a focus on possible extensions and modifications
+  of Haskell as well as critical discussions of the status quo;
+
+* Theory, such as formal semantics of the present language or future
+  extensions, type systems, effects, metatheory, and foundations for
+  program analysis and transformation;
+
+* Implementations, including program analysis and transformation, static
+  and dynamic compilation for sequential, parallel, and distributed
+  architectures, memory management, as well as foreign function and
+  component interfaces;
+
+* Libraries, that demonstrate new ideas or techniques for functional
+  programming in Haskell;
+
+* Tools, such as profilers, tracers, debuggers, preprocessors, and
+  testing tools;
+
+* Applications, to scientific and symbolic computing, databases,
+  multimedia, telecommunication, the web, and so forth;
+
+* Functional Pearls, being elegant and instructive programming examples;
+
+* Experience Reports, to document general practice and experience in
+  education, industry, or other contexts.
+
+Papers in the latter three categories need not necessarily report
+original academic research results. For example, they may instead report
+reusable programming idioms, elegant ways to approach a problem, or
+practical experience that will be useful to other users, implementors,
+or researchers. The key criterion for such a paper is that it makes a
+contribution from which other Haskellers can benefit. It is not enough
+simply to describe a standard solution to a standard programming
+problem, or report on experience where you used Haskell in the standard
+way and achieved the result you were expecting. More advice is available
+via the Haskell wiki:
+(http://wiki.haskell.org/HaskellSymposium/ExperienceReports)
+
+Regular papers should explain their research contributions in both
+general and technical terms, identifying what has been accomplished,
+explaining why it is significant, and relating it to previous work, and
+to other languages where appropriate.
+
+In addition, we solicit proposals for:
+
+* System Demonstrations, based on running software rather than novel
+  research results.
+
+These proposals should summarize the system capabilities that would be
+demonstrated. The proposals will be judged on whether the ensuing
+session is likely to be important and interesting to the Haskell
+community at large, whether on grounds academic or industrial,
+theoretical or practical, technical, social or artistic. Please contact
+the program chair with any questions about the relevance of a proposal.
+
+Travel Support:
+===============
+
+Student attendees with accepted papers can apply for a SIGPLAN PAC grant
+to help cover travel expenses. PAC also offers other support, such as
+for child-care expenses during the meeting or for travel costs for
+companions of SIGPLAN members with physical disabilities, as well as for
+travel from locations outside of North America and Europe. For details
+on the PAC program, see its web page (http://pac.sigplan.org).
+
+Proceedings:
+============
+
+Accepted papers will be included in the ACM Digital Library. Authors
+must grant ACM publication rights upon acceptance
+(http://authors.acm.org/main.html). Authors are encouraged to publish
+auxiliary material with their paper (source code, test data, etc.); they
+retain copyright of auxiliary material.
+
+Accepted proposals for system demonstrations will be posted on the
+symposium website but not formally published in the proceedings.
+
+All accepted papers and proposals will be posted on the conference
+website one week before the meeting.
+
+Publication date: The official publication date of accepted papers is
+the date the proceedings are made available in the ACM Digital
+Library. This date may be up to two weeks prior to the first day of the
+conference. The official publication date affects the deadline for any
+patent filings related to published work.
+
+Submission Details:
+===================
+
+Submitted papers should be in portable document format (PDF), formatted
+using the ACM SIGPLAN style guidelines
+(http://www.acm.org/sigs/sigplan/authorInformation.htm). The text should
+be in a 9-point font in two columns. The length is restricted to 12
+pages, except for "Experience Report" papers, which are restricted to 6
+pages. Papers need not fill the page limit---for example, a Functional
+Pearl may be much shorter than 12 pages. Each paper submission must
+adhere to SIGPLAN's republication policy, as explained on the web.
+
+Demo proposals are limited to 2-page abstracts, in the same ACM format
+as papers.
+
+"Functional Pearls", "Experience Reports", and "Demo Proposals" should
+be marked as such with those words in the title at time of submission.
+
+The paper submission deadline and length limitations are firm.  There
+will be no extensions, and papers violating the length limitations will
+be summarily rejected.
+
+Papers may be submitted at: https://icfp-haskell2016.hotcrp.com/
+
+Submission Timetable:
+=====================
+
+               Early Track        Regular Track      System Demos
+            ----------------   -------------------  ---------------
+1st  April  Paper Submission
+20th May    Notification
+ 6th June                      Abstract Submission
+10th June                      Paper Submission
+17th June   Resubmission                            Demo Submission
+ 8th July   Notification       Notification         Notification
+31st July   Camera ready due   Camera ready due
+
+Deadlines stated are valid anywhere on earth.
+
+The Haskell Symposium uses a two-track submission process so that some
+papers can gain early feedback. Papers can be submitted to the early
+track on 1st April. On 20th May, strong papers are accepted outright,
+and the others will be given their reviews and invited to resubmit. On
+17th June, early track papers may be resubmitted and are sent back to
+the same reviewers. The Haskell Symposium regular track operates as in
+previous years. Papers accepted via the early and regular tracks are
+considered of equal value and will not be distinguished in the
+proceedings.
+
+Although all papers may be submitted to the early track, authors of
+functional pearls and experience reports are particularly encouraged to
+use this mechanism. The success of these papers depends heavily on the
+way they are presented, and submitting early will give the program
+committee a chance to provide feedback and help draw out the key ideas.
+
+Program Committee:
+===================
+
+    James Cheney              University of Edinburgh
+    Iavor Diatchki            Galois
+    David Duke                University of Leeds
+    Richard Eisenberg         Bryn Mawr College
+    Andy Gill                 University of Kansas
+    Zhenjiang Hu              National Institute of Informatics
+    Ranjit Jhala              UC San Diego
+    Yukiyoshi Kameyama        University of Tsukuba
+    Ken Friis Larsen          University of Copenhagen
+    Geoffrey Mainland (chair) Drexel University
+    Mary Sheeran              Chalmers University of Technology
+    David Terei               Stanford
+    Niki Vazou                UC San Diego
+    Dimitrios Vytiniotis      Microsoft Research
+
+=====================================================================
