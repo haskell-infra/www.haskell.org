@@ -120,7 +120,6 @@ Some of the others are
 | [`ghcup/`](https://www.haskell.org/ghcup/) | [ghcup-hs](https://gitlab.haskell.org/haskell/ghcup-hs/-/tree/master/www) | Julian Ospald | |
 | [`haddock/`](https://www.haskell.org/haddock/) | Redirect | Haddock maintainers | [Details](#details-haddock) |
 | [`happy/`](https://www.haskell.org/happy/) | Redirect | Happy maintainers | [Details](#details-happy) |
-| [`haskell-symposium/`](https://www.haskell.org/haskell-symposium/) | | Haskell Symposium organisers | |
 | [`haskell-workshop/`](https://www.haskell.org/haskell-workshop/) | | Haskell Symposium organisers | [Details](#details-haskell-workshop) |
 | [`hugs/`](https://www.haskell.org/hugs/) | | | [Details](#details-hugs) |
 | [`nhc98/`](https://www.haskell.org/nhc98/) | | York Functional Programming Group | [Details](#details-nhc98) |
