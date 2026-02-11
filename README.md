@@ -53,9 +53,20 @@ to review it as soon as we can.
 ### Working On The Builder
 
 The `builder` is the static site generator that turns the markdown files, CSS,
-images, and scripts into a website. It lives in the `builder`. Most of the time,
-you won't need to make changes to the builder and you can follow the
-instructions in the _Contributing Changes_ section above.
+images, and scripts into a website.
+
+> [!NOTE]
+> The package in the builder folder has the `haskell-org-site` executable:
+> ```
+> $ cat cabal.project
+> packages: builder
+>
+> $ cat builder/haskell-org.cabal | grep executable
+> executable haskell-org-site
+> ```
+
+Most of the time, you won't need to make changes to the builder and you can
+follow the instructions in the _Contributing Changes_ section above.
 
 If you want to make a quick change or two, you can continue to use the
 `buildAndWatch` script to rebuild changes, but for more substantial changes this
@@ -66,23 +77,19 @@ builder using either nix or cabal. Directions for both are given below:
 ### Manually Building the Site With Cabal
 
 If you don't have nix installed, or if you are inside of the project's nix
-shell, you will want to use cabal to compile the builder. To do so, enter the
-`builder` directory and compile the program with:
-
-```shell
-cabal v2-build
-```
-
-Once compiled, the builder must be run from the project root directory so that
-it can find all of the content. To run the builder, you need to first find the
-name of the executable. From the builder directory, you can find the executable
-path by running:
+shell, use cabal to build and execute the builder, the only package in
+the project.
 
 ```
-cabal v2-exec -- which haskell-org-site
+$ cabal build all
+$ cabal exec haskell-org-site build
 ```
 
-Using that path, you can run the builder from the project root directory.
+With `cabal run` we can do this in one command.
+
+```
+$ cabal run haskell-org-site -- build
+```
 
 ### Manually Building the Site With Nix
 
