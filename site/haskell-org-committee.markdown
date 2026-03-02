@@ -63,7 +63,7 @@ are:
   * Avi Press (term ends 2026)
   * Matthías Páll Gissurarson (term ends 2026)
   * Moritz Angermann (term ends 2026)
-  * Rebecca Skinner (term ends 2028)
+  * Rebecca Skinner (chair) (term ends 2028)
   * Arnaud Bailly (term ends 2028)
   * Jeff Young (term ends 2028)
   * Tom Ellis (vice chair, vice treasurer) (term ends 2027)
