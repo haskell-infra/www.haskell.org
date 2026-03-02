@@ -60,7 +60,7 @@ The responsibilities of the Committee include:
 The committee consists of 7 members serving 3-year terms. The current members
 are:
 
-  * Avi Press (term ends 2026)
+  * Avi Press (treasurer) (term ends 2026)
   * Matthías Páll Gissurarson (term ends 2026)
   * Moritz Angermann (term ends 2026)
   * Rebecca Skinner (term ends 2028)
