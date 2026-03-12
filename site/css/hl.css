@@ -4744,8 +4744,9 @@ pre .hs-keyglyph {
     color: #f0ad4e;
 }
 .bs-callout-info {
-    border-left-color: #5bc0de;
+    border-left-color: #9E358F;
 }
 .bs-callout-info h4 {
-    color: #5bc0de;
+    color: #000;
 }
+
