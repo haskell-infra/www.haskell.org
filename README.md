@@ -110,7 +110,6 @@ Some of the others are
 
 | Subsite | Source | Owner | Details |
 | --------------- | --------------- | --------------- | --------------- |
-| [`alex/`](https://www.haskell.org/alex/) | Redirect | Alex maintainers | [Details](#details-alex) |
 | [`arrows/`](https://www.haskell.org/arrows/) | | Ross Patterson | |
 | [`cabal/`](https://www.haskell.org/cabal/) | [cabal-website](https://github.com/haskell/cabal-website) | Cabal maintainers | [Details](#details-cabal) |
 | [`communities/`](https://www.haskell.org/communities/) | | | [Details](#details-communities) |
@@ -144,13 +143,6 @@ Some of the others are
   `ghc-perf/`
 
   Same as https://perf.haskell.org
-
-* <a name="details-alex"></a>
-  `alex/`
-
-  Redirect to https://haskell-alex.readthedocs.io
-
-  See also <https://github.com/haskell-infra/www.haskell.org/issues/183>
 
 * <a name="details-communities"></a>
   `communities/`
