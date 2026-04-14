@@ -6,35 +6,18 @@ isHome: true
 <div class="header">
    <div class=" container ">
       <div class="row">
-         <div class=" span12 col-sm-12 hidden-xs"><br></div>
+         <div class="span12 col-sm-12 hidden-xs"><br></div>
       </div>
       <div class="row">
-         <div class=" span6 col-md-6">
-            <div class="branding">
+         <div class="span12 col-sm-12">
+            <div class="branding text-center">
                <br class="hidden-xs alternative-logo-hidden">
                <img src="/img/haskell-logo.svg" alt="Haskell" class="img-responsive alternative-logo-hidden">
                <img src="/img/haskell-uwu.png" alt="Haskell UwU" class="alternative-logo alternative-logo-visible">
-               <h4 class="summary">Enjoy long-term maintainable software you can rely on</h4>
-            </div>
-         </div>
-         <div class=" span6 col-md-6">
-            <div class="row" id="code-example">
-               <div class="branding sample">
-                  <br class="visible-xs visible-sm">
-                  <h4 class="tag">Declarative, statically typed code.</h4>
-                  <div title="This example is contrived in order to demonstrate what Haskell looks like, including: (1) where syntax, (2) enumeration syntax, (3) pattern matching, (4) consing as an operator, (5) list comprehensions, (6) infix functions. Don&#39;t take it seriously as an efficient prime number generator." class="code-sample">
-                     <pre><span class='hs-definition'>primes</span> <span class='hs-keyglyph'>=</span> <span class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span class='hs-num'>2</span><span class='hs-keyglyph'>..</span><span class='hs-keyglyph'>]</span> <span class='hs-keyword'>where</span>
-  <span class='hs-varid'>filterPrime</span> <span class='hs-layout'>(</span><span class='hs-varid'>p</span><span class='hs-conop'>:</span><span class='hs-varid'>xs</span><span class='hs-layout'>)</span> <span class='hs-keyglyph'>=</span>
-    <span class='hs-varid'>p</span> <span class='hs-conop'>:</span> <span class='hs-varid'>filterPrime</span> <span class='hs-keyglyph'>[</span><span class='hs-varid'>x</span> <span class='hs-keyglyph'>|</span> <span class='hs-varid'>x</span> <span class='hs-keyglyph'>&lt;-</span> <span class='hs-varid'>xs</span><span class='hs-layout'>,</span> <span class='hs-varid'>x</span> <span class='hs-varop'>`mod`</span> <span class='hs-varid'>p</span> <span class='hs-varop'>/=</span> <span class='hs-num'>0</span><span class='hs-keyglyph'>]</span></pre>
-                  </div>
-               </div>
-            </div>
-            <div class="row" id="get-started-button">
-               <div class="span12 col-sm-12" style="padding-top: 10px;">
-                  <br/>
-                  <p class="text-center">
-                     <a href="/get-started/" class="btn btn-lg btn-primary" style="font-size: 1.5em">Get started</a>
-                  </p>
+               <h3 class="summary">Enjoy long-term maintainable software you can rely on</h3>
+               <div class="hero-actions">
+                  <a href="/get-started/" class="btn btn-lg btn-primary">Get started</a>
+                  <a href="https://play.haskell.org" class="btn btn-lg btn-default hidden-xs">Open playground</a>
                </div>
             </div>
          </div>
@@ -578,4 +561,3 @@ isHome: true
       </div>
    </div>
 </div>
-
