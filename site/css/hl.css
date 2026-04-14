@@ -4451,9 +4451,20 @@ h1.name {
       h1.name img {
         width: 68px; } }
 
+.header .branding {
+  padding: 40px 0; }
+
+.header .branding > img {
+  margin: 0 auto;
+  max-width: 630px;
+  width: 100%; }
+
 @media (max-width: 767px) {
-  .branding h4 {
-    text-align: center; } }
+  .header .branding > img {
+    max-width: 400px; } }
+
+.header .hero-actions .btn + .btn {
+  margin-left: 10px; }
 
 hr {
   border-top: 4px solid #5d4f85; }
@@ -4500,12 +4511,6 @@ pre .hs-keyglyph {
     right: 0.5em;
     color: #a94442;
     font-style: italic; }
-
-.branding.sample pre {
-  line-height: 1.3; }
-
-.branding.sample h4 {
-  margin-top: 1.1em; }
 
 #console {
   font-family: monospace; }
