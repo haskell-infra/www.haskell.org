@@ -4630,8 +4630,14 @@ pre .hs-keyglyph {
     margin-left: 8px; }
   .choose-path-nav > li > a {
     border: 1px solid #ddd; }
+  .choose-path-nav > li > a:hover, .choose-path-nav > li > a:focus {
+    background-color: #ebe4f3;
+    border-color: #d7c9eb;
+    color: #5d4f85; }
   .choose-path-nav > li.active > a, .choose-path-nav > li.active > a:hover, .choose-path-nav > li.active > a:focus {
-    border: 1px solid #9E358F; }
+    background-color: #5d4f85;
+    border: 1px solid #5d4f85;
+    color: #fff; }
 
 .choose-path-panel {
   text-align: center; }
