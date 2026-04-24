@@ -4615,10 +4615,13 @@ pre .hs-keyglyph {
   font-size: 20px;
   line-height: 1.5; }
 
-.choose-path-section {
+.choose-path-section,
+.path-start-section {
   background-color: #f7f4fb;
   border-top: 1px solid #ebe4f3;
-  border-bottom: 1px solid #ebe4f3;
+  border-bottom: 1px solid #ebe4f3; }
+
+.choose-path-section {
   padding: 40px 0; }
 
 .choose-path-nav {
@@ -4646,12 +4649,43 @@ pre .hs-keyglyph {
   font-size: 20px;
   line-height: 1.5; }
 
-.choose-path-links .btn-sm {
+.path-start-section {
+  padding: 30px 0; }
+
+.path-start-heading {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.cta-pane {
+  display: none; }
+
+.cta-pane.is-active {
+  display: block; }
+
+/*If the browser understands :has(), let css show content according to the selected/active path.
+ * Otherwise, always show default content (whatever is active in html by default) */
+@supports selector(.choose-path-section:has(.tab-pane.active)) {
+  .choose-path-section:has(.tab-pane.active) ~ .path-start-section .cta-pane {
+    display: none; }
+
+  .choose-path-section:has(.choose-path-nav li.active a[data-path="industry"]) ~ .path-start-section .cta-pane[data-path="industry"],
+  .choose-path-section:has(.choose-path-nav li.active a[data-path="academia"]) ~ .path-start-section .cta-pane[data-path="academia"],
+  .choose-path-section:has(.choose-path-nav li.active a[data-path="hobbyists"]) ~ .path-start-section .cta-pane[data-path="hobbyists"],
+  .choose-path-section:has(.choose-path-nav li.active a[data-path="wildcard"]) ~ .path-start-section .cta-pane[data-path="wildcard"] {
+    display: block; }
+}
+
+.path-start-links .btn {
+  margin-left: 4px; }
+
+.path-start-links .btn:first-child {
+  margin-left: 0; }
+
+.path-start-links .btn-sm {
   font-size: 17px;
   line-height: 1.4; }
-
-.choose-path-links .btn + .btn {
-  margin-left: 4px; }
 
 @media (max-width: 767px) {
   .choose-path-nav {
@@ -4661,10 +4695,11 @@ pre .hs-keyglyph {
     .choose-path-nav > li + li {
       margin-left: 0;
       margin-top: 10px; }
-  .choose-path-links .btn {
-    margin-bottom: 10px; }
-  .choose-path-links .btn + .btn {
+  .path-start-links .btn {
+    margin-bottom: 10px;
     margin-left: 8px; }
+  .path-start-links .btn:first-child {
+    margin-left: 0; }
 }
 
 .features .col-md-6 {
