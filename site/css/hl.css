@@ -4626,6 +4626,8 @@ pre .hs-keyglyph {
   .choose-path-nav > li {
     float: none;
     display: inline-block; }
+  .choose-path-nav > li + li {
+    margin-left: 8px; }
   .choose-path-nav > li > a {
     border: 1px solid #ddd; }
   .choose-path-nav > li.active > a, .choose-path-nav > li.active > a:hover, .choose-path-nav > li.active > a:focus {
@@ -4641,6 +4643,23 @@ pre .hs-keyglyph {
 .choose-path-links .btn-sm {
   font-size: 17px;
   line-height: 1.4; }
+
+.choose-path-links .btn + .btn {
+  margin-left: 4px; }
+
+@media (max-width: 767px) {
+  .choose-path-nav {
+    display: block; }
+    .choose-path-nav > li {
+      display: block; }
+    .choose-path-nav > li + li {
+      margin-left: 0;
+      margin-top: 10px; }
+  .choose-path-links .btn {
+    margin-bottom: 10px; }
+  .choose-path-links .btn + .btn {
+    margin-left: 8px; }
+}
 
 .features .col-md-6 {
   cursor: pointer; }
