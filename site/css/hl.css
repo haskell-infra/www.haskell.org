@@ -4603,6 +4603,14 @@ pre .hs-keyglyph {
   font-size: 95%;
   line-height: 130%; }
 
+.home-pillars h3 {
+  font-size: 34px;
+  white-space: nowrap; }
+
+.home-pillars p {
+  font-size: 20px;
+  line-height: 1.5; }
+
 .features .col-md-6 {
   cursor: pointer; }
 
