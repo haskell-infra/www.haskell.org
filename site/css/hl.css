@@ -4603,13 +4603,44 @@ pre .hs-keyglyph {
   font-size: 95%;
   line-height: 130%; }
 
-.home-pillars h3 {
-  font-size: 34px;
-  white-space: nowrap; }
+.home-pillar h3 {
+  font-size: 30px;
+  line-height: 1.2; }
 
-.home-pillars p {
+@media (min-width: 992px) {
+  .home-pillar h3 {
+    white-space: nowrap; } }
+
+.home-pillar p {
   font-size: 20px;
   line-height: 1.5; }
+
+.choose-path-section {
+  background-color: #f7f4fb;
+  border-top: 1px solid #ebe4f3;
+  border-bottom: 1px solid #ebe4f3;
+  padding: 40px 0; }
+
+.choose-path-nav {
+  display: inline-block; }
+  .choose-path-nav > li {
+    float: none;
+    display: inline-block; }
+  .choose-path-nav > li > a {
+    border: 1px solid #ddd; }
+  .choose-path-nav > li.active > a, .choose-path-nav > li.active > a:hover, .choose-path-nav > li.active > a:focus {
+    border: 1px solid #9E358F; }
+
+.choose-path-panel {
+  text-align: center; }
+
+.choose-path-section .choose-path-description {
+  font-size: 20px;
+  line-height: 1.5; }
+
+.choose-path-links .btn-sm {
+  font-size: 17px;
+  line-height: 1.4; }
 
 .features .col-md-6 {
   cursor: pointer; }
