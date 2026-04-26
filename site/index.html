@@ -25,27 +25,83 @@ isHome: true
    </div>
 </div>
 
-<br class="hidden-xs hidden-sm"> 
+<br class="hidden-xs hidden-sm">
 
 <div class="container">
    <div class="row">
-      <div class="span4 col-xs-12 col-sm-4">
+      <div class="span4 col-xs-12 col-sm-4 home-pillar">
          <h3>Model complex domains</h3>
          <p>Express domain rules, invariants, and possible states directly in code instead of scattering them through comments, docs, and informal practices.</p>
       </div>
-      <div class="span4 col-xs-12 col-sm-4">
+      <div class="span4 col-xs-12 col-sm-4 home-pillar">
          <h3>Build reliable software</h3>
          <p>Catch mistakes before they escape into production and build systems that stay dependable as the logic gets more complex and the stakes get higher.</p>
       </div>
-      <div class="span4 col-xs-12 col-sm-4">
+      <div class="span4 col-xs-12 col-sm-4 home-pillar">
          <h3>Refactor with confidence</h3>
          <p>Keep your codebase maintainable, even as requirements shift, teams change, and environments evolve.</p>
       </div>
    </div>
 </div>
 
-<br> 
+<br>
 <br class="hidden-xs hidden-sm">
+
+<div class="choose-path-section">
+   <div class="container">
+      <div class="row">
+         <div class="span12 col-sm-12 text-center">
+            <h2>With Haskell, you are in control. Choose your own path</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="span12 col-sm-12 text-center">
+            <!-- Note that data-path keys and pane order should be aligned with other dependent panes. -->
+            <ul class="nav nav-pills choose-path-nav" role="tablist">
+               <li role="presentation">
+                  <a href="#choose-path-academia" aria-controls="choose-path-academia" role="tab" data-toggle="pill" data-path="academia">Academia and language design</a>
+               </li>
+               <li role="presentation" class="active">
+                  <a href="#choose-path-industry" aria-controls="choose-path-industry" role="tab" data-toggle="pill" data-path="industry">Build reliable systems</a>
+               </li>
+               <li role="presentation">
+                  <a href="#choose-path-hobbyists" aria-controls="choose-path-hobbyists" role="tab" data-toggle="pill" data-path="hobbyists">Build your next pet project</a>
+               </li>
+               <li role="presentation">
+                  <a href="#choose-path-wildcard" aria-controls="choose-path-wildcard" role="tab" data-toggle="pill" data-path="wildcard">Use it your way</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <br>
+      <div class="row">
+         <div class="span12 col-sm-12">
+            <div class="tab-content">
+               <div role="tabpanel" class="tab-pane" id="choose-path-academia">
+                  <div class="choose-path-panel">
+                     <p class="choose-path-description">Use Haskell for research and contribute to ideas that continue to shape modern programming languages since 1990.</p>
+                  </div>
+               </div>
+               <div role="tabpanel" class="tab-pane active" id="choose-path-industry">
+                  <div class="choose-path-panel">
+                     <p class="choose-path-description">Use Haskell in production for web apps, tools, and systems where correctness and maintainability matter.</p>
+                  </div>
+               </div>
+               <div role="tabpanel" class="tab-pane" id="choose-path-hobbyists">
+                  <div class="choose-path-panel">
+                     <p class="choose-path-description">Use Haskell to build tools, games, and side projects that are satisfying to make and rewarding to understand.</p>
+                  </div>
+               </div>
+               <div role="tabpanel" class="tab-pane" id="choose-path-wildcard">
+                  <div class="choose-path-panel">
+                     <p class="choose-path-description">There is no one way to do Haskell. Use Haskell the way that fits how you like to work.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 
 <div class="pattern-bg">
    <div class=" container ">
@@ -530,6 +586,50 @@ isHome: true
    </div>
 </div>
 <br>
+<div class="path-start-section">
+   <div class="container">
+      <div class="row">
+         <div class="span12 col-sm-12">
+            <!-- Note that data-path keys and pane order should be aligned with the top choose-path tabs. -->
+            <div class="cta-pane is-active" data-path="industry">
+               <h3 class="path-start-heading text-center">Start building something real with confidence.</h3>
+               <p class="path-start-links text-center">
+                  <a href="/get-started/" class="btn btn-primary btn-sm">Get started</a>
+                  <a href="https://blog.haskell.org/a-couple-million-lines-of-haskell/" class="btn btn-default btn-sm">A couple million lines of Haskell</a>
+                  <a href="https://serokell.io/blog/haskell-in-production" class="btn btn-default btn-sm">Haskell in production</a>
+                  <a href="#community-wrapper" class="btn btn-default btn-sm">Testimonials</a>
+               </p>
+            </div>
+            <div class="cta-pane" data-path="academia">
+               <h3 class="path-start-heading text-center">Start exploring Haskell's ideas.</h3>
+               <p class="path-start-links text-center">
+                  <a href="/get-started/" class="btn btn-primary btn-sm">Get started</a>
+                  <a href="https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/table.html" class="btn btn-default btn-sm">GHC language extensions</a>
+                  <a href="https://github.com/ghc-proposals/ghc-proposals" class="btn btn-default btn-sm">GHC Proposals</a>
+                  <a href="/documentation/" class="btn btn-default btn-sm">Documentation</a>
+               </p>
+            </div>
+            <div class="cta-pane" data-path="hobbyists">
+               <h3 class="path-start-heading text-center">Start building your next fun project.</h3>
+               <p class="path-start-links text-center">
+                  <a href="/get-started/" class="btn btn-primary btn-sm">Get started</a>
+                  <a href="https://serokell.io/blog/best-haskell-open-source-projects" class="btn btn-default btn-sm">29 Awesome Projects</a>
+                  <a href="https://discourse.haskell.org/c/show-and-tell/7" class="btn btn-default btn-sm">Show and Tell</a>
+                  <a href="https://play.haskell.org/" class="btn btn-default btn-sm">Playground</a>
+               </p>
+            </div>
+            <div class="cta-pane" data-path="wildcard">
+               <h3 class="path-start-heading text-center">Start building projects and applications you care about.</h3>
+               <p class="path-start-links text-center">
+                  <a href="/get-started/" class="btn btn-primary btn-sm">Get started</a>
+                  <a href="/downloads/" class="btn btn-default btn-sm">Downloads</a>
+                  <a href="/documentation/" class="btn btn-default btn-sm">Documentation</a>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 <div class="sponsors pattern-bg">
    <div class=" container ">
       <div class=" row ">
