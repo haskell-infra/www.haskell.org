@@ -4603,6 +4603,9 @@ pre .hs-keyglyph {
   font-size: 95%;
   line-height: 130%; }
 
+.path-overview-section h3 {
+  font-size: 24px; }
+
 .features .col-md-6 {
   cursor: pointer; }
 
