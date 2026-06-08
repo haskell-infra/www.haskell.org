@@ -68,6 +68,7 @@ The SRT publishes security guides for Haskell programmers and
 project maintainers.  Guides will be added or updated over time.
 
 *  [How to secure GitHub repositories](https://github.com/haskell/security-advisories/blob/main/guides/github.md)
+*  [SBOM generation for Haskell projects](https://github.com/haskell/security-advisories/blob/main/guides/sbom_dependencies.md)
 
 ## SRT Reports
 
