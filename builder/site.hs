@@ -78,12 +78,19 @@ main = do
       route   idRoute
       compile copyFileCompiler
 
+    match ".well-known/*" $ do
+      route   idRoute
+      compile copyFileCompiler
+
     match "templates/*" $
       compile templateCompiler
 
 
 configuration :: Configuration
-configuration = defaultConfiguration{ providerDirectory = "site" }
+configuration = defaultConfiguration
+  { providerDirectory = "site"
+  , ignoreFile = \path -> takeFileName path /= ".well-known" && ignoreFile defaultConfiguration path
+  }
 
 parseTestimonialCompiler :: Compiler (Item Testimonial)
 parseTestimonialCompiler = do
