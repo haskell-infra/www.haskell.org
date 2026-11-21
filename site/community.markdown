@@ -49,6 +49,7 @@ There are a number of Haskell Users groups where haskellers meet to learn and co
 *   [Munich Haskell Meeting](https://muenchen.haskell.bayern/)
 *   [Portland Has Skill](https://www.meetup.com/portland-has-skill/)
 *   [Seattle Area Haskell Users' Group (SeaHUG)](https://groups.google.com/g/seattlehaskell)
+*   [Helsinki Haskell Users Group](https://jarkkaa.fi/@helsinki_haskell)
 *   [More Haskell meetups at meetup.com](https://www.meetup.com/find/?allMeetups=true&keywords=Haskell&radius=Infinity)
 
 ## Committees
