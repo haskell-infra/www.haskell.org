@@ -4,11 +4,17 @@ page: documentation
 isDocumentation: true
 ---
 
-# Documentation
-
-This page lists various resources to help you with Haskell. Resources marked with \[$$\] require payment.
-
-If you are new to Haskell and are not sure where to start from, we recommend [CIS194](https://www.seas.upenn.edu/~cis194/spring13/lectures.html). CIS194 is the introductory Haskell course of the University of Pennsylvania; it is free, thorough, practical and will guide you from the basics to advanced features of the language.
+<div class="bs-callout bs-callout-info">
+  <h4>Documentation</h4>
+  <p>
+    This page lists various resources to help you with Haskell. Resources marked with <span>[$$]</span> require payment.
+  </p>
+  <p>
+    If you are new to Haskell and are not sure where to start from, we recommend 
+    <a href="https://www.seas.upenn.edu/~cis194/spring13/lectures.html" target="_blank">CIS194</a>. 
+    <b>CIS194</b> is the introductory Haskell course of the University of Pennsylvania; it is free, thorough, practical, and will guide you from the basics to advanced features of the language.
+  </p>
+</div>
 
 ## Introductory Books for Learning Haskell
 
